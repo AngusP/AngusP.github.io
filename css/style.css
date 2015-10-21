@@ -1,0 +1,168 @@
+/**
+ * 
+ *  T O A S T E R . C C
+ * 
+ *
+ *  Mobile-first custom CSS
+ *  Using em (cascading scale) 
+ *  and rem (relative to html)
+ *
+ **/
+
+
+
+* { box-sizing: border-box; }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Serif','Times','Georgia','TImes New Roman',serif;
+    font-weight: normal;
+    font-size: 12pt;
+    background: #fff;
+    color: #181818;
+    min-width: 320px; /* Only use of px is for min screen size */
+}
+
+::selection {
+    background: black;
+    color: white;
+}
+
+/***
+    SUPER SIMPLE SQUARE-GRID-SYSTEM
+    Columns are all the same height in each row
+***/
+
+@media (min-width: 40rem) {
+    .row { width: 100%; display: table; table-layout: fixed; }
+    .col { display: table-cell; vertical-align: top; padding-right: 1em; }
+    .col+.col { padding: 0 1em; }
+    .col:last-child { padding-right: 0; }
+}
+
+/***
+    MAIN CLASSES
+
+***/
+
+.columnar {
+    -webkit-columns: 3 20rem; /* Chrome, Safari, Opera */
+    -moz-columns: 3 20rem; /* Firefox */
+    columns: 3 20rem;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+}
+
+.container {
+    width: 100%;
+    padding: 0em 2em;
+    margin: 0;
+}
+
+@media(min-width: 40rem){
+    .container {
+        margin: 0 auto;
+        width: 40rem;
+    }
+}
+@media(min-width: 80rem){
+    .container {
+        width: 60rem;
+    }
+}
+@media(min-width: 100rem){
+    .container {
+        width: 80rem;
+    }
+}
+
+.fold-centre {
+    padding: 10rem 2rem 2rem 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat','Helvetica-Neue',Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0.4em 0em 0.2em 0em;
+    line-height: 1.2em;
+    vertical-align: middle;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+h2 { font-size: 2.8em }
+h3 { font-size: 2em }
+h4 { font-size: 1.5em }
+h5 { font-size: 1em }
+h6 { font-size: 0.8em }
+
+
+header.hero {
+    height: 60%;
+    min-height: 30rem;
+    font-size: 1rem;
+    color: #f8f8f8;
+    background-color: #111;
+    background-image: url('../img/forum.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+@media(min-width: 40rem){
+    header.hero {
+        font-size: 1.3rem;
+    }
+}
+@media(min-width: 100rem){
+    header.hero {
+        font-size: 1.6rem;
+    }
+}
+
+hr {
+    margin: 1em 2em;
+    border: 0.1em solid #fff;
+}
+
+.hspace {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+p { font-size: 1em; }
+
+.padder {
+    padding: 2em;
+}
+
+.scrim {
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+}
+
+.sans-serif {
+    font-family: 'Montserrat','Helvetica-Neue', Helvetica, Arial, sans-serif;
+}
+.script {
+    font-family: 'Pacifico', cursive;
+}
+.serif {
+    font-family: 'PT Serif','Times','Georgia','TImes New Roman',serif;
+}
+
+.vspace {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}

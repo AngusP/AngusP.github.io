@@ -1,0 +1,17 @@
+# Site Settings
+title: toaster.cc
+description: "toaster.cc - AngusP's place on the net"
+baseurl: ""
+url: "http://toaster.cc"
+author: "Angus Pearson"
+
+# Main Navigation (Manual)
+navigation:
+ - text: Home
+   url: /
+
+# Build Settings
+paginate: 3
+paginate_path: "news/page:num"
+markdown: kramdown
+permalink: pretty
