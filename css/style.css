@@ -32,6 +32,25 @@ html, body {
     color: white;
 }
 
+::-webkit-scrollbar {
+    width: 0.5rem;
+    max-width: 0.5rem;
+    height: 0.5rem;
+    max-height: 0.5rem;
+}
+::-webkit-scrollbar-thumb{
+    background: #999;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #999;
+}
+
+*:focus {
+    outline: 0;
+}
+
+
+
 /***
     SUPER SIMPLE SQUARE-GRID-SYSTEM
     Columns are all the same height in each row
@@ -119,11 +138,17 @@ header.hero {
     background-size: cover;
     background-position: center center;
 }
+
+header.hero hr {
+    border-color: #fff;
+}
+
 @media(min-width: 40rem){
     header.hero {
         font-size: 1.3rem;
     }
 }
+
 @media(min-width: 100rem){
     header.hero {
         font-size: 1.6rem;
@@ -132,7 +157,7 @@ header.hero {
 
 hr {
     margin: 1em 2em;
-    border: 0.1em solid #fff;
+    border: 0.1em solid #181818;
 }
 
 .hspace {
