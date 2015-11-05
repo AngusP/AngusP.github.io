@@ -38,11 +38,14 @@ html, body {
     height: 0.5rem;
     max-height: 0.5rem;
 }
+::-webkit-scrollbar-track{
+    background: #fff;
+}
 ::-webkit-scrollbar-thumb{
-    background: #444;
+    background: #fed136;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: #444;
+    background: #fed136;
 }
 
 *:focus {
@@ -147,11 +150,10 @@ article p {
 }
 
 footer {
-    color: #FFF;
+    color: #777;
     background-color: #111;
     padding: 3rem 0;
     border-top: 0.2em solid #444;
-    margin-top: 2rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
