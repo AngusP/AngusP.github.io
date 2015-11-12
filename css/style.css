@@ -59,13 +59,13 @@ html, body {
     Columns are all the same height in each row
 ***/
 
-.col { padding-top: 2em; }
+.col { padding-top: 2em; margin: 0 -1em; }
 
 @media (min-width: 60rem) {
     .row { width: 100%; display: table; table-layout: fixed; }
-    .col { display: table-cell; vertical-align: top; padding-right: 1em; padding-top: 0;}
-    .col+.col { padding: 0 1em; }
-    .col:last-child { padding-right: 0; }
+    .col { display: table-cell; vertical-align: top; padding: 0 1em;}
+    /*.col+.col { padding: 0 1em; }
+    .col:last-child { padding-right: 0; }*/
 }
 
 /***
