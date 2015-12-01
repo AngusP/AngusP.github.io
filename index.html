@@ -40,7 +40,7 @@ layout: home
         <i class="fa fa-code-fork"></i>
       </div>
       <h3>Developer</h3>
-      <h4 class="muted script">Web & more</h4>
+      <h4 class="muted script">Full Stack</h4>
     </div>
 
   </div><!-- /.row -->
@@ -49,21 +49,59 @@ layout: home
 
 
 
-<div class="bg-grey">
+<div class="bg-d-grey">
   <div class="container-wide vspace">
 
     <h1 class="center">Portfolio</h1>
+
+    <div class="center padder">
+      <a href="{{ site.baseurl }}/media/cv.pdf" target=_blank class="btn">
+        <i class="fa fa-file-pdf-o"></i> <span class="spacer"></span>Curriculum Vitae</a>
+    </div>
 
     <div class="row">
 
       <div class="col">
         <div class="card">
+          <a href="https://github.com/AngusP/hacknotts15" target=_blank>
+            <img src="{{site.baseurl}}/media/marauders-app.jpg" class="img-responsive">
+          </a>
+          <div class="center padder card-head">
+            <h4>The Marauder's App</h4>
+            <span class="muted">Hackathon Project</span>
+          </div>
+          <div class="padder bg-l-grey muted ">
+            <p>Python Flask webapp, using Redis as a fast data store. I developed the backend
+              SSH bot that concurrently connected to all the computers in the Lab, updating Redis
+              with their availability, i.e. if someone was on them and who.
+            </p>
+            <p>
+              Built at <a href="http://hacknotts.com" target=_blank>HackNotts</a><br>
+              <a href="http://devpost.com/software/the-marauder-s-app" target=_blank>See it on Devpost</a>
+              <a href="https://github.com/AngusP/hacknotts15" target=_blank>GitHub repository</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card">
           <a href="https://github.com/orgs/possel/" target=_blank>
             <img src="{{site.baseurl}}/media/possel-ui.jpg" class="img-responsive">
           </a>
-          <div class="center padder">
+          <div class="center padder card-head">
             <h4>Possel IRC</h4>
             <span class="muted">UI Deveopment</span>
+          </div>
+          <div class="padder bg-l-grey muted">
+            <p>
+              Developing a web user interface for Possel, a new open-source project to build a better
+              IRC bouncer & client. The focus for the UI is to be media rich and similar to increasingly
+              popular team messaging services like Slack.
+            </p>
+            <p>
+              Project <a href="https://github.com/possel">GitHub repository</a>
+            </p>
           </div>
         </div>
       </div>
@@ -73,34 +111,43 @@ layout: home
           <a href="http://ca.gpb.eu" target=_blank>
             <img src="{{site.baseurl}}/media/content-analysis-tool.jpg" class="img-responsive">
           </a>
-          <div class="center padder">
+          <div class="center padder card-head">
             <h4>Content Analysis Tool</h4>
             <span class="muted">Web Development</span>
+          </div>
+          <div class="padder bg-l-grey muted">
+            <p>
+              The tool provides a broad set of market leading metrics for content quality analysis for the company.
+            </p>
+            <p>
+              <a href="http://ca.gpb.eu">Access the tool</a>
           </div>
         </div>
       </div>
 
+      
+    </div><!-- /.row -->
+    <div class="row">
+
+      
       <div class="col">
         <div class="card">
           <a href="http://edinsolar.org" target=_blank>
             <img src="{{site.baseurl}}/media/edinsolar-website.jpg" class="img-responsive">
           </a>
-          <div class="center padder">
+          <div class="center padder card-head">
             <h4>Edinsolar.org</h4>
             <span class="muted">Web Design</span>
           </div>
         </div>
       </div>
       
-    </div><!-- /.row -->
-    <div class="row">
-      
       <div class="col">
         <div class="card">
           <a href="http://diamondminding.github.io" target=_blank>
             <img src="{{site.baseurl}}/media/diamond-minding.jpg" class="img-responsive">
           </a>
-          <div class="center padder">
+          <div class="center padder card-head">
             <h4>Diamond Minding</h4>
             <span class="muted">Web Design</span>
           </div>
@@ -112,23 +159,32 @@ layout: home
           <a href="http://hacktheburgh.com" target=_blank>
             <img src="{{site.baseurl}}/media/hack-the-burgh.jpg" class="img-responsive">
           </a>
-          <div class="center padder">
+          <div class="center padder card-head">
             <h4>Hack the Burgh 2015</h4>
             <span class="muted">Web Dev & Event Management</span>
           </div>
         </div>
       </div>
 
+    </div><!-- /.row -->
+    <div class="row">
+
+      <div class="col">
+      </div>
+      
       <div class="col">
         <div class="card">
           <a href="https://github.com/ilw-sdh/ilw2014-app" target=_blank>
             <img src="{{site.baseurl}}/media/magpye.jpg" class="img-responsive">
           </a>
-          <div class="center padder">
+          <div class="center padder card-head">
             <h4>'MAGPYE'</h4>
             <span class="muted">ILW Hackathon Project</span>
           </div>
         </div>
+      </div>
+
+      <div class="col">
       </div>
       
     </div><!-- /.row -->

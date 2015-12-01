@@ -82,8 +82,38 @@ article p {
     font-size: 1.1em;
 }
 
-.bg-grey {
-    background-color: #f0f0f0;
+.bg-l-grey {
+    background-color: #efefef;
+}
+
+.bg-d-grey {
+    background-color: #f8f8f8;
+}
+
+.btn {
+    font-size: 1em;
+    display: inline-block;
+    padding: 0.5em 2em;
+    background: #fed136;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Montserrat','Helvetica-Neue',Helvetica,Arial,sans-serif;
+    box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #fed136;
+    box-shadow: 0em 0.1em 0.3em 0em rgba(0,0,0,0.5);
+}
+
+.btn-lg {
+    font-size: 1.3em;
+}
+.btn-sm {
+    font-size: 0.8em;
 }
 
 .card {
@@ -91,6 +121,10 @@ article p {
     min-height: 4rem;
     background: #FFF;
     color: #333;
+}
+
+.card-head {
+    border-top: 0.2rem solid #fed136;
 }
 
 .center {
@@ -228,6 +262,11 @@ img.img-responsive {
     font-style: italic;
 }
 
+.muted > a,
+.muted > p > a {
+    color: inherit;
+}
+
 p { font-size: 1em; }
 
 .padder {
@@ -249,6 +288,11 @@ p { font-size: 1em; }
 }
 .serif {
     font-family: 'PT Serif','Times','Georgia','TImes New Roman',serif;
+}
+
+.spacer {
+    display: inline-block;
+    width: 1em;
 }
 
 .vspace {
