@@ -90,6 +90,10 @@ article p {
     background-color: #f8f8f8;
 }
 
+.b-top-grey {
+    border-top: 0.1rem solid #eee;
+}
+
 .btn {
     font-size: 1em;
     display: inline-block;
