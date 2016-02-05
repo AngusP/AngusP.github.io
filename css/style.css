@@ -303,3 +303,17 @@ p { font-size: 1em; }
     padding-top: 2em;
     padding-bottom: 2em;
 }
+
+
+.hidden-xs {
+    display: none;
+}
+
+@media(min-width: 40rem){
+    .hidden-xs {
+        display: initial;
+    }
+    .visible-xs {
+        display: none;
+    }
+}
