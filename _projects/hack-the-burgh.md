@@ -10,8 +10,8 @@ Web design, event management and event branding for Hack the Burgh,
 a Major league Hacking student hackathon in March 2015, as part of CompSoc's 
 2015 events schedule.
 
-[https://bitbucket.org/anangusp/htb-2015](2015 Site Source)
+[2015 Site Source](https://bitbucket.org/anangusp/htb-2015)
 
 Current Site
-[http://hacktheburgh.com](hacktheburgh.com)
+[hacktheburgh.com](https://hacktheburgh.com)
 

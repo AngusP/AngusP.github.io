@@ -10,5 +10,5 @@ Developing a web user interface for Possel, a new open-source project to build a
 IRC bouncer & client. The focus for the UI is to be media rich and similar to increasingly
 popular team messaging services like Slack.
 
-Project [https://github.com/possel](Github Repository)
+Project [Github Repository](https://github.com/possel)
 
