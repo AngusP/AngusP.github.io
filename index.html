@@ -62,9 +62,9 @@ layout: home
       </a>
     </div>
 
-    <div class="row">
-
-      {% for project in site.projects %}
+    {% for project in site.projects | sort 'date' %}
+      
+    <div class="{% cycle '', '', 'row' %}">
       
       <div class="col">
         <div class="card">
@@ -80,8 +80,15 @@ layout: home
           </div>
         </div>
       </div>
+      
+    </div><!-- /.row -->
+    <div class="{% cycle '', '', 'row' %}">
+      
+    {% endfor %}
+    </div><!-- Terminating row  -->
 
-      {% endfor %}
+
+    <!--div class="row">
 
       <div class="col">
         <div class="card">
