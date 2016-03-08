@@ -10,5 +10,7 @@ OpenCV based face detection welcomer, designed to digitise [Rise Manchester's](h
 
 Project [GitHub repo](https://github.com/AWilcke/RIseFaceDetect), developed at [StudentHack IV](https://studenthack.com)
 
+[See it on DevPost](http://devpost.com/software/risefacedetect)
+
 Winner of the Rise Manchester Challenge: Digitise Rise’s Space challenge.
  

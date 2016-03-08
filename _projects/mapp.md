@@ -16,3 +16,5 @@ Built at <a href="http://hacknotts.com">HackNotts</a><br/>
 <a href="http://devpost.com/software/the-marauder-s-app">See it on Devpost</a>
 <a href="https://github.com/AngusP/hacknotts15">GitHub repository</a>
 
+Winner Best Use of Braintree PayPal API, UoN Information Services Best Hack
+
