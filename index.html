@@ -64,6 +64,25 @@ layout: home
 
     <div class="row">
 
+      {% for project in site.projects %}
+      
+      <div class="col">
+        <div class="card">
+          <a href="{{ project.url }}" target=_blank>
+            <img src="{{site.baseurl}}/media/{{ project.image }}" class="img-responsive">
+          </a>
+          <div class="center padder card-head">
+            <h4>{{ project.name }}</h4>
+            <span class="muted">{{ project.type }}</span>
+          </div>
+          <div class="padder b-top-grey muted ">
+            {{ project.content }}
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+
       <div class="col">
         <div class="card">
           <a href="https://mapp.tardis.ed.ac.uk" target=_blank>

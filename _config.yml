@@ -15,3 +15,7 @@ paginate: 3
 paginate_path: "news/page:num"
 markdown: kramdown
 permalink: pretty
+
+# Post-like content
+collections:
+- projects
