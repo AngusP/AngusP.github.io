@@ -67,7 +67,7 @@ layout: home
       
     {% cycle '<div class="row">', '', '' %}
 
-      {% assign mod = forloop.index | modulo:3 %}
+      {% assign mod = forloop.index0 | modulo:3 %}
       
       <div class="col">
         <div class="card">
