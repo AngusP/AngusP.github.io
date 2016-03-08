@@ -3,7 +3,7 @@ name: Content Analysis Tool
 type: Web Development
 image: content-analysis-tool.jpg
 url: http://ca.gpb.eu
-date: 2015-07-30
+published: 2015-07-30
 ---
 
 The tool provides a broad set of market leading metrics for content quality analysis for the company.

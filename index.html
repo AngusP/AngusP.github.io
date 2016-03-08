@@ -62,7 +62,7 @@ layout: home
       </a>
     </div>
 
-    {% for project in site.projects | sort 'date' %}
+    {% for project in site.projects | sort 'published' %}
       
     {% cycle '<div class="row">', '', '' %}
       

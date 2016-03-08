@@ -3,7 +3,7 @@ name: Possel IRC
 type: UI Development
 image: possel-ui.jpg
 url: https://github.com/orgs/possel/
-date: 2015-10-06
+published: 2015-10-06
 ---
 
 Developing a web user interface for Possel, a new open-source project to build a better

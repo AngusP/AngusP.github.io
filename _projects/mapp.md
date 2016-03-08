@@ -3,7 +3,7 @@ name: The Marauder's App
 type: Hackathon Project
 image: marauders-app.jpg
 url: https://mapp.tardis.ed.ac.uk
-date: 2015-11-28
+published: 2015-11-28
 ---
 
 Python Flask webapp, using Redis as a fast data store. 
