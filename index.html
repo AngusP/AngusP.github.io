@@ -83,6 +83,10 @@ layout: home
           </div>
         </div>
       </div>
+      
+    {% cycle '', '', '</div><div class="row">' %}
+      
+    {% endfor %}
 
       {% if mod == 1 %}
       <div class="col"><!-- 1 --></div>
@@ -90,10 +94,7 @@ layout: home
       <div class="col"><!-- 1 --></div>
       <div class="col"><!-- 2 --></div>
       {% endif %}
-      
-    {% cycle '', '', '</div><div class="row">' %}
-      
-    {% endfor %}
+
     </div><!-- Terminating row  -->
 
   </div>
