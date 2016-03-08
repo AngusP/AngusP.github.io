@@ -66,6 +66,8 @@ layout: home
     {% for project in projects %}
       
     {% cycle '<div class="row">', '', '' %}
+
+      {% assign mod = forloop.index | modulo:3 %}
       
       <div class="col">
         <div class="card">
@@ -81,6 +83,13 @@ layout: home
           </div>
         </div>
       </div>
+
+      {% if mod == 1 %}
+      <div class="col"><!-- 1 --></div>
+      {% elsif mod == 2%}
+      <div class="col"><!-- 1 --></div>
+      <div class="col"><!-- 2 --></div>
+      {% endif %}
       
     {% cycle '', '', '</div><div class="row">' %}
       
