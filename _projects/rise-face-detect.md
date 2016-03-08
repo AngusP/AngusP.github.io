@@ -3,7 +3,7 @@ name: Rise Face Detect
 type: Hackathon Project
 image: rise-fd.jpg
 url: http://devpost.com/software/risefacedetect
-published: 2016-03-06
+date: 2016-03-06
 ---
 
 OpenCV based face detection welcomer, designed to digitise [https://thinkrise.com/manchester.html](Rise Manchester's) space in a user friendly and easy way. Frontend used Typed.js, Bootstrap and JQuery.

@@ -127,13 +127,6 @@ article p {
     color: #333;
 }
 
-@media (min-width: 60rem) {
-    .card {
-        /* hack until cleverer loop for collections is implemented */
-        max-width: 31.6%;
-    }
-}
-
 .card-head {
     border-top: 0.2rem solid #fed136;
 }
