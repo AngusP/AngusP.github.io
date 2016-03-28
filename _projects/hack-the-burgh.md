@@ -13,5 +13,5 @@ a Major league Hacking student hackathon in March 2015, as part of CompSoc's
 [2015 Site Source](https://bitbucket.org/anangusp/htb-2015)
 
 Current Site
-[hacktheburgh.com](https://hacktheburgh.com)
+[hacktheburgh.com](http://hacktheburgh.com)
 
