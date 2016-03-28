@@ -9,6 +9,10 @@ author: "Angus Pearson"
 navigation:
  - text: Home
    url: /
+ - text: Portfolio
+   url: /#portfolio
+ - text: GitHub
+   abs: https://github.com/AngusP
 
 # Build Settings
 paginate: 3

@@ -13,13 +13,15 @@ layout: home
   </div>
 </header>
 
+{% include nav.html %}
+
 <div class="container vspace">
 
   <h1 class="center">About Me</h1>
   
   <div class="row vspace">
 
-    <div class="col center">
+    <div class="col center padder">
       <div class="content-circle center twox">
         <i class="fa fa-mortar-board"></i>
       </div>
@@ -27,7 +29,7 @@ layout: home
       <h4 class="muted script">University of Edinburgh</h4>
     </div>
 
-    <div class="col center">
+    <div class="col center padder">
       <div class="content-circle center twox">
         <i class="fa fa-laptop"></i>
       </div>
@@ -35,12 +37,12 @@ layout: home
       <h4 class="muted script">Computer Science</h4>
     </div>
 
-    <div class="col center">
+    <div class="col center padder">
       <div class="content-circle center twox">
         <i class="fa fa-code-fork"></i>
       </div>
       <h3>Developer</h3>
-      <h4 class="muted script">Full Stack Web</h4>
+      <h4 class="muted script">Web &amp;Systems</h4>
     </div>
 
   </div><!-- /.row -->
@@ -48,10 +50,10 @@ layout: home
 </div>
 
 
-
-<div class="bg-d-grey">
+<div class="">
   <div class="container-wide vspace">
 
+    <a name="portfolio"></a>
     <h1 class="center">Portfolio</h1>
 
     <div class="center padder">
@@ -61,6 +63,12 @@ layout: home
         <span class="visible-xs">CV</span>
       </a>
     </div>
+
+  </div>
+</div>
+
+<div class="bg-l-grey">
+  <div class="container-wide vspace">
 
     {% assign projects = site.projects | sort 'date' | reverse %}
     {% for project in projects %}
@@ -108,10 +116,3 @@ layout: home
   <h4 class="center muted">& Further Information</h4>
   
 </div-->
-
-
-<footer>
-  <div class="container">
-    
-  </div>
-</footer>

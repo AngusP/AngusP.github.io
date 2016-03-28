@@ -1,0 +1,17 @@
+<nav class="bg-l-grey">
+  <div class="container">
+    <ul class="row nav-ul">
+      {% assign url = page.url|remove:'index.html' %}
+      {% for link in site.navigation %}
+      <li class="col {% if page.url == link.url %}active{% endif %}">
+        {% if link.url %}
+	<a href="{{ link.url | append: site.baseurl }}" title="{{ link.text }}">{{link.text}}</a>
+        {% endif %}
+        {% if link.abs %}
+        <a href="{{ link.abs }}" title="{{ link.text }}">{{link.text}}</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

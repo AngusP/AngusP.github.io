@@ -59,7 +59,7 @@ html, body {
     Columns are all the same height in each row
 ***/
 
-.col { padding-top: 2em; margin: 0 -1em; }
+.col { /*padding-top: 2em;*/ margin: 0 -1em; }
 
 @media (min-width: 60rem) {
     .row { width: 100%; display: table; table-layout: fixed; }
@@ -83,11 +83,11 @@ article p {
 }
 
 .bg-l-grey {
-    background-color: #efefef;
+    background-color: #f8f8f8;
 }
 
 .bg-d-grey {
-    background-color: #f8f8f8;
+    background-color: #efefef;
 }
 
 .b-top-grey {
@@ -190,10 +190,24 @@ article p {
 }
 
 footer {
-    color: #777;
+    font-family: Helvetica,'Helvetica-Neue', Arial,sans-serif;
+    color: #555;
     background-color: #111;
     padding: 3rem 0;
     border-top: 0.2em solid #444;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+footer a,
+footer a:visited{
+    color: #555;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #777;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -271,6 +285,34 @@ img.img-responsive {
     color: inherit;
 }
 
+.nav-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat','Helvetica-Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.nav-ul > li > a {
+    padding: 1em;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 0.15em solid #EEE;
+}
+
+.nav-ul > li > a.active {
+    border-color: #DDD;
+}
+
+.nav-ul > li > a:hover,
+.nav-ul > li > a:focus {
+    outline: 0;
+    border-color: #fed136;
+}
+
 p { font-size: 1em; }
 
 .padder {
@@ -295,8 +337,13 @@ p { font-size: 1em; }
 }
 
 .spacer {
+    text-align: center;
     display: inline-block;
     width: 1em;
+}
+
+.spacer.double {
+    width: 2em;
 }
 
 .vspace {
