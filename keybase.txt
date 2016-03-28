@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/angusp
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://toaster.cc
+  * I am angusp (https://keybase.io/angusp) on keybase.
+  * I have a public key with fingerprint FA24 28ED D3CE F60F 311B  22C7 6DB6 C5D5 AB4C 6B69
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ac4fa765127b863531f802ac0f13d6f925d7d61bace9040dda2a4837b25e52ca0a",
+            "fingerprint": "fa2428edd3cef60f311b22c76db6c5d5ab4c6b69",
+            "host": "keybase.io",
+            "key_id": "6db6c5d5ab4c6b69",
+            "kid": "0101ac4fa765127b863531f802ac0f13d6f925d7d61bace9040dda2a4837b25e52ca0a",
+            "uid": "518e219fe42e1719b788b80502208519",
+            "username": "angusp"
+        },
+        "service": {
+            "hostname": "toaster.cc",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1459175571,
+    "expire_in": 157680000,
+    "prev": "040fe9530451a2ad8f1b435eb7ce48d2cd4ae2cb9daedf4419c9d9b3229e73d2",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+yMNCAnicrVJrTBRXGF0KbWXlFSC1vtIym7RKKM6d92xos0o3rVqFoFiEhe3M3DvL
+uO6D3eElsm5bamIVq1Ax2CfVVixqUQSXUoMQQbZFtG3QKsZXA4pWfERqbGPSGWL/
+9Wfvn5t77jnnO9+X70RspMEY4eroG255y6lE/NRTV2pY9chSX4WJHliJmaswJ5q6
+0FqI/KrdqUDMjOEAB4JEyQLL0IBgRY4haRLIHE4IEi4DEjIyT9CQhQwQBQnxOIVD
+KBACxZGsSNCIJiQBF7A0TFbcDuTz+hS3qtnKAkERHIKQlJDM4DIJgEgQEstAkZFo
+SAsiJTEiw2vCYo9fV2jhRMGP0hWPhmkP+1S8/+D/z7lLp+xowCEC8DKiCARYwIss
+x4kcTuMEgXM00OuW+pHPLbiQxhbcjlK/F6tOwzSsTJGQPla9jyf/qkfwq8iXLkma
+zuvzqB7Js1bDi1XVa9ZlaqVX55Uj0f7EwS4qbqiNUBOUIZ9f8bgxM9CYkqroloCi
+ecDSNAvSMFThVXzIrugMmmU4XDt6GVSmz4XCZcTTJE7RQGsXcjIQKZJGIishioOE
+BCkBEZLIQwFBmaIAL/GQF0mC4BFLQgLTeypxezAzpcUUHJqlX3G4BbXUh7Dq3h5b
+lCHCaHjm6af01TIYoxP+Xbh5fQmGmjbL2IFgm63xUEzj3UsB0xvmgQs3n/tU7nw9
+6+FQRl5JMHxxdsGWuS/W9o70bryWvzI4eftrKvxzEh5//5x1T37Xaz0Zr9i85Zlr
+ckfXZG/Li3Q9rpkdsCdl1l5d0vmN1fH8ZGGyq7mfqWj8rPkrUBRmbJdLrnypDhLV
+t1/tv5nUuuQFIml6zkuD7zW3m2btDfWPz29KGMiJgVsHjn4RWi1M//iH+nvvj17w
+Hzt4pKjm99gHtsTov61x+9+uNicO3S8eTt/HLfuEje6+9ya0lJFXzh852Xb9Usbu
+2ro/ghMWJeVo6tbE4bjkbGOmeY8pI3794iHm++2Prx9fd3eHPbdj/8xA15i2jIcG
+Pmh5d+LsSOgA33Zujq1hV9rVkHgqk/8xa9ovC1MPz9hQ0Zp8dmPYaXJ/VLjQOnkm
+qmhfQ0LvhhN3Zo6NdHPJD5v65x2LjunZHRGV8uHO5bGHS27I0vZNVSGLMC3/829B
+zXLHs+OT9tOWTGMg/HLkb4W575zPt97YjLqyzxgG+/G9f8WvWHq6OpDkGgnOn7u6
+CXRumrMtI66SvfVr7LX6OsPS1ppO58nsUG+i+w4siD64bPHl7l35DVk5mLClxZUw
+dDEvmFb3KHVBijE2Z6LIfHzd+nGufeK7dvDnThO/aMFYoLvANCt+xqrw6GCUr3HF
+jpXlHc191lsPxjhnxKJT/wB7frx0
+=8Eb6
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/angusp
+
+==================================================================
+
