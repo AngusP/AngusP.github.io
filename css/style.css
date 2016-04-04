@@ -275,6 +275,11 @@ img.img-responsive {
     height: auto;
 }
 
+.img-card-head {
+    min-height: 16em;
+    background: #111;
+}
+
 .muted {
     opacity: 0.8;
     font-style: italic;
