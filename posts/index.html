@@ -1,0 +1,26 @@
+---
+title: Posts
+layout: default
+---
+
+<div class="container vspace skinny">
+  {% for post in paginator.posts %}
+
+  <article>
+    <a name="{{ post.title | xml_escape }}"></a>
+    <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+    <p class="muted i">
+      {{ post.date | date: "%b %-d, %Y" }}
+    </p>
+    <div {% if post.columnar %} class="columnar" {% endif %}>
+      {{ post.content }}
+    </div>
+  </article>
+
+  {% if paginator.total_posts > 1 %}
+  <hr>
+  {% endif %}
+  {% endfor %}
+</div>
+
+

@@ -2,7 +2,7 @@
 name: Edinsolar.org
 type: Web Design
 image: edinsolar-website.jpg
-url: http://edinsolar.org
+link: http://edinsolar.org
 date: 2015-06-15
 ---
 

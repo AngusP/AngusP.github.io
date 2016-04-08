@@ -2,7 +2,7 @@
 name: System Design Project
 type: University Project
 image: sdp.jpg
-url: http://www.inf.ed.ac.uk/teaching/courses/sdp/
+link: http://www.inf.ed.ac.uk/teaching/courses/sdp/
 date: 2016-04-01
 ---
 

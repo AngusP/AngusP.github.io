@@ -11,12 +11,14 @@ navigation:
    url: /
  - text: Portfolio
    url: /#portfolio
+ - text: Posts
+   url: /posts/
  - text: GitHub
    abs: https://github.com/AngusP
 
 # Build Settings
 paginate: 3
-paginate_path: "news/page:num"
+paginate_path: "posts/page:num"
 markdown: kramdown
 permalink: pretty
 

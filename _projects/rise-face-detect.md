@@ -2,7 +2,7 @@
 name: Rise Face Detect
 type: Hackathon Project
 image: rise-fd.jpg
-url: http://devpost.com/software/risefacedetect
+link: http://devpost.com/software/risefacedetect
 date: 2016-03-06
 ---
 

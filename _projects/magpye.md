@@ -2,7 +2,7 @@
 name: 'MAGPYE'
 type: ILW Hackathon Project
 image: magpye.jpg
-url: https://github.com/ilw-sdh/ilw2014-app
+link: https://github.com/ilw-sdh/ilw2014-app
 date: 2014-02-18
 ---
 

@@ -2,7 +2,7 @@
 name: Diamond Minding
 type: Web Design
 image: diamond-minding.jpg
-url: http://diamondminding.github.io
+link: http://diamondminding.github.io
 date: 2014-09-02
 ---
 

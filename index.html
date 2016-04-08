@@ -1,12 +1,12 @@
 ---
 title: Home
-layout: home
+layout: basic
 ---
 
 <header class="hero">
   <div class="scrim">
     <div class="fold-centre">
-      <h1>toaster . cc</h1>
+      <h1>toaster&nbsp;.&nbsp;cc</h1>
       <hr>
       <h3 class="script">AngusP</h3>
     </div>
@@ -26,7 +26,7 @@ layout: home
         <i class="fa fa-mortar-board"></i>
       </div>
       <h3>Student</h3>
-      <h4 class="muted script">University of Edinburgh</h4>
+      <h4 class="muted script i">University of Edinburgh</h4>
     </div>
 
     <div class="col center padder">
@@ -34,7 +34,7 @@ layout: home
         <i class="fa fa-laptop"></i>
       </div>
       <h3>Major</h3>
-      <h4 class="muted script">Computer Science</h4>
+      <h4 class="muted script i">Computer Science</h4>
     </div>
 
     <div class="col center padder">
@@ -42,7 +42,7 @@ layout: home
         <i class="fa fa-code-fork"></i>
       </div>
       <h3>Developer</h3>
-      <h4 class="muted script">Web &amp;Systems</h4>
+      <h4 class="muted script i">Web &amp;Systems</h4>
     </div>
 
   </div><!-- /.row -->
@@ -51,7 +51,7 @@ layout: home
 
 
 <div class="">
-  <div class="container-wide vspace">
+  <div class="container vspace">
 
     <a name="portfolio"></a>
     <h1 class="center">Portfolio</h1>
@@ -68,7 +68,7 @@ layout: home
 </div>
 
 <div class="bg-l-grey">
-  <div class="container-wide vspace">
+  <div class="container vspace">
 
     {% assign projects = site.projects | sort 'date' | reverse %}
     {% for project in projects %}
@@ -79,8 +79,8 @@ layout: home
       
       <div class="col">
         <div class="card">
-          <a href="{{ project.url }}" target=_blank>
-            <img src="{{site.baseurl}}/media/{{ project.image }}" class="img-responsive img-card-head">
+          <a href="{{ project.link }}" target=_blank>
+            <img src="{{site.baseurl}}/media/{{ project.image }}" class="img-responsive">
           </a>
           <div class="center padder card-head">
             <h4>{{ project.name }}</h4>
@@ -109,10 +109,4 @@ layout: home
   </div>
 </div>
 
-
-<!--div class="container vspace">
-
-  <h1 class="center">Contact</h1>
-  <h4 class="center muted">& Further Information</h4>
-  
-</div-->
+{% include footer.html %}

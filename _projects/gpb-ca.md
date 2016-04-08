@@ -2,7 +2,7 @@
 name: Content Analysis Tool
 type: Web Development
 image: content-analysis-tool.jpg
-url: http://ca.gpb.eu
+link: http://ca.gpb.eu
 date: 2015-07-30
 ---
 

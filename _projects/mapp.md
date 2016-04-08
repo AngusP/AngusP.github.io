@@ -2,7 +2,7 @@
 name: The Marauder's App
 type: Hackathon Project
 image: marauders-app.jpg
-url: https://mapp.tardis.ed.ac.uk
+link: https://mapp.tardis.ed.ac.uk
 date: 2015-11-28
 ---
 

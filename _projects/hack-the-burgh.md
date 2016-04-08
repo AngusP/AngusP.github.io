@@ -2,7 +2,7 @@
 name: Hack the Burgh 2015
 type: Web Dev & Event Management
 image: hack-the-burgh.jpg
-url: https://bitbucket.org/anangusp/htb-2015
+link: https://bitbucket.org/anangusp/htb-2015
 date: 2015-03-18
 ---
 
