@@ -109,6 +109,11 @@ article {
         color: lighten($copy_colour, 20%);
     }
 
+    ul, ol {
+        padding-left: 2em;
+        margin-left: -2em;
+    }
+
     a {
         color: darken($theme_colour, 0%);
         text-decoration: none;
@@ -155,7 +160,7 @@ article {
             padding-top: 0.1em;
             opacity: 0;
             display: inline-block;
-            transition: opacity 0.4s ease;
+            transition: opacity 0.3s ease;
         }
 
         a:hover::before,
@@ -520,6 +525,7 @@ img.img-responsive {
     font-weight: bold;
     color: #7B7B7B;
     border-bottom: 0.15em solid #EEE;
+    transition: border-color 0.3s ease;
 }
 
 .nav-ul > li > a.active {
