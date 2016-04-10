@@ -549,11 +549,14 @@ p { font-size: 1em; }
 }
 
 .pagination {
-    font-size: 3em;
+    font-size: 2em;
+    padding: 0.5em 0;
     width: 100%;
     display: block;
     font-family: $sans_font;
+    font-weight: bold;
     text-align: center;
+    color: $copy_colour;
     
     a,
     a:visited,
@@ -566,7 +569,24 @@ p { font-size: 1em; }
 
     .page_number {
         font-size: 0.6em;
-        opacity: 0.8;
+        opacity: 0.2;
+        word-spacing: 0.5em;
+    }
+
+    .col {
+        padding: 0.5em 0em; 
+    }
+}
+
+@media (min-width: $breakpoint_sm) {
+    .pagination {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: $breakpoint_md) {
+    .pagination {
+        font-size: 3em;
     }
 }
 
