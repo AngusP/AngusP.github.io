@@ -434,7 +434,7 @@ hr {
     border: 0.15em solid $back_d_grey;
 }
 
-hr.break:after {
+hr.break::after {
     display: inline-block;
     content: "//";
     float: left;
