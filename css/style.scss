@@ -435,7 +435,7 @@ hr {
 }
 
 hr.break:after {
-display:
+    display: inline-block;
     content: "//";
     float: left;
     font-size: 2em;
