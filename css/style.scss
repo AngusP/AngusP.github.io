@@ -141,8 +141,8 @@ article {
             text-decoration: none;
         }
 
-        a::after,
-        a::after {
+        a::before,
+        a::before {
             content: "\f0c1"; /* Hyperlink icon */
             float: left;
             font: normal normal normal 14px/1 FontAwesome;
@@ -154,13 +154,12 @@ article {
             color: lighten($copy_colour, 44%);
             padding-top: 0.1em;
             opacity: 0;
-            display: none;
+            display: inline-block;
             transition: opacity 0.4s ease;
         }
 
-        a:hover::after,
-        a:focus::after {
-            display: inline-block;
+        a:hover::before,
+        a:focus::before {
             opacity: 1;
         }
     }
