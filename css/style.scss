@@ -392,6 +392,8 @@ header.hero {
     height: 60%;
     min-height: 30rem;
     font-size: 1rem;
+    font-size: 3.5vw;
+    white-space: nowrap;
     color: #f8f8f8;
     background-color: #111;
     background-image: url($header_image);
@@ -402,6 +404,12 @@ header.hero {
         border-color: #fff;
         margin: 1em 2em;
         border-width: 0.15em;
+    }
+}
+
+@media(min-width: $breakpoint_xs){
+    header.hero {
+        font-size: 1rem;
     }
 }
 
@@ -513,11 +521,19 @@ p { font-size: 1em; }
     color: #181818;
     text-align: center;
     font-size: 1rem;
+    font-size: 3.5vw;
+    white-space: nowrap;
 
     h1 {
         padding: 1em 0em;
         margin: 0;
         line-height: 1em;
+    }
+}
+
+@media(min-width: $breakpoint_xs){
+    .site_header {
+        font-size: 1rem;
     }
 }
 
