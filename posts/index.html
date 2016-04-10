@@ -21,28 +21,31 @@ layout: default
   {% endfor %}
 
   
-  <nav class="col pagination">
-    
+  <nav class="pagination">
     <div class="row">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}"><i class="fa fa-chevron-left"></i></a>
-      {% else %}
-      <i class="fa fa-chevron-left muted"></i>
-      {% endif %}
+      <div class="col">
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" title="Older">
+          <i class="fa fa-chevron-left"></i></a>
+        {% else %}
+        <i class="fa fa-chevron-left muted"></i>
+        {% endif %}
+      </div>
+      
+      
+      <div class="col">
+        <span class="page_number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+      </div>
+      
+      <div class="col">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" title="Newer">
+          <i class="fa fa-chevron-right"></i></a>
+        {% else %}
+        <i class="fa fa-chevron-right muted"></i>
+        {% endif %}
+      </div>
     </div>
-    
-    <div class="row">
-      <span class="page_number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-    </div>
-
-    <div class="row">
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}"><i class="fa fa-chevron-right"></i></a>
-      {% else %}
-      <i class="fa fa-chevron-right muted"></i>
-      {% endif %}
-    </div>
-    
   </nav>
 </div>
 

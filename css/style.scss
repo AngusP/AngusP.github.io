@@ -548,6 +548,13 @@ p { font-size: 1em; }
     padding: 2em;
 }
 
+.pagination {
+    font-size: 3em;
+    width: 100%;
+    display: block;
+    font-family: $sans_font;
+}
+
 .sans-serif {
     font-family: $serif_font;
 }
