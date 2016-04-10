@@ -17,7 +17,7 @@ navigation:
    abs: https://github.com/AngusP
 
 # Build Settings
-paginate: 1
+paginate: 3
 paginate_path: "posts/page:num"
 markdown: kramdown
 permalink: pretty
