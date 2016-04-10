@@ -431,7 +431,22 @@ header.hero {
 
 hr {
     margin: 4em 0em;
-    border: 0.25em solid $back_d_grey;
+    border: 0.15em solid $back_d_grey;
+}
+
+hr.break:after {
+display:
+    content: "//";
+    float: left;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    margin-top: -0.5em;
+    line-height: 1em;
+    color: $back_d_grey;
+    font-weight: bold;
+    letter-spacing: -0.1em;
+    font-family: $sans_fon;
 }
 
 .hspace {
