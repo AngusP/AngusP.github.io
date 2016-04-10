@@ -569,8 +569,12 @@ p { font-size: 1em; }
 
     .page_number {
         font-size: 0.6em;
-        opacity: 0.2;
+        color: lighten($copy_colour, 70%);
         word-spacing: 0.5em;
+        display: inline-block;
+        line-height: 1em;
+        vertical-align: middle;
+        padding: 0.666666em 0em;
     }
 
     .col {
