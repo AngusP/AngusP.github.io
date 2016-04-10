@@ -567,7 +567,12 @@ p { font-size: 1em; }
         text-decoration: none;
     }
 
+    .disabled {
+        color: lighten($copy_colour, 70%);
+    }
+
     .page_number {
+        @extend .disabled;
         font-size: 0.6em;
         color: lighten($copy_colour, 70%);
         word-spacing: 0.5em;
