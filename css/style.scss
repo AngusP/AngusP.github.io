@@ -29,6 +29,11 @@ $mono_font: 'Source Code Pro', monospace;
 
 $header_image: '../img/forum-opt.jpg';
 
+$breakpoint_xs: 30rem;
+$breakpoint_sm: 50rem;
+$breakpoint_md: 70rem;
+$breakpoint_lg: 100rem;
+
 * { box-sizing: border-box; }
 
 html, body {
@@ -79,7 +84,7 @@ html, body {
 
 .col { /*padding-top: 2em;*/ margin: 0 -1em; }
 
-@media (min-width: 60rem) {
+@media (min-width: $breakpoint_sm) {
     .row { width: 100%; display: table; table-layout: fixed; }
     .col { display: table-cell; vertical-align: top; /*padding: 0 1em;*/}
     /*.col+.col { padding: 0 1em; }
@@ -188,12 +193,12 @@ article {
 
 }
 
-@media (min-width: 30rem) {
+@media (min-width: $breakpoint_xs) {
     article {
         font-size: 1.2em;
     }
 }
-@media (min-width: 50rem) {
+@media (min-width: $breakpoint_sm) {
     article {
         font-size: 1.4em;
     }
@@ -279,42 +284,42 @@ article {
     padding: 0em 2em;
 }
 
-@media(min-width: 30rem){
+@media(min-width: $breakpoint_xs){
     .container {
-        width: 30rem;
+        width: $breakpoint_xs;
     }
     .container.skinny {
-        width: 30rem;
+        width: $breakpoint_xs;
     }
 }
 
-@media(min-width: 50rem){
+@media(min-width: $breakpoint_sm){
     .container {
-        width: 50rem;
+        width: $breakpoint_sm;
     }
     .container.skinny {
-        width: 30rem;
+        width: ($breakpoint_sm - 20);
     }
 }
 
-@media(min-width: 70rem){
+@media(min-width: $breakpoint_md){
     .container {
-        width: 70rem;
+        width: $breakpoint_md;
     }
     .container.skinny {
-        width: 50rem;
+        width: ($breakpoint_md - 20);
     }
 }
 
-@media(min-width: 100rem){
+@media(min-width: $breakpoint_lg){
     .container {
-        width: 90rem;
+        width: ($breakpoint_lg - 10);
     }
     .container.wide {
-        width: 90rem;
+        width: ($breakpoint_lg - 10);
     }
     .container.skinny {
-        width: 70rem;
+        width: ($breakpoint_lg - 30);
     }
 }
 
@@ -400,7 +405,7 @@ header.hero {
     }
 }
 
-@media(min-width: 40rem){
+@media(min-width: $breakpoint_sm){
     header.hero {
         font-size: 1.3rem;
 
@@ -410,7 +415,7 @@ header.hero {
     }
 }
 
-@media(min-width: 100rem){
+@media(min-width: $breakpoint_lg){
     header.hero {
         font-size: 1.6rem;
     }
@@ -516,13 +521,13 @@ p { font-size: 1em; }
     }
 }
 
-@media(min-width: 40rem){
+@media(min-width: $breakpoint_sm){
     .site_header {
         font-size: 1.3rem;
     }
 }
 
-@media (min-width: 100rem) {
+@media (min-width: $breakpoint_lg) {
     .site_header {
         font-size: 1.6rem;
     }
@@ -548,7 +553,7 @@ p { font-size: 1em; }
     display: none;
 }
 
-@media(min-width: 40rem){
+@media(min-width: $breakpoint_xs){
     .hidden-xs {
         display: initial;
     }
