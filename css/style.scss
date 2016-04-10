@@ -188,11 +188,6 @@ article {
 
 }
 
-article ::-webkit-scrollbar {
-    width: 0.2rem;
-    height: 0.2rem;
-}
-
 @media (min-width: 30rem) {
     article {
         font-size: 1.2em;
@@ -497,13 +492,13 @@ p { font-size: 1em; }
 }
 
 .site_header {
-    background-color: #111;
-    background-image: url($header_image);
+    background-color: #FFF;
+    /*background-image: url($header_image);*/
     background-position: center center;
     background-size: cover;
-    color: #FFF;
+    color: #181818;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     h1 {
         padding: 1em 0em;
@@ -512,9 +507,15 @@ p { font-size: 1em; }
     }
 }
 
-@media (min-width: 60rem) {
+@media(min-width: 40rem){
     .site_header {
-        font-size: 1.5em;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 100rem) {
+    .site_header {
+        font-size: 1.6rem;
     }
 }
 
