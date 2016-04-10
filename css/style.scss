@@ -279,6 +279,15 @@ article {
     padding: 0em 2em;
 }
 
+@media(min-width: 30rem){
+    .container {
+        width: 30rem;
+    }
+    .container.skinny {
+        width: 30rem;
+    }
+}
+
 @media(min-width: 50rem){
     .container {
         width: 50rem;
