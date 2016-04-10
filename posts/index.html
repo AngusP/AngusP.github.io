@@ -21,6 +21,7 @@ layout: default
   {% endfor %}
 
   
+  {% if paginator.total_pages > 1 %}
   <nav class="pagination">
     <div class="row">
       <div class="col">
@@ -47,5 +48,6 @@ layout: default
       </div>
     </div>
   </nav>
+  {% endif %}
 </div>
 
