@@ -17,25 +17,31 @@ layout: default
     </div>
   </article>
 
-  {% if paginator.total_posts > 1 %}
   <hr class="break">
-  {% endif %}
   {% endfor %}
 
-  <nav class="col">
-    {% if paginator.previous_page %}
+  
+  <nav class="col pagination">
     
     <div class="row">
-      
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}"><i class="fa fa-chevron-left"></i></a>
+      {% else %}
+      <i class="fa fa-chevron-left muted"></i>
+      {% endif %}
+    </div>
+    
+    <div class="row">
+      <span class="page_number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
     </div>
 
-    {% elsif paginator.next_page %}
-    
     <div class="row">
-      
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}"><i class="fa fa-chevron-right"></i></a>
+      {% else %}
+      <i class="fa fa-chevron-right muted"></i>
+      {% endif %}
     </div>
-    
-    {% endif %}
     
   </nav>
 </div>
