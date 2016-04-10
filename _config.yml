@@ -9,8 +9,6 @@ author: "Angus Pearson"
 navigation:
  - text: Home
    url: /
- - text: Portfolio
-   url: /#portfolio
  - text: Posts
    url: /posts/
  - text: GitHub
