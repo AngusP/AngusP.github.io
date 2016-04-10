@@ -130,8 +130,32 @@ article {
         
         a:hover,
         a:focus {
-            text-decoration: underline;
+            text-decoration: none;
             color: darken($copy_colour, 20%);
+        }
+
+        
+        a::after,
+        a::after {
+            content: "\f0c1"; /* Hyperlink */
+            float: left;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 0.7em;
+            line-height: 1.4em;
+            margin-left: -1.1em;
+            width: 1em;
+            height: 1.4em;
+            color: lighten($copy_colour, 44%);
+            padding-top: 0.1em;
+            opacity: 0;
+            display: none;
+            transition: opacity 0.4s ease;
+        }
+
+        a:hover::after,
+        a:focus::after {
+            display: inline-block;
+            opacity: 1;
         }
     }
 
