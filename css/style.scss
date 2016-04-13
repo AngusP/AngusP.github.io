@@ -467,6 +467,8 @@ header.hero {
     }
 }
 
+@include 'syntax';
+
 hr {
     margin: 4em 0em;
     border: 0.15em solid $back_d_grey;
