@@ -36,14 +36,12 @@ layout: basic
 <div class="bg-l-grey">
   <div class="container vspace">
 
-    {% assign mod = 0 %}
+    {% assign mod = site.projects | size | modulo:3 %}
 
     {% assign projects = site.projects | sort 'date' | reverse %}
     {% for project in projects %}
       
     {% cycle '<div class="row">', '', '' %}
-
-      {% assign mod = forloop.index0 | modulo:3 %}
       
       <div class="col">
         <div class="card">
