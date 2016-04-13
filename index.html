@@ -36,6 +36,8 @@ layout: basic
 <div class="bg-l-grey">
   <div class="container vspace">
 
+    {% assign mod = 0 %}
+
     {% assign projects = site.projects | sort 'date' | reverse %}
     {% for project in projects %}
       
