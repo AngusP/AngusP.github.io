@@ -467,7 +467,7 @@ header.hero {
     }
 }
 
-@include 'syntax';
+@import 'syntax';
 
 hr {
     margin: 4em 0em;
