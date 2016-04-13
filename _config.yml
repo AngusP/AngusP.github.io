@@ -19,7 +19,7 @@ paginate: 3
 paginate_path: "posts/page:num"
 markdown: kramdown
 permalink: pretty
-highlighter=rouge
+highlighter: rouge
 
 # Post-like content
 collections:
