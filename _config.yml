@@ -20,6 +20,7 @@ paginate_path: "posts/page:num"
 markdown: kramdown
 permalink: pretty
 highlighter: rouge
+gems: [jekyll-paginate]
 
 # Post-like content
 collections:
