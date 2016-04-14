@@ -104,6 +104,27 @@ html, body {
 article {
     font-size: 1em;
 
+    code {
+        font-family: $mono_font;
+        font-size: 0.9em;
+        padding: 0.2em 0;
+        color: lighten($copy_colour, 20%);
+        overflow: auto;
+    }
+
+    .columnar {
+        /* Columns don-t handle negative margins well */
+        ul,ol {
+            padding-left: 1em;
+        }
+
+        blockquote {
+            margin-left: 0em;
+            margin-right: 0em;
+            padding: 0.2em 1em;
+        }
+    }
+
     p, ul, ol {
         line-height: 1.5em;
         color: lighten($copy_colour, 20%);
@@ -130,7 +151,18 @@ article {
         color: darken($theme_colour, 10%);
     }
 
+    blockquote {
+        color: lighten($copy_colour, 30%);
+        border-left: 0.2em solid $back_d_grey;
+        margin: 1em 2em;
+        margin-left: -0.5em;
+        padding: 0.2em 2em;
+    }
+
     h1, h2, h3, h4 {
+        -webkit-column-span: all;
+        column-span: all;
+
         a,
         a:visited {
             color: inherit;
@@ -177,14 +209,6 @@ article {
         text-transform: none;
     }
 
-    code {
-        font-family: $mono_font;
-        font-size: 0.9em;
-        padding: 0.2em 0;
-        color: lighten($copy_colour, 20%);
-        overflow: auto;
-    }
-
     figure {
         margin: 0;
     }
@@ -223,14 +247,6 @@ article {
     td {
         border-bottom: 0.07em solid $back_l_grey;
         overflow: hidden;
-    }
-
-    blockquote {
-        color: lighten($copy_colour, 30%);
-        border-left: 0.2em solid $back_d_grey;
-        margin: 1em 2em;
-        margin-left: -0.5em;
-        padding: 0.2em 2em;
     }
 
 }
@@ -476,6 +492,8 @@ header.hero {
 hr {
     margin: 4em 0em;
     border: 0.15em solid $back_d_grey;
+    -webkit-column-span: all;
+    column-span: all;
 }
 
 hr.break::after {
