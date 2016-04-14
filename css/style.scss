@@ -104,6 +104,26 @@ html, body {
 article {
     font-size: 1em;
 
+    a {
+        color: darken($theme_colour, 0%);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover,
+    a:visited {
+        text-decoration: underline;
+        color: darken($theme_colour, 10%);
+    }
+
+    blockquote {
+        color: lighten($copy_colour, 30%);
+        border-left: 0.2em solid $back_d_grey;
+        margin: 1em 2em;
+        margin-left: -0.5em;
+        padding: 0.2em 2em;
+    }
+
     code {
         font-family: $mono_font;
         font-size: 0.9em;
@@ -125,38 +145,8 @@ article {
         }
     }
 
-    p, ul, ol {
-        line-height: 1.5em;
-        color: lighten($copy_colour, 20%);
-    }
-
-    ul, ol {
-        padding-left: 0em;
-    }
-
-    ul ul,
-    ol ol {
-        padding-left: 2em;
-    }
-
-    a {
-        color: darken($theme_colour, 0%);
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-    a:hover,
-    a:visited {
-        text-decoration: underline;
-        color: darken($theme_colour, 10%);
-    }
-
-    blockquote {
-        color: lighten($copy_colour, 30%);
-        border-left: 0.2em solid $back_d_grey;
-        margin: 1em 2em;
-        margin-left: -0.5em;
-        padding: 0.2em 2em;
+    figure {
+        margin: 0;
     }
 
     h1, h2, h3, h4 {
@@ -174,6 +164,27 @@ article {
             text-decoration: underline;
             color: darken($copy_colour, 20%);
         }
+    }
+    
+    h1 {
+        text-transform: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    li {
+        padding-bottom: 0.5em;
+    }
+
+    p, ul, ol {
+        line-height: 1.5em;
+        color: lighten($copy_colour, 20%);
+    }
+
+    ul, ol {
+        padding-left: 2em;
     }
 
     .post-title {
@@ -203,18 +214,6 @@ article {
         a:focus::before {
             opacity: 1;
         }
-    }
-
-    h1 {
-        text-transform: none;
-    }
-
-    figure {
-        margin: 0;
-    }
-
-    img {
-        max-width: 100%;
     }
 
     pre {
