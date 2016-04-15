@@ -18,10 +18,16 @@ Our group settled on a three wheeled holonomic design pretty early on - motivati
 
 The maths behind holonomics isn't actually all that complex - it comes from doing the mechanics on the three forces produced by the three wheels, and the observation that what we're really dealing with is a matrix.
 
-<figure>
-<img src="/media/2016-04-15-holo-mech.jpg" 
-     alt="Three wheel holonomics mechanical diagram"
-     style="width: 400px;">
+<figure class="row">
+  <div class="col center" style="width: 60%;">
+    <img src="/media/2016-04-15-holo-mech.jpg" 
+         alt="Three wheel holonomics mechanical diagram">
+  </div>
+  <div class="col">
+    <p>
+      The three forces produced by the wheels, F<sub>1</sub> through to F<sub>3</sub>. Simple trigonometry slits these into their <i>x,y</i> components.
+    </p>
+  </div>
 </figure>
 
 
