@@ -2,6 +2,10 @@
 title: GNU General Public License
 layout: post
 ---
+
+This License applies only to the source code of this website, not the content.
+Content is held in the `media/`, `_projects/` and `_posts/` directories.
+
 Version 3, 29 June 2007
 
 Copyright (C) 2007 [Free Software Foundation, Inc.](http://fsf.org/)
