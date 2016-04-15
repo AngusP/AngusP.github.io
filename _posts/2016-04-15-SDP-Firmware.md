@@ -19,18 +19,50 @@ Our group settled on a three wheeled holonomic design pretty early on - motivati
 The maths behind holonomics isn't actually all that complex - it comes from doing the mechanics on the three forces produced by the three wheels, and the observation that what we're really dealing with is a matrix.
 
 <figure class="row">
-  <div class="col center" style="width: 60%;">
+  <div class="col center">
     <img src="/media/2016-04-15-holo-mech.jpg" 
-         alt="Three wheel holonomics mechanical diagram">
+         alt="Three wheel holonomics mechanical diagram"
+         style="width: 400px;">
   </div>
   <div class="col">
     <p>
-      The three forces produced by the wheels, F<sub>1</sub> through to F<sub>3</sub>. Simple trigonometry slits these into their <i>x,y</i> components.
+      The three forces produced by the wheels, F<sub>1</sub> through to F<sub>3</sub>. Simple trigonometry splits these forces into their <i>x,y</i> components.
     </p>
   </div>
 </figure>
 
+So, we have the following:
 
+<figure>
+  \[
+  F_x = F_1 \cdot \cos(\Theta_1 + \frac{\pi}{2}) + F_2 \cdot \cos(\Theta_2 + \frac{\pi}{2}) + F_3 \cdot \cos(\Theta_3 + \frac{\pi}{2})
+  \]
+
+  \[
+  F_y = F_1 \cdot \sin(\Theta_1 + \frac{\pi}{2}) + F_2 \cdot \sin(\Theta_2 + \frac{\pi}{2}) + F_3 \cdot \sin(\Theta_3 + \frac{\pi}{2})
+  \]
+</figure>
+
+Which, is equivalent to the following **Force Coupling** matrix: (Note the omega is the rotational force)
+
+<figure>
+  \begin{pmatrix}
+      F_1 \\
+      F_2 \\
+      F_3
+  \end{pmatrix}
+  =
+  \begin{pmatrix}
+      -\frac{1}{2} & \frac{\sqrt{3}}{2} & 1\\
+      -\frac{1}{2} & -\frac{\sqrt{3}}{2} & 1\\
+      1 & 0 & 1
+  \end{pmatrix}
+  \begin{pmatrix}
+      F_x \\
+      F_y \\
+      \omega
+  \end{pmatrix}
+</figure>
 
 Doing more than one thing
 =========================
