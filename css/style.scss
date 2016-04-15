@@ -455,7 +455,7 @@ h6 { font-size: 0.8em }
 
 .hero {
     position: relative;
-    height: 25rem;
+    height: 15rem;
     background-color: #111;
     background-size: cover;
     background-position: center center;
@@ -483,12 +483,20 @@ header.hero {
 }
 
 @media(min-width: $breakpoint_xs){
+    .hero {
+        height: 20rem;
+    }
+    
     header.hero {
         font-size: 1rem;
     }
 }
 
 @media(min-width: $breakpoint_sm){
+    .hero {
+        height: 25rem;
+    }
+    
     header.hero {
         font-size: 1.3rem;
 
