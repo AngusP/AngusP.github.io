@@ -50,14 +50,11 @@ Which, is equivalent to the following **Force Coupling** matrix: (Note the omega
       F_1 \\
       F_2 \\
       F_3
-  \end{pmatrix}
-  =
-  \begin{pmatrix}
+  \end{pmatrix} = \begin{pmatrix}
       -\frac{1}{2} & \frac{\sqrt{3}}{2} & 1\\
       -\frac{1}{2} & -\frac{\sqrt{3}}{2} & 1\\
       1 & 0 & 1
-  \end{pmatrix}
-  \begin{pmatrix}
+  \end{pmatrix} \begin{pmatrix}
       F_x \\
       F_y \\
       \omega
