@@ -309,7 +309,7 @@ There's a more futureproof way of linking to your own content.
 
 This is shown as:
 
-[Awesome Post]({% post_url 2014-06-26-Markdown %})
+[Awesome Post](http://goo.gl)
 
 As long as the `2014-10-20-name-of-post` part matches the filename of the post you're linking
 to (notice the lack of a .md extension) this will work. Also if it isn't, the site won't update,

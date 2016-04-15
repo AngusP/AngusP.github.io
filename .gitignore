@@ -2,3 +2,5 @@ _site/*
 _site
 *.html#
 *.css#
+.sass-cache/*
+.sass-cache
