@@ -118,16 +118,18 @@ Finally, for Gradient Descent correction we need the partial derivative of $$E$$
   \]
 </figure>
 
-And the result of all this fiddling looks like this:
+And the result of all this fiddling looks like this: (warning: **Loud** ungodly NXT noise)
 
-<figure class="center">
-<iframe width="560" height="315"
-        src="https://www.youtube.com/embed/xdrMzdQxG6U?rel=0&amp;controls=0&amp;showinfo=0"
-        frameborder="0" allowfullscreen></iframe>
+<figure class="center iframe-responsive">
+  <iframe src="https://www.youtube.com/embed/xdrMzdQxG6U?rel=0&amp;controls=0&amp;showinfo=0"
+          frameborder="0" allowfullscreen></iframe>
 </figure>
 
+---
 
 Doing more than one thing
 =========================
 
-It's pretty important that the bot can perform more than one task at a time - commands could be coming in from strategy, and there's a host of things we need to do, like reading sensors at steady intervals and performing error corrections. 
+It's pretty important that the bot can perform more than one task at a time - commands could be coming in from strategy, and there's a host of things we need to do, like reading sensors at steady intervals and performing error corrections.
+
+
