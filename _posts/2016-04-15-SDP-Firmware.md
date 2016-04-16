@@ -7,7 +7,7 @@ hero: 2016-04-15-sdp-hero.jpg
 Preamble
 ========
 
-SDP is Edinburgh University's third year Computer Science System Design project. The task is to build and develop a robot to play two-a-side football loosely based on the rules of the [RoboCup SSL](https://en.wikipedia.org/wiki/RoboCup_Small_Size_League). Teams have 10 members in two groups, one per robot. The System architecture, at an abstract level, is comprised of a vision system, strategy AI/planner, computer-to-robot communications module and of course the robot with it's hardware and firmware.
+SDP is Edinburgh University's third year Computer Science System Design project. The task is to build and develop a robot to play two-a-side football loosely based on the rules of the [RoboCup SSL](https://en.wikipedia.org/wiki/RoboCup_Small_Size_League). Teams have twelve members in two groups of six, one per robot. The System architecture, at an abstract level, is comprised of a vision system, strategy AI/planner, computer-to-robot communications module and of course the robot with it's hardware and firmware.
 
 Tasks for developing the system were divided up between the ten people in the team, and I took building the code that runs on the Arduino. Provided hardware was the Xino RF, an Arduino clone with the familiar AT328P microcontroller and an added Ciseco SRF chip, for wireless communications to the C&C computer that'd be running the rest of the stack.
 
@@ -16,7 +16,7 @@ Holonomics are fun
 
 Our group settled on a three wheeled holonomic design pretty early on - motivations for this were mainly "Because it's cool", "Angus wants to do holonomics" and also because some people in the year above strongly suggested that we *didnt't* make a holonomic robot. Holonomic wheels have bearings that let the wheel slide laterally along it's axis of rotation, giving freedom of movement in any direction if used correctly.
 
-The maths behind holonomics isn't actually all that complex - it comes from doing the mechanics on the three forces produced by the three wheels, and the observation that what we're really dealing with is a matrix.
+The maths behind holonomic motion isn't actually all that complex - it comes from doing the mechanics on the three forces produced by the three wheels, and the observation that what we're really dealing with is a matrix.
 
 <figure class="row">
   <div class="col center">
@@ -76,7 +76,7 @@ Error correcting on the fly
 
 While holonomics are a powerful advantage, giving the ability to move in any direction and rotate as we wish independently of each-other, this all depends on us being able to move the motors in perfect proportions to the holonomic forces we've derived.
 
-It's also *not* sufficient to try correcting linearly, nor is it particularly clever to guess at some function that'll do this correction for you. A full PID controller is overkill in this situation, and we employed a Gradient Descent algorithm to do these corrections during runtime, using the feedback from the rotary encoders Lego's NXT motors are equiped with.
+It's also *not* sufficient to try correcting linearly, nor is it particularly clever to guess at some function that'll do this correction for you. A full PID controller is overkill in this situation, and we employed a Gradient Descent algorithm to do these corrections during runtime, using the feedback from the rotary encoders Lego's NXT motors are equipped with.
 
 So, without further ado, the correction maths on the robot: The error vector $$\hat{e}$$ given a desired velocity vector (The one we get sent over the RF link) $$\hat{v}$$ and realised velocity vector $$\hat{r}$$ (the one we read from the rotary encoders) is:
 
@@ -86,7 +86,7 @@ So, without further ado, the correction maths on the robot: The error vector $$\
   \]
 </figure>
 
-$$k$$ is the learning rate, which increases the granularity with which we'll correct, hopefully resulting in a smooth correction with no over-reactions. Tuning this constant has the greatest effect on how the corrective system behaves; We used a value of around 0.1, which is quite conserative but very smooth.
+$$k$$ is the learning rate, which increases the granularity with which we'll correct, hopefully resulting in a smooth correction with no over-reactions. Tuning this constant has the greatest effect on how the corrective system behaves; We used a value of around 0.1, which is quite conservative but very smooth.
 
 The new powers we need to apply to the motors to reduce the error, $$\hat{c'}$$, with respect to the previous $$\hat{c}$$ and error $$\hat{e}$$ is
 
@@ -96,7 +96,7 @@ The new powers we need to apply to the motors to reduce the error, $$\hat{c'}$$,
   \]
 </figure>
 
-Note that we're operating on unit vectors here - that prevents the need to consider the units we're working in, some of which would take a large amount of unecessary computation to figure out. After we're done correcting, a stored power multiplier scales the corrected unit vector back up.
+Note that we're operating on unit vectors here - that prevents the need to consider the units we're working in, some of which would take a large amount of unnecessary computation to figure out. After we're done correcting, a stored power multiplier scales the corrected unit vector back up.
 
 So, the error function we need to minimise, $$E$$, is as follows: (bit of a maths jump, it's just the size of $$\hat{e}$$)
 
@@ -118,7 +118,7 @@ Finally, for Gradient Descent correction we need the partial derivative of $$E$$
   \]
 </figure>
 
-And the result of all this fiddling looks like this: (warning: **Loud** ungodly NXT noise)
+And the result of all this fiddling looks like this: (**Warning:** loud ungodly NXT noise)
 
 <figure class="center iframe-responsive">
   <iframe src="https://www.youtube.com/embed/xdrMzdQxG6U?rel=0&amp;controls=0&amp;showinfo=0"
@@ -131,5 +131,53 @@ Doing more than one thing
 =========================
 
 It's pretty important that the bot can perform more than one task at a time - commands could be coming in from strategy, and there's a host of things we need to do, like reading sensors at steady intervals and performing error corrections.
+
+The code we used in the final round was polling the rotary encoders, which incremented a counter every time the wheel went through 1&deg; of rotation over 20 times a second, and was applying the above Gradient Descent correction at the same rate. Coupled with any other tasks the bot was required to execute, a reasonable method of scheduling work to run at precise intervals is needed.
+
+Our bot used a simple process model, with structures carrying around information about when the task was last run, how often it should be run and whether it was enabled. There were more than eight of these on the bot, which doesn't seem a lot but given the 16MHz clock speed and limited calculation abilities of the ATMega 328 isn't a light load.
+
+{% highlight c %}
+typedef struct {
+    pid_t id;
+    unsigned long last_run, interval;
+    bool enabled;
+    void (*callback)(pid_t);
+    const char *label;
+} process;
+{% endhighlight %}
+
+Above, Process structure definition. It's a tad shorter than the one Linux uses. Below, an example of a process, the one that polls the rotary encoders.
+
+{% highlight c %}
+/*
+  Rapidly check motor rotations and speeds
+*/
+const char update_motors_l[] = "update motors";
+void update_motors_f(pid_t);
+process update_motors = {
+    .id         = 0,
+    .last_run   = 0,
+    .interval   = 50,
+    .enabled    = true,
+    .callback   = &update_motors_f,
+    .label      = update_motors_l
+};
+{% endhighlight %}
+
+A terse yet capable `Processes` class manages these tasks, which has the advantage of abstracting control logic away from functions that make the robot do something useful, and that once you know the processes work correctly, you can be confident that any you add will do so too.
+
+`Processes` maintains a list of pointers to these structs, and processes were run in order if `last_run + interval` is less than `millis()`. While it is *possible* to have a runaway condition where nothing is run on time because everything before it is taking too long, that's essentially the case where you're tying to do too much on the Arduino.
+
+One of the key functions of processes is that they can be enabled and disabled during runtime, and that the `Processes` class provides methods for processes to mutate themselves and each-other. This leads to emergent Finite State Machine behaviour, with tasks like grabbing the ball and kicking being done by coding up a set of states and managing transitions between them.
+
+All in all, the result of the synchronous process abstraction and asynchronous command set listening leads to the rather neat main `loop()` function:
+
+{% highlight c %}
+void loop()
+{
+    CommandSet.readSerial();
+    processes.run();
+}
+{% endhighlight %}
 
 
