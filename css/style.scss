@@ -147,20 +147,12 @@ html, body {
 @media(min-width: $breakpoint-sm){
     .archive {
         font-size: 1.2em;
-        
-        li {
-            padding: 1rem 5rem;
-        }
     }
 }
 
 @media(min-width: $breakpoint-md){
     .archive {
         font-size: 1.5em;
-
-        li {
-            padding: 1rem 10rem;
-        }
     }
 }
 

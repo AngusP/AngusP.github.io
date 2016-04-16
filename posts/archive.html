@@ -3,15 +3,11 @@ layout: default
 title: Archive
 ---
 
-<div class="bg-l-grey">
-  <div class="container vspace center">
-    <header class="archive">
-      <h3>This Year</h3>
-    </header>
-  </div>
+<div class="container vspace">
+  <h1>This Year</h3>
 </div>
 
-<div class="container vspace">
+<div class="container">
     <section class="archive">
       {% for post in site.posts %}
       
@@ -25,15 +21,11 @@ title: Archive
     </section>
 </div>
 
-<div class="bg-l-grey">
-  <div class="container vspace center">
-    <header class="archive">
-      <h3>{{ post.date | date: '%Y' }}</h3>
-    </header>
-  </div>
+<div class="container">
+  <h2>{{ post.date | date: '%Y' }}</h2>
 </div>
 
-<div class="container vspace">
+<div class="container">
   <section class="archive">
     <ul class="past">
       {% endif %}
@@ -48,5 +40,7 @@ title: Archive
       {% endfor %}
     </ul>
   </section>
+
+  <div class="vspace">&nbsp;</div>
 </div>
 
