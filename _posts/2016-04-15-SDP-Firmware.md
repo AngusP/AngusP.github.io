@@ -74,15 +74,17 @@ This translation between forward, lateral & rotational force and the application
 Error correcting on the fly
 ---------------------------
 
-While holonomics are a powerful advantage, giving the ability to move in any direction and rotate as we wish independently of each-other, this all depends on us being able to move the motors in perfect proportions to the holonomic forces we've derived.
+While holonomics are a powerful advantage, giving the ability to move in any direction independently of rotation, this all depends on us being able to move the motors in perfect proportions to the holonomic forces we've derived using the above matrix.
 
-It's also *not* sufficient to try correcting linearly, nor is it particularly clever to guess at some function that'll do this correction for you. A full PID controller is overkill in this situation, and we employed a Gradient Descent algorithm to do these corrections during runtime, using the feedback from the rotary encoders Lego's NXT motors are equipped with.
+It's also *not* sufficient to try correcting linearly, nor is it particularly clever to guess at some function that'll do this correction for you. A full PID controller is overkill in this situation, and we employed a Gradient Descent algorithm to do these corrections during runtime, using the feedback from the rotary encoders Lego's NXT motors are equipped with. The graph below shows the uneven relationship between the roational speeds of the motors and the applied power. The three coloured lines that are closely grouped are the three motors selected for use on or bot; The single blue line is a particularly broken motor.
+
+![Graph showing uneven response of motors](media/2016-04-15-sdp-motors.jpg)
 
 So, without further ado, the correction maths on the robot: The error vector $$\hat{e}$$ given a desired velocity vector (The one we get sent over the RF link) $$\hat{v}$$ and realised velocity vector $$\hat{r}$$ (the one we read from the rotary encoders) is:
 
 <figure>
   \[
-  \hat{e_i} = k \cdot \frac{\hat{d_i}}{||\hat{d}||}
+  \hat{e_i} = k \cdot (\frac{\hat{d_i}}{||\hat{d}||} - \frac{\hat{r_i}}{||\hat{r}||})
   \]
 </figure>
 
