@@ -38,8 +38,8 @@ layout: default
   
 {% endfor %}
 
+{% if paginator.total_pages > 1 %}
 <div class="container vspace skinny">
-  {% if paginator.total_pages > 1 %}
   <nav class="pagination">
     <div class="row">
       <div class="col">
@@ -66,11 +66,11 @@ layout: default
       </div>
     </div>
   </nav>
-  {% endif %}
 </div>
+{% endif %}
 
-<div class="container vspace skinny last">
-  <aside class="center">
+<div class="container vspace skinny">
+  <aside class="center last">
     <a class="btn btn-default" href="{{ site.baseurl }}/posts/archive">
       <i class="fa fa-calendar-o"></i>
       <span class="spacer"></span>

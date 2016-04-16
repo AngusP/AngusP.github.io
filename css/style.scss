@@ -737,12 +737,6 @@ p { font-size: 1em; }
     }
 }
 
-@media (min-width: $breakpoint_md) {
-    .pagination {
-        font-size: 3em;
-    }
-}
-
 .sans-serif {
     font-family: $sans_font;
 }
@@ -832,7 +826,7 @@ p { font-size: 1em; }
     padding-top: 3em;
 }
 .last {
-    padding-bottom: 4em;
+    padding-bottom: 3em;
 }
 
 .vspace {
