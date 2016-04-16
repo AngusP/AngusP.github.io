@@ -77,11 +77,11 @@ Error correcting on the fly
 
 While holonomics are a powerful advantage, giving the ability to move in any direction independently of rotation, this all depends on us being able to move the motors in perfect proportions to the holonomic forces we've derived using the above matrix.
 
-It's also *not* sufficient to try correcting linearly, nor is it particularly clever to guess at some function that'll do this correction for you. A full PID controller is overkill in this situation, and we employed a Gradient Descent algorithm to do these corrections during runtime, using the feedback from the rotary encoders Lego's NXT motors are equipped with. The graph below shows the uneven relationship between the roational speeds of the motors and the applied power. The three coloured lines that are closely grouped are the three motors selected for use on or bot; The single blue line is a particularly broken motor.
+It's also *not* sufficient to try correcting linearly, nor is it particularly clever to guess at some function that'll do this correction for you. A full PID controller is overkill in this situation, so we employed a Gradient Descent algorithm to do these corrections during runtime, using the feedback from the rotary encoders Lego's NXT motors are equipped with. The graph below shows the uneven relationship between the rotational speeds of the motors and the applied power. The three coloured lines that are closely grouped are the three motors selected for use on or bot; The single blue line is a particularly broken motor, and the pink line indicates a stall condition.
 
 ![Graph showing uneven response of motors](/media/2016-04-15-sdp-motors.jpg)
 
-So, without further ado, the correction maths on the robot: The error vector $$\hat{e}$$ given a desired velocity vector (The one we get sent over the RF link) $$\hat{v}$$ and realised velocity vector $$\hat{r}$$ (the one we read from the rotary encoders) is:
+So, without further ado, the correction maths on the robot: The error vector $$\hat{e}$$ given a desired velocity vector (The one we get sent over the RF link) $$\hat{d}$$ and realised velocity vector $$\hat{r}$$ (the one we read from the rotary encoders) is:
 
 <figure>
   \[
@@ -89,9 +89,9 @@ So, without further ado, the correction maths on the robot: The error vector $$\
   \]
 </figure>
 
-$$k$$ is the learning rate, which increases the granularity with which we'll correct, hopefully resulting in a smooth correction with no over-reactions. Tuning this constant has the greatest effect on how the corrective system behaves; We used a value of around 0.1, which is quite conservative but very smooth.
+$$k$$ is the learning rate, which varies the granularity with which we'll correct, hopefully resulting in a smooth correction with no over-reactions. Tuning this constant has the greatest effect on how the corrective system behaves; We used a value of around 0.1, which is quite conservative but very smooth given corrections are being made 20 times a second.
 
-The new powers we need to apply to the motors to reduce the error, $$\hat{c'}$$, with respect to the previous $$\hat{c}$$ and error $$\hat{e}$$ is
+The new powers we need to apply to the motors, $$\hat{c'}$$ to reduce the error with respect to the previous $$\hat{c}$$ and error $$\hat{e}$$ is
 
 <figure>
   \[
@@ -99,7 +99,7 @@ The new powers we need to apply to the motors to reduce the error, $$\hat{c'}$$,
   \]
 </figure>
 
-Note that we're operating on unit vectors here - that prevents the need to consider the units we're working in, some of which would take a large amount of unnecessary computation to figure out. After we're done correcting, a stored power multiplier scales the corrected unit vector back up.
+Note that we're operating on unit length vectors here - that prevents the need to consider the units we're working in, some of which would take a large amount of unnecessary computation to figure out. After we're done correcting, a power multiplier scales the corrected unit vector back up.
 
 So, the error function we need to minimise, $$E$$, is as follows: (bit of a maths jump, it's just the size of $$\hat{e}$$)
 
@@ -109,7 +109,7 @@ So, the error function we need to minimise, $$E$$, is as follows: (bit of a math
   \]
 </figure>
 
-Finally, for Gradient Descent correction we need the partial derivative of $$E$$ with respect to $$\hat{r}$$
+Finally, for Gradient Descent correction we need the partial derivative of $$E$$ with respect to $$\hat{r_i}$$
 
 <figure>
   \[
@@ -121,7 +121,7 @@ Finally, for Gradient Descent correction we need the partial derivative of $$E$$
   \]
 </figure>
 
-And the result of all this fiddling looks like this: (**Warning:** loud ungodly NXT noise)
+And the result of all this fiddling looks like this: (**Warning:** loud NXT motor noise)
 
 <figure class="center iframe-responsive">
   <iframe src="https://www.youtube.com/embed/xdrMzdQxG6U?rel=0&amp;controls=0&amp;showinfo=0"
@@ -135,7 +135,7 @@ Doing more than one thing
 
 It's pretty important that the bot can perform more than one task at a time - commands could be coming in from strategy, and there's a host of things we need to do, like reading sensors at steady intervals and performing error corrections.
 
-The code we used in the final round was polling the rotary encoders, which incremented a counter every time the wheel went through 1&deg; of rotation over 20 times a second, and was applying the above Gradient Descent correction at the same rate. Coupled with any other tasks the bot was required to execute, a reasonable method of scheduling work to run at precise intervals is needed.
+The code we used in the final round was polling rotary encoders over 20 times a second, sensors that increment a counter every time the wheel went through 1&deg, then applying the above Gradient Descent correction at the same rate. Coupled with any other tasks the bot was required to execute, a more capable approach to scheduling is needed than just a very large `void loop()` function.
 
 Our bot used a simple process model, with structures carrying around information about when the task was last run, how often it should be run and whether it was enabled. There were more than eight of these on the bot, which doesn't seem a lot but given the 16MHz clock speed and limited calculation abilities of the ATMega 328 isn't a light load.
 
@@ -167,9 +167,9 @@ process update_motors = {
 };
 {% endhighlight %}
 
-A terse yet capable `Processes` class manages these tasks, which has the advantage of abstracting control logic away from functions that make the robot do something useful, and that once you know the processes work correctly, you can be confident that any you add will do so too.
+A terse yet capable `Processes` class manages these tasks, which has the advantage of abstracting control logic away from functions that make the robot do something useful, and that once you know the process control logic functions correctly, that any processes that are later added will also be executed as expected.
 
-`Processes` maintains a list of pointers to these structs, and processes were run in order if `last_run + interval` is less than `millis()`. While it is *possible* to have a runaway condition where nothing is run on time because everything before it is taking too long, that's essentially the case where you're tying to do too much on the Arduino.
+`Processes` maintains a list of pointers to these structs, and processes were run in order if `last_run + interval` is less than `millis()`. While it is *possible* to have a runaway condition where no processes runs on time because everything before it is taking too long, that's essentially the case where you're tying to do too much on the Arduino.
 
 One of the key functions of processes is that they can be enabled and disabled during runtime, and that the `Processes` class provides methods for processes to mutate themselves and each-other. This leads to emergent Finite State Machine behaviour, with tasks like grabbing the ball and kicking being done by coding up a set of states and managing transitions between them.
 
