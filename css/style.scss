@@ -110,7 +110,11 @@ html, body {
 
 .archive {
     text-align: center;
-    font-size: 1.2em;
+
+    a,
+    a:visited {
+        color: inherit;
+    }
 
     ul {
         padding: 0;
@@ -121,16 +125,28 @@ html, body {
     }
 
     li {
-        display: oinline-block;
+        display: inline-block;
         width: 100%;
         padding: 0.3em 0em;
+        border-bottom: 0.15em solid #EEE;
+        margin-bottom: 0.5em;
     }
 
     time {
-        color: lighten($copy_colour, 20%);
         float: left;
     }
 }
+
+@media(min-width: $breakpoint-sm){
+    .archive {
+        font-size: 1.2em;
+        
+        li {
+            padding: 0.5em 3em;
+        }
+    }
+}
+
 
 article {
     font-size: 1em;

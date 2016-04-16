@@ -2,7 +2,7 @@
 layout: default
 title: Archive
 ---
-<div class="container vspace skinny">
+<div class="container vspace">
   <section class="archive">
     <h2>This year's posts</h2>
     {% for post in site.posts %}
@@ -20,7 +20,12 @@ title: Archive
       {% endunless %}
       
 
-      <li><time>{{ post.date | date:"%d %b" }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <a href="{{ post.url }}">
+        <li>
+          <time>{{ post.date | date:"%d %b" }}</time>
+          {{ post.title }}
+        </li>
+      </a>
       {% endfor %}
     </ul>
   </section>
