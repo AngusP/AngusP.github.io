@@ -305,7 +305,7 @@ Will show up as
 
 There's a more futureproof way of linking to your own content.
 
-<pre>[Awesome Post](&#123;% post-url 2014-10-20-name-of-post %&#125;)</pre>
+<pre>[Awesome Post](&#123;% post_url 2014-10-20-name-of-post %&#125;)</pre>
 
 This is shown as:
 
