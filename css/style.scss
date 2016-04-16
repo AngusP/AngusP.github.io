@@ -157,14 +157,19 @@ body {
         margin: 2em 0;
         
         li {
-            padding: 0.5em 3em;
+            padding: 1rem 10rem;
         }
     }
 }
 
-@media(min-width: $breakpoint-sm){
+@media(min-width: $breakpoint-md){
     .archive {
         margin: 3em 0;
+        font-size: 1.5em;
+
+        li {
+            padding: 1rem 20rem;
+        }
     }
 }
 
