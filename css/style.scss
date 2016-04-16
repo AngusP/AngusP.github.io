@@ -110,7 +110,6 @@ html, body {
 
 .archive {
     text-align: center;
-    margin-bottom: 2em;
 
     a,
     a:visited,
@@ -150,7 +149,7 @@ html, body {
         font-size: 1.2em;
         
         li {
-            padding: 1rem 10rem;
+            padding: 1rem 5rem;
         }
     }
 }
@@ -160,15 +159,7 @@ html, body {
         font-size: 1.5em;
 
         li {
-            padding: 1rem 15rem;
-        }
-    }
-}
-
-@media(min-width: $breakpoint-lg){
-    .archive {
-        li {
-            padding: 1rem 20rem;
+            padding: 1rem 10rem;
         }
     }
 }
