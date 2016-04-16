@@ -15,7 +15,12 @@
  **/
 
 
-$theme_colour: #fed136;
+$theme_colour: {{ site.theme_colour }};
+
+$theme_complement: {% if site.theme_complement %}{{ site.theme_complement }};
+{% else %}{{ site.theme_colour }};
+{% endif %}
+
 $copy_colour: #181818;
 
 $back_l_grey: #f8f8f8;
@@ -106,7 +111,7 @@ article {
     word-break: break-word;
 
     a {
-        color: darken($theme_colour, 0%);
+        color: darken($theme_complement, 0%);
         text-decoration: none;
         transition: color 0.3s ease;
     }
@@ -114,7 +119,7 @@ article {
     a:hover,
     a:visited {
         text-decoration: underline;
-        color: darken($theme_colour, 10%);
+        color: darken($theme_complement, 10%);
     }
 
     blockquote {
@@ -133,6 +138,10 @@ article {
         overflow: auto;
     }
 
+    .row {
+        padding: 0 1em;
+    }
+
     .columnar {
         /* Columns don-t handle negative margins well */
         ul,ol {
@@ -148,6 +157,7 @@ article {
 
     figure {
         margin: 0;
+        overflow: auto;
     }
 
     h1, h2, h3, h4 {
@@ -278,6 +288,13 @@ article {
     background-color: $back_d_grey;
 }
 
+.bg-theme {
+    background-color: $theme_colour;
+}
+.bg-theme-complement {
+    background-color: $theme_complement;
+}
+
 .b-top-grey {
     border-top: 0.1rem solid #eee;
 }
@@ -317,7 +334,7 @@ article {
 }
 
 .card-head {
-    border-top: 0.2rem solid $theme_colour;
+    border-top: 0.2rem solid $theme_complement;
 }
 
 .center {
@@ -352,10 +369,13 @@ article {
 
 @media(min-width: $breakpoint_xs){
     .container {
-        width: $breakpoint_xs;
+        width: 90%;
     }
     .container.skinny {
-        width: $breakpoint_xs;
+        width: 80%;
+    }
+    .container.wide {
+        width: 100%;
     }
 }
 
@@ -364,7 +384,10 @@ article {
         width: $breakpoint_sm;
     }
     .container.skinny {
-        width: ($breakpoint_sm - 20);
+        width: ($breakpoint_sm - 10);
+    }
+    .container.wide {
+        width: 90%;
     }
 }
 
@@ -374,6 +397,9 @@ article {
     }
     .container.skinny {
         width: ($breakpoint_md - 20);
+    }
+    .container.wide {
+        width: $breakpoint_md;
     }
 }
 
