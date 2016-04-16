@@ -71,6 +71,7 @@ Which, is equivalent to the following **Force Coupling** matrix: (Note the omega
 
 This translation between forward, lateral & rotational force and the application of power is done in firmware, meaning the rest of the stack needn't be aware of the specifics of this bot; Three wheel holonomic or otherwise. While the single-precision floating point we're limited to on the Arduino (`double` is a lie) makes this tricky, in practice using unit vectors and a separate magnitude multipliers prevents `NaNs` from ruining our day.
 
+
 Error correcting on the fly
 ---------------------------
 
@@ -78,7 +79,7 @@ While holonomics are a powerful advantage, giving the ability to move in any dir
 
 It's also *not* sufficient to try correcting linearly, nor is it particularly clever to guess at some function that'll do this correction for you. A full PID controller is overkill in this situation, and we employed a Gradient Descent algorithm to do these corrections during runtime, using the feedback from the rotary encoders Lego's NXT motors are equipped with. The graph below shows the uneven relationship between the roational speeds of the motors and the applied power. The three coloured lines that are closely grouped are the three motors selected for use on or bot; The single blue line is a particularly broken motor.
 
-![Graph showing uneven response of motors](media/2016-04-15-sdp-motors.jpg)
+![Graph showing uneven response of motors](/media/2016-04-15-sdp-motors.jpg)
 
 So, without further ado, the correction maths on the robot: The error vector $$\hat{e}$$ given a desired velocity vector (The one we get sent over the RF link) $$\hat{v}$$ and realised velocity vector $$\hat{r}$$ (the one we read from the rotary encoders) is:
 
