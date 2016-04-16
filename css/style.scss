@@ -101,10 +101,36 @@ html, body {
 
 ***/
 
-.twox   { font-size: 2em; }
-.threex { font-size: 3em; }
-.fourx  { font-size: 4em; }
-.fivex  { font-size: 5em; }
+.halfx  { font-size: 0.5em; }
+.bigger { font-size: 1.5em; }
+.twox   { font-size: 2em;   }
+.threex { font-size: 3em;   }
+.fourx  { font-size: 4em;   }
+.fivex  { font-size: 5em;   }
+
+.archive {
+    text-align: center;
+    font-size: 1.2em;
+
+    ul {
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        display: block;
+        text-align: right;
+    }
+
+    li {
+        display: oinline-block;
+        width: 100%;
+        padding: 0.3em 0em;
+    }
+
+    time {
+        color: lighten($copy_colour, 20%);
+        float: left;
+    }
+}
 
 article {
     font-size: 1em;
