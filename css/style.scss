@@ -148,7 +148,6 @@ html, body {
 @media(min-width: $breakpoint-sm){
     .archive {
         font-size: 1.2em;
-        margin: 2em 0;
         
         li {
             padding: 1rem 10rem;
@@ -158,7 +157,6 @@ html, body {
 
 @media(min-width: $breakpoint-md){
     .archive {
-        margin: 3em 0;
         font-size: 1.5em;
 
         li {
