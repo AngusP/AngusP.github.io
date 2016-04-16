@@ -75,4 +75,36 @@ layout: basic
   </div>
 </div>
 
+
+<div class="bg-d-grey">
+  <div class="container vspace">
+
+    <a name="portfolio"></a>
+    <h1 class="center">Posts</h1>
+
+    <div class="center padder">
+      <a href="{{ site.baseurl }}/media/cv.pdf" target=_blank class="btn">
+        <i class="fa fa-calendar-o"></i> <span class="spacer"></span>
+        Post Archive
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="container last">
+  <section class="archive">
+    <ul class="this">    
+      {% for post in site.posts limit:5 %}
+      <a href="{{ post.url }}">
+        <li>
+          {{ post.title }}
+          <time>{{ post.date | date:"%d %b" }}</time>
+        </li>
+      </a>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+
 {% include footer.html %}
