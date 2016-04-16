@@ -168,6 +168,14 @@ body {
         font-size: 1.5em;
 
         li {
+            padding: 1rem 15rem;
+        }
+    }
+}
+
+@media(min-width: $breakpoint-lg){
+    .archive {
+        li {
             padding: 1rem 20rem;
         }
     }
