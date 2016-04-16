@@ -27,7 +27,10 @@ markdown: kramdown
 permalink: pretty
 highlighter: rouge
 gems: [jekyll-paginate]
+sass:
+  style: compressed
 
-# Post-like content
+
+# Addition content types
 collections:
 - projects
