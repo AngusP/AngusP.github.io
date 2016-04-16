@@ -45,7 +45,12 @@ layout: basic
       
       <div class="col">
         <div class="card">
-          <a href="{{ project.link }}" target=_blank>
+          <a {% if project.post %}
+             href="{% post_url project.post %}"
+             {% else %}
+             href="{{ project.link }}"
+             target=_blank >
+            {% endif %}
             <img src="{{site.baseurl}}/media/{{ project.image }}" class="img-responsive">
           </a>
           <div class="center padder card-head">

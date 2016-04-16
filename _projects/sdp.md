@@ -2,7 +2,7 @@
 name: System Design Project
 type: University Project
 image: sdp.jpg
-link: post_url 2016-04-15-SDP-Firmware
+post: 2016-04-15-SDP-Firmware
 date: 2016-04-01
 ---
 
