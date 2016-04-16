@@ -3,8 +3,10 @@ layout: default
 title: Archive
 ---
 
-<div class="container vspace">
-  <h1>This Year</h3>
+<div class="container vspace first">
+  <header class="archive">
+    <h3>This Year</h3>
+  </header>
 </div>
 
 <div class="container">
@@ -22,7 +24,9 @@ title: Archive
 </div>
 
 <div class="container">
-  <h2>{{ post.date | date: '%Y' }}</h2>
+  <header class="archive">
+    <h3>{{ post.date | date: '%Y' }}</h3>
+  </header>
 </div>
 
 <div class="container">

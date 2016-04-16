@@ -109,8 +109,6 @@ html, body {
 .fivex  { font-size: 5em;   }
 
 .archive {
-    text-align: center;
-
     a,
     a:visited,
     a:hover,
@@ -828,6 +826,10 @@ p { font-size: 1em; }
 
 .spacer.double {
     width: 2em;
+}
+
+.first {
+    padding-top: 3em;
 }
 
 .vspace {
