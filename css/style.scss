@@ -127,7 +127,7 @@ body {
         list-style: none;
         width: 100%;
         display: block;
-        text-align: right;
+        text-align: left;
     }
 
     li {
@@ -136,10 +136,13 @@ body {
         padding: 0.3em 0em;
         border-bottom: 0.15em solid #EEE;
         margin-bottom: 0.5em;
+        overflow: hidden;
+        
     }
 
     time {
-        float: left;
+        float: right;
+        font-weigth: bold;
     }
 }
 
