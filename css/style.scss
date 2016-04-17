@@ -834,6 +834,20 @@ p { font-size: 1em; }
     padding-bottom: 2em;
 }
 
+@media(min-width: $breakpoint_md){
+    .vspace {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+}
+
+@media(min-width: $breakpoint_lg){
+    .vspace {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+}
+
 .vspace + .vspace {
     padding-top: 0em;
 }
