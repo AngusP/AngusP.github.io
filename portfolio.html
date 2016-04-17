@@ -25,6 +25,8 @@ layout: default
           <div class="center padder card-head">
             <h4>{{ project.name }}</h4>
             <span class="muted">{{ project.type }}</span>
+            <br>
+            <span class="muted">{{ project.date | date:"%d %b %Y" }}</span>
           </div>
           <div class="padder b-top-grey muted ">
             {{ project.content }}

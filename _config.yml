@@ -15,10 +15,10 @@ theme_complement: "#fed136"
 navigation:
  - text: Home
    url: /
- - text: Posts
-   url: /posts/
  - text: Portfolio
    url: /portfolio/
+ - text: Posts
+   url: /posts/
 
 # Build Settings
 paginate: 3
