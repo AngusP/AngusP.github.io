@@ -36,11 +36,11 @@ layout: basic
 <div class="bg-l-grey">
   <div class="container wide vspace">
 
-    {% assign projects = site.projects | limit: 9 | sort 'date' | reverse %}
+    {% assign projects = site.projects | sort 'date' | reverse %}
     {% assign mod = projects | size | plus: 1 | modulo:3 %}
     
-    {% for project in projects %}
-      
+    {% for project in projects limit:9 %}
+    
     {% cycle '<div class="row">', '', '' %}
       
       <div class="col">
@@ -58,21 +58,20 @@ layout: basic
         </div>
       </div>
       
-    {% cycle '', '', '</div>' %}
-      
+      {% cycle '', '', '</div>' %}
+    
     {% endfor %}
 
-      {% if mod == 1 %}
-      <div class="col"><!-- 1 --></div>
-      {% elsif mod == 2%}
-      <div class="col"><!-- 1 --></div>
-      <div class="col"><!-- 2 --></div>
-      {% endif %}
+    {% if mod == 1 %}
+    <div class="col"><!-- 1 --></div>
+    {% elsif mod == 2%}
+    <div class="col"><!-- 1 --></div>
+    <div class="col"><!-- 2 --></div>
+    {% endif %}
 
-    </div><!-- Terminating row  -->
+  </div><!-- Terminating row  -->
 
-  </div>
-  </div>
+</div>
 </div>
 
 
