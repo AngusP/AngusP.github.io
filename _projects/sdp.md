@@ -12,3 +12,5 @@ Undefeated in the final tournament set, winning the seeding tournament and perfo
 
 I've written up some aspects of the firmware design [here]({% post_url 2016-04-15-SDP-Firmware %}), detailing the use of Gradient Descent error correction and RTOS-like task management.
 
+Code is published [here](https://bitbucket.org/sdpateam/firmware-group-1)
+
