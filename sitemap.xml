@@ -7,7 +7,11 @@ title: sitemap
   {% for page in site.pages %}
     <url>
       <loc>{{ site.url }}{{ page.url }}</loc>
+      {% if page.date %} 
       <lastmod>{{ page.date | date: "%F" }}</lastmod>
+      {% else %}
+      <lastmod>{{ site.time | date: "%F" }}</lastmod>
+      {% endif %}
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
     </url>
