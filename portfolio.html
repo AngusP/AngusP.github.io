@@ -11,11 +11,11 @@ layout: default
   <div class="container wide vspace last">
 
     {% assign projects = site.projects | sort 'date' | reverse %}
-    {% assign mod = projects | size | plus: 1 | modulo:3 %}
+    {% assign mod = projects | size | plus: 1 | modulo:2 %}
     
     {% for project in projects %}
       
-    {% cycle '<div class="row">', '', '' %}
+    {% cycle '<div class="row">', '' %}
       
       <div class="col">
         <div class="card">
@@ -32,7 +32,7 @@ layout: default
         </div>
       </div>
       
-    {% cycle '', '', '</div>' %}
+    {% cycle '', '</div>' %}
       
     {% endfor %}
 

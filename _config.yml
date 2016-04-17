@@ -17,8 +17,8 @@ navigation:
    url: /
  - text: Posts
    url: /posts/
- - text: GitHub
-   abs: https://github.com/AngusP
+ - text: Portfolio
+   url: /portfolio/
 
 # Build Settings
 paginate: 3
