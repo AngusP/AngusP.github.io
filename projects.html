@@ -1,20 +1,7 @@
 ---
 title: Home
-layout: basic
+layout: default
 ---
-
-<header class="hero">
-  <div class="scrim">
-    <div class="fold-centre">
-      <h1>toaster&nbsp;.&nbsp;cc</h1>
-      <hr>
-      <h3 class="script">AngusP</h3>
-    </div>
-  </div>
-</header>
-
-{% include nav.html %}
-
 
 <div class="">
   <div class="container vspace">
@@ -34,9 +21,9 @@ layout: basic
 </div>
 
 <div class="bg-l-grey">
-  <div class="container wide vspace">
+  <div class="container wide vspace last">
 
-    {% assign projects = site.projects | limit: 9 | sort 'date' | reverse %}
+    {% assign projects = site.projects | sort 'date' | reverse %}
     {% assign mod = projects | size | plus: 1 | modulo:3 %}
     
     {% for project in projects %}
@@ -72,37 +59,6 @@ layout: basic
     </div><!-- Terminating row  -->
 
   </div>
-  </div>
-</div>
-
-
-<div class="">
-  <div class="container vspace">
-
-    <a name="portfolio"></a>
-    <h1 class="center">Posts</h1>
-
-  </div>
-</div>
-
-<div class="container last">
-  <section class="archive">
-    <ul class="this">    
-      {% for post in site.posts limit:5 %}
-      <a href="{{ post.url }}">
-        <li>
-          {{ post.title }}
-          <time>{{ post.date | date:"%d %b %Y" }}</time>
-        </li>
-      </a>
-      {% endfor %}
-    </ul>
-  </section>
-  <div class="center padder">
-    <a href="{{ site.baseurl }}/posts" class="btn">
-      <i class="fa fa-paper-plane"></i> <span class="spacer"></span>
-      See All
-    </a>
   </div>
 </div>
 
