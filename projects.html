@@ -1,0 +1,50 @@
+---
+title: Home
+layout: default
+---
+
+<div class="container vspace wide">
+  <h1 class="center">Portfolio</h1>
+</div>
+
+<div class="bg-l-grey">
+  <div class="container wide vspace last">
+
+    {% assign projects = site.projects | sort 'date' | reverse %}
+    {% assign mod = projects | size | plus: 1 | modulo:3 %}
+    
+    {% for project in projects %}
+      
+    {% cycle '<div class="row">', '', '' %}
+      
+      <div class="col">
+        <div class="card">
+          <a href="{{ project.link }}" target=_blank >
+            <img src="{{site.baseurl}}/media/{{ project.image }}" class="img-responsive">
+          </a>
+          <div class="center padder card-head">
+            <h4>{{ project.name }}</h4>
+            <span class="muted">{{ project.type }}</span>
+          </div>
+          <div class="padder b-top-grey muted ">
+            {{ project.content }}
+          </div>
+        </div>
+      </div>
+      
+    {% cycle '', '', '</div>' %}
+      
+    {% endfor %}
+
+      {% if mod == 1 %}
+      <div class="col"><!-- 1 --></div>
+      {% elsif mod == 2%}
+      <div class="col"><!-- 1 --></div>
+      <div class="col"><!-- 2 --></div>
+      {% endif %}
+
+    </div><!-- Terminating row  -->
+
+  </div>
+  </div>
+</div>
