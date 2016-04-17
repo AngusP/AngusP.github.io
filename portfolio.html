@@ -18,6 +18,7 @@ layout: default
     {% cycle '<div class="row">', '' %}
       
       <div class="col">
+        <a name="{{ project.name | url_encode }}"></a>
         <div class="card">
           <a href="{{ project.link }}" target=_blank >
             <img src="{{site.baseurl}}/media/{{ project.image }}" class="img-responsive">

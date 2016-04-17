@@ -1,5 +1,5 @@
 ---
-name: Carneades Argumentation System
+name: Carneades Argumentation
 type: University AI Large Practical
 image: caes.jpg
 link: http://www.inf.ed.ac.uk/teaching/courses/ailp
