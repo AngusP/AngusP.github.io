@@ -160,7 +160,7 @@ article {
     word-break: break-word;
 
     a {
-        color: darken($theme_complement, 0%);
+        color: darken($theme_colour, 0%);
         text-decoration: none;
         transition: color 0.3s ease;
     }
@@ -168,7 +168,7 @@ article {
     a:hover,
     a:visited {
         text-decoration: underline;
-        color: darken($theme_complement, 10%);
+        color: darken($theme_colour, 10%);
     }
 
     blockquote {
