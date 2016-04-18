@@ -58,6 +58,7 @@ html, body {
 @media print {
     html, body {
         color: #000!important;
+        font-size: 10pt;
     }
 }
 
@@ -510,6 +511,13 @@ footer {
     a:hover,
     a:focus {
         color: #777;
+    }
+}
+
+@media print {
+    footer {
+        border: 0;
+        font-size: 0.7rem;
     }
 }
 
