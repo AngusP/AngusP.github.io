@@ -55,6 +55,12 @@ html, body {
     min-width: 320px; /* Only use of px is for min screen size */
 }
 
+@media print {
+    html, body {
+        color: #000!important;
+    }
+}
+
 ::selection {
     background: black;
     color: white;
@@ -318,12 +324,12 @@ article {
 
 }
 
-@media (min-width: $breakpoint_xs) {
+@media screen and (min-width: $breakpoint_xs) {
     article {
         font-size: 1.2em;
     }
 }
-@media (min-width: $breakpoint_sm) {
+@media screen and (min-width: $breakpoint_sm) {
     article {
         font-size: 1.4em;
     }
@@ -416,7 +422,7 @@ article {
     padding: 0em 2em;
 }
 
-@media(min-width: $breakpoint_xs){
+@media screen and (min-width: $breakpoint_xs){
     .container {
         width: 90%;
     }
@@ -428,7 +434,7 @@ article {
     }
 }
 
-@media(min-width: $breakpoint_sm){
+@media screen and (min-width: $breakpoint_sm){
     .container {
         width: $breakpoint_sm;
     }
@@ -440,7 +446,7 @@ article {
     }
 }
 
-@media(min-width: $breakpoint_md){
+@media screen and (min-width: $breakpoint_md){
     .container {
         width: $breakpoint_md;
     }
@@ -452,7 +458,7 @@ article {
     }
 }
 
-@media(min-width: $breakpoint_lg){
+@media screen and (min-width: $breakpoint_lg){
     .container {
         width: ($breakpoint_lg - 10);
     }
@@ -528,6 +534,12 @@ h4 { font-size: 1.5em }
 h5 { font-size: 1em }
 h6 { font-size: 0.8em }
 
+@media print {
+    .hidden-print {
+        display: none!important;
+    }
+}
+
 .hero {
     position: relative;
     height: 15rem;
@@ -584,6 +596,12 @@ header.hero {
 @media(min-width: $breakpoint_lg){
     header.hero {
         font-size: 1.6rem;
+    }
+}
+
+@media print {
+    header.hero {
+        display: none;
     }
 }
 
@@ -684,6 +702,12 @@ img.img-responsive {
 .nav-ul > li > a:focus {
     outline: 0;
     border-color: $theme_colour;
+}
+
+@media print {
+    .nav-ul {
+        display: none;
+    }
 }
 
 p { font-size: 1em; }
@@ -794,13 +818,13 @@ p { font-size: 1em; }
     }
 }
 
-@media(min-width: $breakpoint_xs){
+@media (min-width: $breakpoint_xs){
     .site_header {
         font-size: 1rem;
     }
 }
 
-@media(min-width: $breakpoint_sm){
+@media (min-width: $breakpoint_sm){
     .site_header {
         font-size: 1.3rem;
     }
@@ -809,6 +833,12 @@ p { font-size: 1em; }
 @media (min-width: $breakpoint_lg) {
     .site_header {
         font-size: 1.6rem;
+    }
+}
+
+@media print {
+    .site_header {
+        display: none;
     }
 }
 
