@@ -96,7 +96,7 @@ html, body {
 
 .col { /*padding-top: 2em;*/ margin: 0 -1em; }
 
-@media (min-width: $breakpoint_sm) {
+@media all and (min-width: $breakpoint_sm) {
     .row { width: 100%; display: table; table-layout: fixed; }
     .col { display: table-cell; vertical-align: top; /*padding: 0 1em;*/}
     /*.col+.col { padding: 0 1em; }
