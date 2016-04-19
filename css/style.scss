@@ -149,13 +149,13 @@ html, body {
     }
 }
 
-@media(min-width: $breakpoint-sm){
+@media (min-width: $breakpoint-sm){
     .archive {
         font-size: 1.2em;
     }
 }
 
-@media(min-width: $breakpoint-md){
+@media (min-width: $breakpoint-md){
     .archive {
         font-size: 1.5em;
     }
@@ -336,14 +336,16 @@ article {
     }
 }
 
-.bg-l-grey {
-    background-color: $back_l_grey;
+@media screen {
+    .bg-l-grey {
+        background-color: $back_l_grey;
+    }
+    
+    .bg-d-grey {
+        background-color: $back_d_grey;
+    }
 }
-
-.bg-d-grey {
-    background-color: $back_d_grey;
-}
-
+    
 .bg-theme {
     background-color: $theme_colour;
 }
