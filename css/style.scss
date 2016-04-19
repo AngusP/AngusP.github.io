@@ -97,8 +97,8 @@ html, body {
     Columns are all the same height in each row
 ***/
 
-.col { margin: 0 -1em; }
-.col.sep ~ .col.sep { border-left: 0.1rem solid $border_dark; }
+.col { /*margin: 0 -1em;*/ }
+.col.sep ~ .col.sep { border-top: 0.1rem solid $border_dark; }
 .col.padd { padding-right: 2em; }
 
 @media all and (min-width: $breakpoint_sm) {
@@ -106,11 +106,11 @@ html, body {
     .col { display: table-cell; vertical-align: top;}
 
     .col.sep ~ .col.sep { 
-        border-left: none;
-        border-top: 0.1rem solid $border_dark;
+        border-top: none;
+        border-left: 0.1rem solid $border_dark;
     }
 
-    .col+.col { padding-left: 1em; }
+    .col.padd +.col.padd { padding-left: 1em; }
     .col:last-child { padding-right: 0; }
 }
 
@@ -521,10 +521,9 @@ footer {
     font-family: $small_font;
     color: #AAA;
     background-color: #111;
-    padding: 3rem 0;
+    padding: 3rem 1rem;
     border-top: 0.3rem solid #777;
     font-size: 0.9rem;
-    text-align: center;
 
     a,
     a:visited{
