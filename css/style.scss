@@ -179,14 +179,15 @@ html, body {
 }
 
 
-a {
+a,
+a:visited {
     color: darken($theme_colour, 0%);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover,
-a:visited {
+a:focus {
     text-decoration: underline;
     color: darken($theme_colour, 10%);
 }
@@ -566,6 +567,10 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0.4em 0em 0.2em 0em;
     line-height: 1.2em;
     vertical-align: middle;
+
+    a {
+        color: inherit;
+    }
 }
 
 h1 {
