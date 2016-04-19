@@ -99,7 +99,7 @@ html, body {
 
 .col { /*margin: 0 -1em;*/ }
 .col.sep ~ .col.sep { border-top: 0.1rem solid $border_dark; }
-.col.padd { padding-right: 2em; }
+.col.padd { padding: 1em 0em; }
 
 @media all and (min-width: $breakpoint_sm) {
     .row { width: 100%; display: table; table-layout: fixed; }
@@ -107,9 +107,10 @@ html, body {
 
     .col.sep ~ .col.sep { 
         border-top: none;
-        border-left: 0.1rem solid $border_dark;
+        border-left: 0.1rem solid;
     }
-
+    
+    .col.padd { padding: 0; padding-right: 1em; }
     .col.padd +.col.padd { padding-left: 1em; }
     .col:last-child { padding-right: 0; }
 }
@@ -519,7 +520,7 @@ article {
 
 footer {
     font-family: $small_font;
-    color: #AAA;
+    color: #FFF;
     background-color: #111;
     padding: 3rem 1rem;
     border-top: 0.3rem solid #777;
@@ -537,12 +538,8 @@ footer {
         color: $theme_colour;
     }
 
-    h1,h2,h3,h4 {
-        color: #FFF;
-    }
-
-    .sep {
-        border-color: #666;
+    .col.sep ~ .col.sep {
+        border-color: #555;
     }
 }
 
