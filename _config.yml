@@ -4,12 +4,13 @@ description: "toaster.cc - AngusP's place on the net"
 baseurl: ""
 url: "http://toaster.cc"
 author: "Angus Pearson"
-theme_colour: "#9ac6ff"
-theme_complement: "#fed136"
+theme_colour: "#59d380"
+theme_complement: "#9ac6ff"
 
 # Pantone colour of the year: #f7cac9
 # Complementary: #92a8d1
 # TCC blue: #9ac6ff
+# TCC green: #9ac6ff
 # TCC yellow: #fed136
 
 # Main Navigation (Manual)
