@@ -5,7 +5,7 @@ baseurl: ""
 url: "http://toaster.cc"
 author: "Angus Pearson"
 theme_colour: "#59d380"
-theme_complement: "#9ac6ff"
+theme_complement: "#bdeecd"
 
 # Pantone colour of the year: #f7cac9
 # Complementary: #92a8d1
