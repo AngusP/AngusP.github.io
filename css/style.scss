@@ -127,6 +127,19 @@ html, body {
 .fourx  { font-size: 4em;   }
 .fivex  { font-size: 5em;   }
 
+a,
+a:visited {
+    color: darken($theme_colour, 0%);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: darken($theme_colour, 10%);
+}
+
 .archive {
     a,
     a:visited,
@@ -178,24 +191,15 @@ html, body {
     }
 }
 
-
-a,
-a:visited {
-    color: darken($theme_colour, 0%);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover,
-a:focus {
-    text-decoration: underline;
-    color: darken($theme_colour, 10%);
-}
-
 article {
     font-size: 1em;
     word-break: break-word;
 
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+    
     blockquote {
         color: lighten($copy_colour, 30%);
         border-left: 0.2em solid $back_d_grey;
