@@ -558,6 +558,8 @@ h6 { font-size: 0.8em }
     background-size: cover;
     background-position: center center;
     color: #f8f8f8;
+    border-bottom: 0.3em solid $theme_colour;
+
 
     h1.post-title {
         position: absolute;
@@ -572,6 +574,7 @@ header.hero {
     font-size: 3.5vw;
     white-space: nowrap;
     background-image: url($header_image);
+    border: 0;
 
     hr {
         border-color: #fff;
