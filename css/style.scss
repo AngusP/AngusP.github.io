@@ -31,7 +31,7 @@ $border_dark: #ddd;
 
 $sans_font: 'Montserrat','Helvetica-Neue',Helvetica,Arial,sans-serif;
 $serif_font: 'PT Serif','Times','Georgia','Times New Roman',serif;
-$copy_font: Helvetica,'Helvetica-Neue', Arial,sans-serif;
+$small_font: Helvetica,'Helvetica-Neue', Arial,sans-serif;
 $cursive_font: 'Pacifico', cursive;
 $mono_font: 'Source Code Pro', monospace;
 
@@ -97,13 +97,21 @@ html, body {
     Columns are all the same height in each row
 ***/
 
-.col { /*padding-top: 2em;*/ margin: 0 -1em; }
+.col { margin: 0 -1em; }
+.col.sep ~ .col.sep { border-left: 0.1rem solid $border_dark; }
+.col.padd { padding-right: 2em; }
 
 @media all and (min-width: $breakpoint_sm) {
     .row { width: 100%; display: table; table-layout: fixed; }
-    .col { display: table-cell; vertical-align: top; /*padding: 0 1em;*/}
-    /*.col+.col { padding: 0 1em; }
-    .col:last-child { padding-right: 0; }*/
+    .col { display: table-cell; vertical-align: top;}
+
+    .col.sep ~ .col.sep { 
+        border-left: none;
+        border-top: 0.1rem solid $border_dark;
+    }
+
+    .col+.col { padding-left: 1em; }
+    .col:last-child { padding-right: 0; }
 }
 
 /***
@@ -400,9 +408,7 @@ article {
     transition: box-shadow 0.3s ease, margin 0.3s ease;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
+.card:hover {
     margin-top: 1.8rem;
     margin-bottom: 1.2rem;
     box-shadow: 0em 0.2em 0.6em 0em rgba(0,0,0,0.4);
@@ -512,24 +518,32 @@ article {
 }
 
 footer {
-    font-family: $copy_font;
-    color: #555;
+    font-family: $small_font;
+    color: #AAA;
     background-color: #111;
-    padding: 7rem 0;
-    border-top: 0.2em solid #444;
+    padding: 3rem 0;
+    border-top: 0.3rem solid #777;
     font-size: 0.9rem;
     text-align: center;
 
-
     a,
     a:visited{
-        color: #555;
+        color: #BBB;
         text-decoration: none;
+        transition: color 0.3s ease;
     }
 
     a:hover,
     a:focus {
-        color: #777;
+        color: $theme_colour;
+    }
+
+    h1,h2,h3,h4 {
+        color: #FFF;
+    }
+
+    .sep {
+        border-color: #666;
     }
 }
 
