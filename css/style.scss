@@ -179,21 +179,21 @@ html, body {
 }
 
 
+a {
+    color: darken($theme_colour, 0%);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:visited {
+    text-decoration: underline;
+    color: darken($theme_colour, 10%);
+}
+
 article {
     font-size: 1em;
     word-break: break-word;
-
-    a {
-        color: darken($theme_colour, 0%);
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-    a:hover,
-    a:visited {
-        text-decoration: underline;
-        color: darken($theme_colour, 10%);
-    }
 
     blockquote {
         color: lighten($copy_colour, 30%);
@@ -233,7 +233,7 @@ article {
         overflow: auto;
     }
 
-    h1, h2, h3, h4 {
+    h1, h2, h3, h4, h5, h6 {
         -webkit-column-span: all;
         column-span: all;
 
