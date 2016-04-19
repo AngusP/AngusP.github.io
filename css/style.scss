@@ -575,7 +575,12 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.2em;
     vertical-align: middle;
 
-    a, a:hover, a:visited, a:focus {
+    a, a:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a:hover, a:focus {
         color: inherit;
     }
 }
