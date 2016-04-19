@@ -571,7 +571,7 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.2em;
     vertical-align: middle;
 
-    a {
+    a, a:hover, a:visited, a:focus {
         color: inherit;
     }
 }
