@@ -523,8 +523,9 @@ footer {
     color: #FFF;
     background-color: #111;
     padding: 3rem 1rem;
-    border-top: 0.3rem solid #777;
+    border-top: 0.15rem solid #777;
     font-size: 0.9rem;
+    transition: border-color 0.5s ease;
 
     a,
     a:visited{
@@ -541,6 +542,10 @@ footer {
     .col.sep ~ .col.sep {
         border-color: #555;
     }
+}
+
+footer:hover {
+    border-color: $theme_colour;
 }
 
 @media print {
