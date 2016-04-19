@@ -97,7 +97,7 @@ html, body {
     Columns are all the same height in each row
 ***/
 
-.col { /*margin: 0 -1em;*/ }
+.col { margin: 0 -1rem; }
 .col.sep ~ .col.sep { border-top: 0.1rem solid $border_dark; }
 .col.padd { padding: 1em 0em; }
 
@@ -436,7 +436,7 @@ article {
 
 .container {
     width: 100%;
-    padding: 0em 1em;
+    padding: 0em 1rem;
     margin: 0 auto;
 }
 
@@ -446,7 +446,7 @@ article {
 
 .skinny {
     @extend .container;
-    padding: 0em 2em;
+    padding: 0em 2rem;
 }
 
 @media screen and (min-width: $breakpoint_xs){
