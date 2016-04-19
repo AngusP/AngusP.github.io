@@ -110,8 +110,8 @@ html, body {
         border-left: 0.1rem solid;
     }
     
-    .col.padd { padding: 0; padding-right: 1em; }
-    .col.padd +.col.padd { padding-left: 1em; }
+    .col.padd { padding: 0; padding-right: 2em; }
+    .col.padd +.col.padd { padding-left: 2em; }
     .col:last-child { padding-right: 0; }
 }
 
