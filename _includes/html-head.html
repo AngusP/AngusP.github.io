@@ -26,11 +26,9 @@
     <meta name="twitter:image" content="{{ site.url }}/img/tcc-favicon.png" />
     {% endif %}
     
-    
     <!-- OpenGraph Metadata -->
-    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta property="og:title" content="{{ page.title }}" />
-    
     
     {% if page.hero %}
     <meta property="og:image" content="{{ site.url }}/media/{{ page.hero }}" />
