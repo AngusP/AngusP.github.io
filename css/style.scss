@@ -785,6 +785,9 @@ img.img-responsive {
 }
 
 @media screen and (min-width: $breakpoint_md){
+    .ledge, .redge {
+        max-width: 60%;
+    }
     .ledge {
         float: left;
         margin-left: -5rem;
@@ -798,6 +801,9 @@ img.img-responsive {
 }
 
 @media screen and (min-width: $breakpoint_lg){
+    .ledge, .redge {
+        max-width: 70%;
+    }
     .ledge {
         margin-left: -10rem;
     }
