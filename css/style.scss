@@ -270,6 +270,8 @@ article {
 
     img {
         max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     li {
@@ -409,6 +411,15 @@ button.btn {
     font-size: 0.8em;
 }
 
+.caps {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.small-caps {
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+}
+
 .card {
     margin: 1rem;
     margin-top: 2rem;
@@ -438,6 +449,27 @@ button.btn {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.chip {
+    font-family: $small_font;
+    font-weight: 500;
+    display: inline-block;
+    height: 2rem;
+    font-size: 1rem;
+    color: rgba(0,0,0,0.6);
+    line-height: 2rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    background-color: $bg_d_grey;
+
+    img {
+        float: left;
+        margin: 0 0.5rem 0 -1rem;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 1rem;
+    }
 }
 
 .columnar {
@@ -568,6 +600,7 @@ footer:hover {
         border: 0;
         font-size: 0.7rem;
         background: none;
+        color: $copy_colour;
     }
 }
 
@@ -747,6 +780,34 @@ img.img-responsive {
     height: auto;
 }
 
+/* Slide content off the left or right of a parent */
+.ledge, .redge {
+    @extend .sheet;
+    margin: 2em 0em;
+}
+
+@media screen and (min-width: $breakpoint_md){
+    .ledge {
+        float: left;
+        margin-left: -5rem;
+        margin-right: 2em;
+    }
+    .redge {
+        float: right;
+        margin-left: 2em;
+        margin-right: -5rem;
+    }
+}
+
+@media screen and (min-width: $breakpoint_lg){
+    .ledge {
+        margin-left: -10rem;
+    }
+    .redge {
+        margin-right: -10rem;
+    }
+}
+
 .muted {
     opacity: 0.7;
 }
@@ -872,6 +933,12 @@ p { font-size: 1em; }
 
 .serif {
     font-family: $serif_font;
+}
+
+/* A lot like .card, but more generic */
+.sheet {
+    box-shadow: 0rem 0.2rem 0.6rem 0rem rgba(0,0,0,0.4);
+    border-radius: 0.1rem;
 }
 
 .site_header {
