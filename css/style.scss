@@ -601,7 +601,7 @@ h4 { font-size: 1.3em }
 h5 { font-size: 1em }
 h6 { font-size: 0.8em }
 
-@media (min-size: $breakpoint_md){
+@media (min-width: $breakpoint_md){
     h1 { font-size: 3em; }
     h2 { font-size: 2.6em }
     h3 { font-size: 2em }
