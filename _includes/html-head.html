@@ -16,20 +16,29 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS feed" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Twitter rich content metadata -->
-    <meta name="twitter:title" content="{{ page.title }} - {{ site.title }}" />
+    <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ site.description }}" />
     
     <meta name="twitter:card" content="summary" />
+    {% if page.hero %}
+    <meta name="twitter:image" content="{{ site.url }}/media/{{ page.hero }}" />
+    {% else %}
     <meta name="twitter:image" content="{{ site.url }}/img/tcc-favicon.png" />
+    {% endif %}
     
     
     <!-- OpenGraph Metadata -->
     <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
+    <meta property="og:title" content="{{ page.title }}" />
     
+    
+    {% if page.hero %}
+    <meta property="og:image" content="{{ site.url }}/media/{{ page.hero }}" />
+    {% else %}
     <meta property="og:image" content="{{ site.url }}/img/tcc-favicon.png" />
+    {% endif %}
     
-    <meta property="og:site_name" content="Toaster.cc" />
+    <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:description" content="{{ site.description }}" />
 
     <meta name="description" content="{{ site.description }}" />
