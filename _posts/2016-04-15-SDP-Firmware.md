@@ -14,10 +14,6 @@ Tasks for developing the system were divided up between the ten people in the te
 Holonomics are fun
 ==================
 
-Our group settled on a three wheeled holonomic design pretty early on - motivations for this were mainly "Because it's cool", "Angus wants to do holonomics" and also because some people in the year above strongly suggested that we *didnt't* make a holonomic robot. Holonomic wheels have bearings that let the wheel slide laterally along it's axis of rotation, giving freedom of movement in any direction if used correctly.
-
-The maths behind holonomic motion isn't actually all that complex - it comes from doing the mechanics on the three forces produced by the three wheels, and the observation that what we're really dealing with is a matrix.
-
 <figure class="ledge" style="max-width: 400px;">
   <img src="/media/2016-04-15-holo-mech.jpg" 
        alt="Three wheel holonomics mechanical diagram">
@@ -25,6 +21,10 @@ The maths behind holonomic motion isn't actually all that complex - it comes fro
     The three forces produced by the wheels, F<sub>1</sub> through to F<sub>3</sub>.
   </figcaption>
 </figure>
+
+Our group settled on a three wheeled holonomic design pretty early on - motivations for this were mainly "Because it's cool", "Angus wants to do holonomics" and also because some people in the year above strongly suggested that we *didnt't* make a holonomic robot. Holonomic wheels have bearings that let the wheel slide laterally along it's axis of rotation, giving freedom of movement in any direction if used correctly.
+
+The maths behind holonomic motion isn't actually all that complex - it comes from doing the mechanics on the three forces produced by the three wheels, and the observation that what we're really dealing with is a matrix.
 
 Simple trigonometry splits these forces into their *x,y* components.
 
