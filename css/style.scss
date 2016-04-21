@@ -195,6 +195,7 @@ a:focus {
 article {
     font-size: 1em;
     word-break: break-word;
+    counter-reset: figures;
 
     a,
     a:visited {
@@ -235,8 +236,24 @@ article {
     }
 
     figure {
+        counter-increment: figures;
         margin: 0;
         overflow: auto;
+        
+
+        figcaption {
+            display: block;
+            font-size: 0.75em;
+            padding: 1rem;
+            background: $back_d_grey;
+            color: darken($back_d_grey, 50%);
+            line-height: 1.2em;
+        }
+
+        figcaption:before {
+            content: 'Fig. ' counter(figures) ': ';
+            font-weight: bold;
+        }
     }
 
     h1, h2, h3, h4, h5, h6 {
