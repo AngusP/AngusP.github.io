@@ -470,6 +470,10 @@ button.btn {
     }
 }
 
+.circular {
+    border-radius: 50%;
+}
+
 .columnar {
     -webkit-columns: 3 20rem; /* Chrome, Safari, Opera */
     -moz-columns: 3 20rem; /* Firefox */
@@ -540,17 +544,6 @@ button.btn {
     .container.skinny {
         width: ($breakpoint_lg - 30);
     }
-}
-
-.content-circle {
-    color: #fff;
-    background: $theme_colour;
-    width: 2em;
-    height: 2em;
-    padding: 0.5em 0.2em;
-    text-align: center;
-    line-height: 1em;
-    border-radius: 50%;
 }
 
 .em {
@@ -1004,6 +997,12 @@ p { font-size: 1em; }
 
 .spacer.double {
     width: 2em;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .first {
