@@ -18,7 +18,7 @@ Our group settled on a three wheeled holonomic design pretty early on - motivati
 
 The maths behind holonomic motion isn't actually all that complex - it comes from doing the mechanics on the three forces produced by the three wheels, and the observation that what we're really dealing with is a matrix.
 
-<figure class="ledge" style="width: 400px;">
+<figure class="ledge" style="max-width: 400px;">
   <img src="/media/2016-04-15-holo-mech.jpg" 
        alt="Three wheel holonomics mechanical diagram">
   <figcaption>
