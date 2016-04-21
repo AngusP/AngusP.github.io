@@ -196,6 +196,12 @@ article {
     font-size: 1em;
     word-break: break-word;
     counter-reset: figures;
+    text-rendering: optimizeLegibility;
+    -webkit-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+    -webkit-font-feature-settings: "kern";
+    font-feature-settings: "kern";
+    font-kerning: normal;
 
     a,
     a:visited {
