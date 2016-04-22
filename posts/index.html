@@ -25,18 +25,20 @@ layout: default
   
   <div class="container vspace skinny">
     <article>
-      <div class="chip pull-right">
-        {% if post.author %}
-        {% if post.author_avatar %}
-        <img src="{{ post.author_avatar }}">
-        {% endif %}
-        {{ post.author }}
-        {% else %}
-        <img src="{{ site.author_avatar }}">{{ site.author }}
-        {% endif %}
-      </div>
-      <p class="muted i">
-        {{ post.date | date: "%b %-d, %Y" }}
+      <p>
+        <div class="chip pull-right">
+          {% if post.author %}
+          {% if post.author_avatar %}
+          <img src="{{ post.author_avatar }}">
+          {% endif %}
+          {{ post.author }}
+          {% else %}
+          <img src="{{ site.author_avatar }}">{{ site.author }}
+          {% endif %}
+        </div>
+        <span class="muted i">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </span>
       </p>
       <div {% if post.columnar %} class="columnar" {% endif %}>
         {{ post.content }}
