@@ -479,20 +479,20 @@ button.btn {
     font-family: $small_font;
     font-weight: 500;
     display: inline-block;
-    height: 2rem;
-    font-size: 1rem;
+    height: 2em;
+    font-size: 0.9em;
     color: rgba(0,0,0,0.6);
-    line-height: 2rem;
-    padding: 0 1rem;
-    border-radius: 1rem;
+    line-height: 2em;
+    padding: 0 1em;
+    border-radius: 1em;
     background-color: $back_d_grey;
 
     img {
         float: left;
-        margin: 0 0.5rem 0 -1rem;
-        height: 2rem;
-        width: 2rem;
-        border-radius: 1rem;
+        margin: 0 0.5em 0 -1em;
+        height: 2em;
+        width: 2em;
+        border-radius: 1em;
     }
 }
 
