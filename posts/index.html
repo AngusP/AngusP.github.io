@@ -36,9 +36,9 @@ layout: default
           <img src="{{ site.author_avatar }}">{{ site.author }}
           {% endif %}
         </div>
-        <span class="muted i">
+        <time class="muted i">
           {{ post.date | date: "%b %-d, %Y" }}
-        </span>
+        </time>
       </p>
       <div {% if post.columnar %} class="columnar" {% endif %}>
         {{ post.content }}
