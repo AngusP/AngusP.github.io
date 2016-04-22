@@ -480,7 +480,7 @@ button.btn {
     font-weight: 500;
     display: inline-block;
     height: 2em;
-    font-size: 0.9em;
+    font-size: 0.75em;
     color: rgba(0,0,0,0.6);
     line-height: 2em;
     padding: 0 1em;
@@ -934,6 +934,13 @@ p { font-size: 1em; }
     .pagination {
         font-size: 2.5em;
     }
+}
+
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
 }
 
 .sans-serif {

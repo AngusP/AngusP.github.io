@@ -21,6 +21,17 @@ layout: default
 
 <div class="container vspace skinny">
   <article>
+    <div class="chip pull-right">
+        {% if page.author %}
+        {% if page.author_avatar %}
+        <img src="{{ page.author_avatar }}">
+        {% endif %}
+        {{ page.author }}
+        {% else %}
+        <img src="{{ site.author_avatar }}">{{ site.author }}
+        {% endif %}
+      </div>
+    
     {% if page.date %}
     <p class="muted i">{{ page.date | date: "%b %-d, %Y" }}</p>
     {% endif %}

@@ -4,6 +4,7 @@ description: "Not a site about toasters."
 baseurl: ""
 url: "http://toaster.cc"
 author: "Angus Pearson"
+author_avatar: "//s.gravatar.com/avatar/8c54ddeaeca4f852c1d522c83780ced1?s=160"
 theme_colour: "#59d380"
 theme_complement: "#bdeecd"
 
