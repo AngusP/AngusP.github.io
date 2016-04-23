@@ -443,6 +443,11 @@ button.btn {
     box-shadow: $zshadow_1
 }
 
+.btn:active {
+    @extend .btn:hover;
+    box-shadow: $zshadow_2;
+}
+
 .btn-lg {
     font-size: 1.3em;
 }
