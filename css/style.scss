@@ -42,6 +42,10 @@ $breakpoint_sm: 50rem;
 $breakpoint_md: 70rem;
 $breakpoint_lg: 100rem;
 
+/* Material lighting cues */
+$zshadow_1: 0rem 0.2rem 0.6rem 0rem rgba(0,0,0,0.3);
+$zshadow_2: 0rem 0.6rem   2rem 0rem rgba(0,0,0,0.4);
+
 * { box-sizing: border-box; }
 
 html, body {
@@ -429,14 +433,14 @@ button.btn {
     text-decoration: none;
     color: #FFF;
     font-family: $sans_font;
-    box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.4);
+    box-shadow: none;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover {
     color: #FFF;
     background-color: lighten($theme_colour, 6%);
-    box-shadow: 0em 0.2em 0.6em 0em rgba(0,0,0,0.4);
+    box-shadow: $zshadow_1
 }
 
 .btn-lg {
@@ -466,9 +470,7 @@ button.btn {
 
 @media screen and (min-width: $breakpoint_sm){
     .card:hover {
-        /*margin-top: 1.8rem;
-        margin-bottom: 1.2rem;*/
-        box-shadow: 0em 0.2em 0.6em 0em rgba(0,0,0,0.4);
+        box-shadow: $zshadow_1;
     }
 
     .card {
@@ -820,6 +822,12 @@ img.img-responsive {
 .ledge, .redge {
     @extend .sheet;
     margin: 2em 0em;
+    border-radius: 0.2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.ledge:hover, .redge:hover {
+    @extend .sheet.hoverable:hover;
 }
 
 @media screen and (min-width: $breakpoint_md){
@@ -986,7 +994,10 @@ p { font-size: 1em; }
 
 /* A lot like .card, but more generic */
 .sheet {
-    box-shadow: 0rem 0.2rem 0.6rem 0rem rgba(0,0,0,0.4);
+    box-shadow: $zshadow_2;
+}
+.sheet.hoverable:hover {
+    box-shadow: $zshadow_2;
 }
 
 .site_header {
