@@ -823,7 +823,6 @@ img.img-responsive {
     @extend .sheet;
     margin: 2em 0em;
     border-radius: 0.2rem;
-    transition: box-shadow 0.3s ease;
 }
 
 .ledge:hover, .redge:hover {
@@ -995,6 +994,7 @@ p { font-size: 1em; }
 /* A lot like .card, but more generic */
 .sheet {
     box-shadow: $zshadow_1;
+    transition: box-shadow 0.3s ease;
 }
 .sheet.hoverable:hover {
     box-shadow: $zshadow_2;
