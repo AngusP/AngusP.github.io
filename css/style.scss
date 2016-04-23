@@ -518,6 +518,14 @@ button.btn {
     border-radius: 50%;
 }
 
+.clearfix:after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
 .columnar {
     -webkit-columns: 3 20rem; /* Chrome, Safari, Opera */
     -moz-columns: 3 20rem; /* Firefox */

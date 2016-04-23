@@ -21,7 +21,7 @@ layout: default
 
 <div class="container vspace skinny">
   <article>
-    <p>
+    <div class="clearfix">
       <div class="chip pull-right">
         {% if page.author %}
         {% if page.author_avatar %}
@@ -36,7 +36,7 @@ layout: default
       {% if page.date %}
       <time class="muted i">{{ page.date | date: "%b %-d, %Y" }}</time>
       {% endif %}
-    </p>
+    </div>
 
     <div {% if page.columnar %} class="columnar" {% endif %}>
       {{ content }}
