@@ -610,6 +610,12 @@ button.btn {
     vertical-align: bottom;
 }
 
+.feature {
+    padding: 2rem 2rem;
+    font-size: 1.3em;
+    max-width: 25rem;
+}
+
 .fold-centre {
     padding: 10rem 2rem 2rem 2rem;
     margin: 0 auto;
@@ -833,13 +839,8 @@ img.img-responsive {
 
 /* Slide content off the left or right of a parent */
 .ledge, .redge {
-    @extend .sheet;
-    margin: 2em 0em;
+    margin: 2rem 0em;
     border-radius: 0.2rem;
-}
-
-.ledge:hover, .redge:hover {
-    @extend .sheet.hoverable:hover;
 }
 
 @media screen and (min-width: $breakpoint_md){
@@ -849,11 +850,11 @@ img.img-responsive {
     .ledge {
         float: left;
         margin-left: -5rem;
-        margin-right: 2em;
+        margin-right: 2rem;
     }
     .redge {
         float: right;
-        margin-left: 2em;
+        margin-left: 2rem;
         margin-right: -5rem;
     }
 }

@@ -14,7 +14,7 @@ Tasks for developing the system were divided up between the ten people in the te
 Holonomics are fun
 ==================
 
-<figure class="ledge" style="max-width: 400px;">
+<figure class="ledge sheet hoverable" style="max-width: 400px;">
   <img src="/media/2016-04-15-holo-mech.jpg" 
        alt="Three wheel holonomics mechanical diagram">
   <figcaption>
