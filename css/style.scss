@@ -295,6 +295,17 @@ article {
         max-width: 100%;
     }
 
+    /* Broken link style */
+    img:before {
+        content: "\f127";
+        font-family: FontAwesome;
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+        padding: 0.5em;
+        color: #F88;
+    }
+
     li {
         padding-bottom: 0.5em;
     }
