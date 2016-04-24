@@ -218,6 +218,15 @@ article {
         margin: 1em 2em;
         margin-left: -0.5em;
         padding: 0.2em 2em;
+
+        cite {
+            display: block;
+            margin-top: 0.5em;
+            color: lighten($copy_colour, 50%);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none;
+        }
     }
 
     code {

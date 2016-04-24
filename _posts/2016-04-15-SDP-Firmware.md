@@ -129,7 +129,7 @@ Doing more than one thing
 
 It's pretty important that the bot can perform more than one task at a time - commands could be coming in from strategy, and there's a host of things we need to do, like reading sensors at steady intervals and performing error corrections.
 
-The code we used in the final round was polling rotary encoders over 20 times a second, sensors that increment a counter every time the wheel went through 1&deg, then applying the above Gradient Descent correction at the same rate. Coupled with any other tasks the bot was required to execute, a more capable approach to scheduling is needed than just a very large `void loop()` function.
+The code we used in the final round was polling rotary encoders over 20 times a second, sensors that increment a counter every time the wheel went through 1&deg;, then applying the above Gradient Descent correction at the same rate. Coupled with any other tasks the bot was required to execute, a more capable approach to scheduling is needed than just a very large `void loop()` function.
 
 Our bot used a simple process model, with structures carrying around information about when the task was last run, how often it should be run and whether it was enabled. There were more than eight of these on the bot, which doesn't seem a lot but given the 16MHz clock speed and limited calculation abilities of the ATMega 328 isn't a light load.
 
