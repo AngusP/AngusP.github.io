@@ -629,6 +629,19 @@ button.btn {
     max-width: 25rem;
 }
 
+blockquote.feature:before {
+    content: '\201C';
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 2.6em;
+    line-height: 1em;
+    color: $theme_colour;
+    float: left;
+    height: 0.45em;
+    padding-right: 0.2em;
+    margin-left: -0.1em;
+}
+
 .fold-centre {
     padding: 10rem 2rem 2rem 2rem;
     margin: 0 auto;
