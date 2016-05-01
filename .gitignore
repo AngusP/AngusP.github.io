@@ -4,3 +4,4 @@ _site
 *.css#
 .sass-cache/*
 .sass-cache
+*.xcf
