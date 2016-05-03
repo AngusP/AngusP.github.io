@@ -828,21 +828,22 @@ hr {
 }
 
 hr.break {
-    border-color: $border_dark;
+    border: none;
+    
 }
 
 hr.break::after {
     display: inline-block;
-    content: "//";
+    content: "...";
     float: left;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     width: 100%;
     margin-top: -1rem;
     line-height: 2rem;
     color: $theme_colour;
     font-weight: bold;
-    letter-spacing: -0.2rem;
+    letter-spacing: 0.3rem;
     font-family: $sans_font;
 }
 
