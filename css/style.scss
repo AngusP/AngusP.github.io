@@ -242,6 +242,8 @@ article {
     }
 
     .columnar {
+        padding-top: 1.5em;
+        
         /* Columns don-t handle negative margins well */
         ul,ol {
             padding-left: 1em;
@@ -255,12 +257,13 @@ article {
     }
 
     figure {
-        counter-increment: figures;
         margin: 0;
+        margin-bottom: 1.5rem;
         overflow: auto;
         
 
         figcaption {
+            counter-increment: figures;
             display: block;
             font-size: 0.75em;
             padding: 1rem;
@@ -272,6 +275,10 @@ article {
         figcaption:before {
             content: 'Fig. ' counter(figures) ': ';
             font-weight: bold;
+        }
+
+        pre {
+            margin: 0;
         }
     }
 
@@ -623,6 +630,8 @@ button.btn {
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-size: 1.3em;
+    -webkit-column-span: all;
+    column-span: all;
 }
 
 .feature.ledge,
@@ -900,6 +909,11 @@ img.img-responsive {
     .redge {
         margin-right: -10rem;
     }
+}
+
+mark, .mark {
+    color: inherit;
+    background-color: lighten($theme_colour, 35%);
 }
 
 .muted {
