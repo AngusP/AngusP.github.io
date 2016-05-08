@@ -1125,6 +1125,13 @@ p { font-size: 1em; }
     width: 2em;
 }
 
+.subhead {
+    font-weight: normal;
+    padding-top: 0;
+    opacity: 0.4;
+    font-size: 1.2em;
+}
+
 .truncate {
     white-space: nowrap;
     overflow: hidden;
@@ -1174,3 +1181,4 @@ p { font-size: 1em; }
         display: none;
     }
 }
+
