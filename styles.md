@@ -1,5 +1,5 @@
 ---
-title: Styles
+title: Style Expo
 layout: post
 ---
 
@@ -115,6 +115,32 @@ The `<figcaption>` is optional, and are numbered automatically with some CSS mag
 The `figure` itself has minimal styling to keep it flexible. Many of the below
 classes are particularly effective on `figure`s:
 
+### Super Simple Grid System
+
+Uses table layouts to develop a simple grid system without murdering semantics.
+
+    <div class="row">
+        <div class="col">
+            ...
+        </div>
+        ...
+    </div>
+    
+The row has the optional `.sep` and `.padd` classes that add a border between columns and padding to the columns. The columns below use both `sep` and `padd`. Grids in `<article>`s have a small padding applied to them too, which isn't the case elsewhere. Sep borders responively switch edge.
+
+<div class="row sep padd">
+    <p class="col">
+        Quisque ac tristique nisi. Fusce eget augue vel dui pharetra blandit. Proin eu ex arcu. Nulla facilisi. In tempus vel enim quis suscipit. Proin eleifend fringilla lacus id vehicula.
+    </p>
+    <p class="col">
+        Etiam hendrerit dolor accumsan, fringilla augue id, molestie arcu. Duis cursus felis eget ante gravida hendrerit. Vivamus tempus risus ut sapien elementum interdum.
+    </p>
+    <p class="col">
+        Maecenas eget scelerisque dui. Etiam lobortis, nisi eget molestie rutrum, eros magna scelerisque magna, in commodo eros sem mollis urna. Morbi imperdiet dui vel nulla maximus.
+    </p>
+</div>
+<br>
+
 ### Classes
 
 padder
@@ -155,6 +181,9 @@ b-top-grey
 
 columnar
 : Applies CSS columns to the element, responsively
+
+truncate
+: Sets overflow hidden, white-space no wrap and adds a trailing hellipsis.
 
 <figure class="ledge" style="max-width: 400px;">
     <blockquote>
@@ -201,6 +230,40 @@ This paragraph is apparently important, implied by the larger font size from the
     For comparison, using the theme complement background
 </div>
 
+They're not really a class, but **chips** from Material Design are included:
+
+    <div class="chip">
+        <img src="...">
+        Chip Content
+    </div>
+
+<div class="chip">
+    <img src="https://octodex.github.com/images/nyantocat.gif">
+    Nyantocat
+</div>
+
+<div class="chip">
+    The image is optional
+</div>
+
+Similarly, buttons
+
+    <a class="btn">
+        I do nothing.
+    </a>
+    <a class="btn danger">
+        I do nothing.
+    </a>
+
+<div>
+    <a class="btn">
+        I do nothing.
+    </a>
+    <a class="btn danger">
+        I do nothing.
+    </a>
+</div>
+
 <div class="clearfix">&nbsp;</div>
 
 <br>
@@ -210,7 +273,7 @@ This paragraph is apparently important, implied by the larger font size from the
 
 ## Fonts
 
-Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *FontAwesome* Icons and *Source Code Pro* are provided.
+Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *FontAwesome* Icons and *Source Code Pro* are provided. A Helvetica based font stack for small uses (e.g. chips) is also provided.
 
     Paragraph in PT Serif
     {: .serif}
@@ -223,12 +286,16 @@ Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *FontAwesome* Icons an
     
     Paragraph in Source Code Pro
     {: .tt}
+    
+    Paragraph in small font
+    {: .small-font}
 
 <figure class="sheet padder">
     <p class="serif">Paragraph in PT Serif</p>
     <p class="sans-serif">Paragraph in Montserrat</p>
     <p class="script">Paragraph in Pacifico</p>
     <p class="tt">Paragraph in Source Code Pro</p>
+    <p class="small-font">Paragraph in small font</p>
 </figure>
 
 ### Bold
@@ -253,6 +320,42 @@ The following snippet of text is _rendered as italicized text_.
 Appears as:
 
 _rendered as italicized text_
+
+
+### Caps
+
+The classes `caps` and `small-caps` successively transform everything to upper case, 
+and use the small caps variant of a font. Both increase the letter spacing to maintain readability.
+
+<em>Serif:</em>
+
+<div class="larger caps serif">
+    Cras suscipit rhoncus nibh, id sodales eros facilisis id.
+</div>
+
+<div class="larger small-caps serif">
+    Nullam non mi non mauris sodales Accumsan laoreet accumsan velit.
+</div>
+
+<em>Sans Serif:</em>
+
+<div class="larger caps sans-serif">
+    Cras suscipit rhoncus nibh, id sodales eros facilisis id.
+</div>
+
+<div class="larger small-caps sans-serif">
+    Nullam non mi non mauris sodales Accumsan laoreet accumsan velit.
+</div>
+
+<em>Small Font:</em>
+
+<div class="caps small-font smaller">
+    Cras suscipit rhoncus nibh, id sodales eros facilisis id.
+</div>
+
+<div class="small-caps small-font smaller">
+    Nullam non mi non mauris sodales Accumsan laoreet accumsan velit.
+</div>
 
 <br>
 <br>

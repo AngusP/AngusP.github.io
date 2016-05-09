@@ -29,6 +29,8 @@ $back_d_grey: #efefef;
 $border_light: #eee;
 $border_dark: #ddd;
 
+$danger_colour: #ce4a55;
+
 $sans_font: 'Montserrat','Helvetica-Neue',Helvetica,Arial,sans-serif;
 $serif_font: 'PT Serif','Times','Georgia','Times New Roman',serif;
 $small_font: Helvetica,'Helvetica-Neue', Arial,sans-serif;
@@ -102,21 +104,32 @@ html, body {
 ***/
 
 .col { margin: 0 -1rem; }
-.col.sep ~ .col.sep { border-top: 0.1rem solid $border_dark; }
-.col.padd { padding: 1em 0em; }
+.sep {
+    .col ~ .col { border-top: 0.1rem solid $border_dark; }
+}
+.row.padd { .col { padding: 1em 0em; } }
 
 @media all and (min-width: $breakpoint_sm) {
     .row { width: 100%; display: table; table-layout: fixed; }
     .col { display: table-cell; vertical-align: top;}
 
-    .col.sep ~ .col.sep { 
-        border-top: none;
-        border-left: 0.1rem solid;
+    .row.sep {
+        .col ~ .col {
+            border-top: none;
+            border-left: 0.1rem solid $border_dark;
+        }
     }
     
-    .col.padd { padding: 0; padding-right: 2em; }
-    .col.padd +.col.padd { padding-left: 2em; }
-    .col:last-child { padding-right: 0; }
+    .row.padd {
+        .col {
+            padding: 0; padding-right: 2em;
+        }
+        .col ~ .col {
+            padding-left: 2em;
+        }
+        .col:last-child { padding-right: 0; }
+    }
+    
 }
 
 /***
@@ -442,10 +455,10 @@ article {
 a.btn,
 button.btn {
     /* Specificity hack using a.btn */
-    font-size: 1em;
+    font-size: 1rem;
     display: inline-block;
-    padding: 0.5em 2em;
-    margin: 0.3em 0.1em;
+    padding: 0.5rem 2rem;
+    margin: 0.3rem 0.1rem;
     background-color: $theme_colour;
     border-radius: 0.3rem;
     text-decoration: none;
@@ -453,6 +466,7 @@ button.btn {
     font-family: $sans_font;
     box-shadow: none;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.2rem;
 }
 
 .btn:hover {
@@ -466,11 +480,13 @@ button.btn {
     box-shadow: $zshadow_2;
 }
 
-.btn-lg {
-    font-size: 1.3em;
+.btn.danger,
+a.btn.danger {
+    background-color: $danger_colour;
 }
-.btn-sm {
-    font-size: 0.8em;
+.btn.danger:hover,
+.btn.danger:active {
+    background-color: lighten($danger_colour, 6%);
 }
 
 .caps {
@@ -1092,6 +1108,10 @@ p { font-size: 1em; }
 
 .serif {
     font-family: $serif_font;
+}
+
+.small-font {
+    font-family: $small_font;
 }
 
 /* A lot like .card, but more generic */
