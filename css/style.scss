@@ -285,6 +285,10 @@ article {
         pre {
             margin: 0;
         }
+
+        blockquote {
+            margin-left: 0;
+        }
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -541,12 +545,13 @@ button.btn {
 }
 
 .columnar {
-    -webkit-columns: 3 20rem; /* Chrome, Safari, Opera */
-    -moz-columns: 3 20rem; /* Firefox */
-    columns: 3 20rem;
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
+    /* Column responiveness is based on relative font size (em) */
+    -webkit-columns: 3 16em; /* Chrome, Safari, Opera */
+    -moz-columns: 3 16em; /* Firefox */
+    columns: 3 16em;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
 }
 
 .container {
@@ -609,6 +614,21 @@ button.btn {
     }
     .container.skinny {
         width: ($breakpoint_lg - 30);
+    }
+}
+
+dl {
+    dt {
+        font-weight: bold;
+        margin: 0;
+    }
+
+    dd {
+        @media (min-width: $breakpoint_sm){
+            font-size: 0.8em;
+        }
+        margin-left: 1em;
+        margin-bottom: 0.5em;
     }
 }
 
@@ -697,6 +717,25 @@ footer:hover {
         background: none;
         color: $copy_colour;
     }
+}
+
+.footnotes {
+    font-size: 0.8em;
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 0.1rem solid $theme_colour;
+
+    p {
+        margin: 0;
+    }
+}
+
+.footnotes:before {
+    content: "Footnotes";
+    font-size: 1.2em;
+    padding-left: 1em;
+    display: block;
+    font-weight: bold;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -1136,6 +1175,10 @@ p { font-size: 1em; }
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.tt {
+    font-family: $mono_font;
 }
 
 .first {
