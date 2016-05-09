@@ -11,13 +11,14 @@ layout: post
     columnar: {true, false}
     author: JR Hacker
     author_avatar: http://s.gravatar.com/avatar/8c54ddeaeca4f852c1d522c83780ced1?s=160
+    author_url: http://gravatar.com
     date: 1970-01-01T00:00:00
     ---
 
 Layouts are successively more styled, with basic giving an empty body, default giving 
 just header and navigation and the post layout which is best for Markdown files.
 
-The attributes `columnar`, `author`, `author_avatar` and `date` are optional. The 
+The attributes `columnar`, `author`, `author_avatar`, `author_url` and `date` are optional. The 
 authorial attributes change the content of the chip at the top of the page. The 
 default for columnar is `false`. The columnar layout uses a variable number of 
 CSS columns up to 3, and is best suitied to continuous prose only. Columns can 

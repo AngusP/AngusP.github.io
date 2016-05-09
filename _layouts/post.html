@@ -28,6 +28,11 @@ layout: default
         <img src="{{ page.author_avatar }}">
         {% endif %}
         {{ page.author }}
+        
+        {% if page.author_url %}
+        <a href="{{ page.author_url }}" target=_blank><i class="fa fa-share"></i></a>
+        {% endif %}
+
         {% else %}
         <img src="{{ site.author_avatar }}">{{ site.author }}
         {% endif %}
@@ -44,3 +49,4 @@ layout: default
   </article>
   <div class="vspace">&nbsp;</div>
 </div>
+

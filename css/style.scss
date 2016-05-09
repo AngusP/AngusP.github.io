@@ -546,6 +546,28 @@ a.btn.danger {
         width: 2em;
         border-radius: 1em;
     }
+
+    a {
+        display: inline-block;
+        width: 1.4em;
+        height: 1.4em;
+        border-radius: 50%;
+        text-align: center;
+        background-color: darken($back_d_grey, 10%);
+        color: darken($back_d_grey, 60%);
+        vertical-align: middle;
+        margin-left: 0.5em;
+        line-height: 1.5rem;
+        transition: background-color 0.5s ease;
+
+        i {
+            font-size: 0.8rem;
+        }
+    }
+
+    a:hover {
+        background-color: darken($back_d_grey, 20%);
+    }
 }
 
 .circular {

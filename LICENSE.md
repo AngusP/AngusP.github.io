@@ -1,5 +1,7 @@
 ---
 title: GNU General Public License
+author: Free Software Foundation, Inc
+author_url: http://www.fsf.org
 layout: post
 ---
 
