@@ -418,6 +418,8 @@ of the text above it
     2. Consectetur adipiscing elit
        1. Integer molestie lorem at massa
        2. Facilisis in pretium nisl aliquet
+          1. Maecenas dignissim magna vitae ipsum convallis mollis.
+          2. Phasellus eu neque nulla. Quisque volutpat at purus nec pulvinar.
        3. Nulla volutpat aliquam velit
     3. Faucibus porta lacus fringilla vel
     4. Aenean sit amet erat nunc
@@ -429,6 +431,8 @@ Again becomes:
 2. Consectetur adipiscing elit
    1. Integer molestie lorem at massa
    2. Facilisis in pretium nisl aliquet
+      1. Maecenas dignissim magna vitae ipsum convallis mollis.
+      2. Phasellus eu neque nulla. Quisque volutpat at purus nec pulvinar.
    3. Nulla volutpat aliquam velit
 3. Faucibus porta lacus fringilla vel
 4. Aenean sit amet erat nunc

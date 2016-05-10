@@ -349,7 +349,7 @@ article {
     }
 
     li {
-        padding-bottom: 0.5em;
+        padding-bottom: 0.2em;
     }
 
     p, ul, ol {
@@ -359,6 +359,11 @@ article {
 
     ul, ol {
         padding-left: 2em;
+    }
+
+    ol ol,
+    ul ul {
+        padding-top: 0.2em;
     }
 
     .post-title {
@@ -912,7 +917,7 @@ hr.break::after {
     display: inline-block;
     content: "...";
     float: left;
-    font-size: 2.5rem;
+    font-size: 4rem;
     text-align: center;
     width: 100%;
     margin-top: -1rem;
@@ -1036,6 +1041,16 @@ mark, .mark {
 @media print {
     .nav-ul {
         display: none;
+    }
+}
+
+ol {
+    list-style-type: decimal;
+    ol {
+        list-style-type: lower-alpha;
+        ol {
+            list-style-type: lower-roman;
+        }
     }
 }
 
