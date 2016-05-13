@@ -1,13 +1,13 @@
 ---
 title: Style Expo
-layout: post
+layout: clear
 ---
 
 # YAML Front Matter
 
     ---
     title: Post Title
-    layout: {basic, default, post}
+    layout: {basic, default, clear, post}
     columnar: {true, false}
     author: JR Hacker
     author_avatar: http://s.gravatar.com/avatar/8c54ddeaeca4f852c1d522c83780ced1?s=160
@@ -16,7 +16,8 @@ layout: post
     ---
 
 Layouts are successively more styled, with basic giving an empty body, default giving 
-just header and navigation and the post layout which is best for Markdown files.
+just header and navigation and the post layout which is best for Markdown files. Clear gives
+the same styling and `<article>` as post, withouyt the navigation bar or header.
 
 The attributes `columnar`, `author`, `author_avatar`, `author_url` and `date` are optional. The 
 authorial attributes change the content of the chip at the top of the page. The 
