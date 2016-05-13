@@ -212,13 +212,20 @@ Muted looks like this:
 Aenean dictum felis eget risus interdum dignissim. Etiam non nisi et orci tempus suscipit et eget diam. Cras turpis nisl, consectetur condimentum arcu sed, fermentum elementum lacus. Morbi in nunc quis felis viverra iaculis.
 {: .muted}
 
-Muted used in conjuntion with `smaller` is often effective
+Muted used in conjuntion with `smaller`:
 
 Quisque condimentum eu quam sit amet cursus. In eget purus at sapien vehicula malesuada. Ut elementum tempus erat, eget accumsan mi tristique a.
 {: .muted .smaller}
 
 This paragraph is apparently important, implied by the larger font size from the `feature` class.
 {: .feature}
+
+
+The `feature` class can be applied to most elements, with special styles being provided for blockquotes, adding a large quotation mark.
+
+> Praesent odio felis, consectetur consequat vulputate ut, facilisis nec erat. Vestibulum sit amet quam pulvinar, lacinia nunc vitae, scelerisque nulla. Aliquam venenatis dui et imperdiet suscipit.
+{: .feature}
+
 
 <div class="bg-theme padder">
     <span class="twox">JumboTron</span>
@@ -237,6 +244,12 @@ They're not really a class, but **chips** from Material Design are included:
         <img src="...">
         Chip Content
     </div>
+    
+    <div class="chip">
+        Chips can also have anchors
+        <a href="#"><i class="fa fa-share"></i></a>
+        <a href="#"><i class="fa fa-close"></i></a>
+    </div>
 
 <div class="chip">
     <img src="https://octodex.github.com/images/nyantocat.gif">
@@ -245,6 +258,12 @@ They're not really a class, but **chips** from Material Design are included:
 
 <div class="chip">
     The image is optional
+</div>
+
+<div class="chip">
+    Chips can also have anchors
+    <a href="#"><i class="fa fa-share"></i></a>
+    <a href="#"><i class="fa fa-close"></i></a>
 </div>
 
 Similarly, buttons

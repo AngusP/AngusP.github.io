@@ -36,6 +36,7 @@ $serif_font: 'PT Serif','Times','Georgia','Times New Roman',serif;
 $small_font: Helvetica,'Helvetica-Neue', Arial,sans-serif;
 $cursive_font: 'Pacifico', cursive;
 $mono_font: 'Source Code Pro', monospace;
+$icon_font: normal normal normal 14px/1 FontAwesome;
 
 $header_image: '../img/library-cover-opt.jpg';
 
@@ -229,23 +230,6 @@ article {
     a:visited {
         text-decoration: none;
     }
-    
-    blockquote {
-        color: lighten($copy_colour, 30%);
-        border-left: 0.2em solid $back_d_grey;
-        margin: 1em 2em;
-        margin-left: -0.5em;
-        padding: 0.2em 2em;
-
-        cite {
-            display: block;
-            margin-top: 0.5em;
-            color: lighten($copy_colour, 50%);
-            font-weight: normal;
-            font-style: italic;
-            text-decoration: none;
-        }
-    }
 
     code {
         font-family: $mono_font;
@@ -340,7 +324,7 @@ article {
     /* Broken link style */
     img:before {
         content: "\f127";
-        font-family: FontAwesome;
+        font: $icon_font;
         display: block;
         font-size: 2rem;
         text-align: center;
@@ -375,7 +359,7 @@ article {
         a::before,
         a::before {
             content: "\f0c1"; /* Hyperlink icon */
-            font: normal normal normal 14px/1 FontAwesome;
+            font: $icon_font;
             font-size: 0.7em;
             line-height: 1.4em;
             width: 1em;
@@ -433,6 +417,10 @@ article {
 
 }
 
+.b-top-grey {
+    border-top: 0.1rem solid #eee;
+}
+
 @media screen {
     .bg-l-grey {
         background-color: $back_l_grey;
@@ -442,7 +430,7 @@ article {
         background-color: $back_d_grey;
     }
 }
-    
+   
 .bg-theme {
     background-color: $theme_colour;
     color: #FFF;
@@ -452,8 +440,29 @@ article {
     color: #FFF;
 }
 
-.b-top-grey {
-    border-top: 0.1rem solid #eee;
+blockquote {
+    color: lighten($copy_colour, 30%);
+    border-left: 0.2em solid $back_d_grey;
+    margin: 1em 0em;
+    margin-left: -0.5em;
+    padding: 0.2em 2em;
+
+    cite {
+        display: block;
+        margin-top: 0.5em;
+        color: lighten($copy_colour, 50%);
+        font-weight: normal;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    p + p {
+        margin-top: 1em;
+    }
 }
 
 .btn,
@@ -562,7 +571,8 @@ a.btn.danger {
         color: darken($back_d_grey, 60%);
         vertical-align: middle;
         margin-left: 0.5em;
-        line-height: 1.5rem;
+        margin-right: -0.5rem;
+        line-height: 1.4rem;
         transition: background-color 0.5s ease;
 
         i {
@@ -705,16 +715,12 @@ blockquote.feature {
 }
 
 blockquote.feature:before {
-    content: '\201C';
-    font-family: Georgia;
-    font-style: italic;
-    font-size: 2.6em;
-    line-height: 1em;
-    color: $theme_colour;
-    float: left;
-    height: 0.45em;
-    padding-right: 0.2em;
-    margin-left: -0.1em;
+    content: '\f10d';
+    font: $icon_font;
+    font-style: normal;
+    font-size: 1.5em;
+    color: $back_d_grey;
+    height: 1em;
 }
 
 .fold-centre {
