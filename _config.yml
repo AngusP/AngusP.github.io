@@ -36,4 +36,10 @@ sass:
 
 # Addition content types
 collections:
-- projects
+  projects:
+    output: false
+  unlisted:
+    output: true
+    layout: clear
+    permalink: /unlisted/:path/
+
