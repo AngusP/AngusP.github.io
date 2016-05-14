@@ -272,6 +272,8 @@ article {
             background: $back_d_grey;
             color: darken($back_d_grey, 50%);
             line-height: 1.2em;
+            text-align: center;
+            word-wrap: break-word;
         }
 
         figcaption:before {
