@@ -698,8 +698,6 @@ dl {
 }
 
 .feature {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     font-size: 1.3em;
     -webkit-column-span: all;
     column-span: all;
@@ -761,10 +759,7 @@ footer:hover {
 
 @media print {
     footer {
-        border: 0;
-        font-size: 0.7rem;
-        background: none;
-        color: $copy_colour;
+        display: none;
     }
 }
 
@@ -1218,7 +1213,7 @@ p { font-size: 1em; }
 }
 
 .site-nav {
-    margin-bottom: 0.1rem;
+    
 }
 
 .spacer {
