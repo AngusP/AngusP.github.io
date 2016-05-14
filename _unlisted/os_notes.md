@@ -109,10 +109,10 @@ This is achieved by the implementation of two *modes of operation*;
 
 Privileged instructions can only be executed in kernel mode.
 
-<figure class="redge sheet">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Priv_rings.svg"
-        class="padder"
+<figure class="redge sheet"
         style="max-width: 400px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Priv_rings.svg"
+        class="padder">
     <figcaption>
         x86 Architecture privelage levels.
         <br>
@@ -310,10 +310,10 @@ faults, and little time doing useful things.
 This could mean that there is not enough memory or that the memory is
 over-commited
 
-<figure class="sheet">
-    <img src="/media/pageFaultGraph.png"
-        class="padder img-responsive center"
+<figure class="sheet center"
         style="max-width: 600px;">
+    <img src="/media/pageFaultGraph.png"
+        class="padder img-responsive">
     <figcaption>Page Faults vs Number of Frames</figcaption>
 </figure>
 
@@ -374,10 +374,9 @@ to get the best performance.
 MutEx
 =====
 
-<figure class="sheet redge">
+<figure class="sheet redge" style="max-width: 500px;">
     <img src="/media/correctConcurrency.jpg"
-        class="padder img-responsive center"
-        style="max-width: 500px;">
+        class="img-responsive">
     <figcaption>Concurrency Dependencies</figcaption>
 </figure>
 
@@ -512,9 +511,9 @@ In a **producer and consumer** model, we can have many threads wishing
 to consume some data, and many that produce it. The handover of data can
 be done with a *bounded buffer*
 
-<figure class="sheet">
+<figure class="sheet center" style="max-width: 800px;">
     <img src="/media/produceConsume.jpg"
-        class="padder img-responsive center">
+        class="padder img-responsive">
     <figcaption>Producer-Consumer model</figcaption>
 </figure>
 
