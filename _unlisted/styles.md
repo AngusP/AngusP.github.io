@@ -170,7 +170,10 @@ feature
 : Bumps the font size, spans all columns and adds padding. Good for beginning an article.
 
 mark
-: Does the same as `<mark></mark> and higlights text.
+: Does the same as `<mark></mark>` and highlights text.
+
+noir
+: Same as `mark` but with white on black colouring, as opposed to theme.
 
 bg-theme, bg-theme-complement
 : Sets background to the theme colour.
@@ -207,6 +210,7 @@ truncate
 </figure>
 
 Marking and <mark>highlighting like this is Medium or something</mark> `<mark>` and `.mark` behave same.
+THere's the bolder and darker <mark class="noir">noir mark class also</mark> for super standy-outness.
 
 Muted looks like this:
 

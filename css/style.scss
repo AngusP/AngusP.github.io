@@ -997,8 +997,13 @@ img.img-responsive {
 }
 
 mark, .mark {
-    color: inherit;
-    background-color: lighten($theme_colour, 35%);
+    color: darken($theme_colour, 45%);
+    background-color: lighten($theme_colour, 25%);
+}
+
+mark.noir, .noir, .mark.noir {
+    color: #FFF;
+    background-color: #000;
 }
 
 .muted {
