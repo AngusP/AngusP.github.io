@@ -298,7 +298,7 @@ Similarly, buttons
 
 ## Fonts
 
-Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *FontAwesome* Icons and *Source Code Pro* are provided. A Helvetica based font stack for small uses (e.g. chips) is also provided.
+Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *Yeseva One*, *FontAwesome* Icons and *Source Code Pro* are provided. A Helvetica based font stack for small uses (e.g. chips) is also provided.
 
     Paragraph in PT Serif
     {: .serif}
@@ -309,18 +309,80 @@ Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *FontAwesome* Icons an
     Paragraph in Pacifico
     {: .script}
     
+    Paragraph in Yeseva One
+    {: .fancy}
+    
     Paragraph in Source Code Pro
     {: .tt}
     
     Paragraph in small font
     {: .small-font}
 
-<figure class="sheet padder">
+<figure class="sheet padder" id="font-demo">
+    <style scoped>
+        #font-demo { font-size: 1.2em; }
+        #font-demo p {
+            color: #000;
+        }
+    </style>
     <p class="serif">Paragraph in PT Serif</p>
     <p class="sans-serif">Paragraph in Montserrat</p>
     <p class="script">Paragraph in Pacifico</p>
+    <p class="fancy">Paragraph in Yeseva One</p>
     <p class="tt">Paragraph in Source Code Pro</p>
-    <p class="small-font">Paragraph in small font</p>
+    <p class="small-font halfx">Paragraph in small font</p>
+</figure>
+
+<figure class="sheet">
+    <style scoped>
+        #font-demo-2 { 
+            font-size: 2em;
+            z-index: 100;
+        }
+        #font-demo-2 .demo-quote {
+            display: block;
+            font-size: 2em;
+            height: 0.65em;
+        }
+        #font-demo-2 .demo-head {
+            padding: 0 1em;
+            margin: 0 2em;
+            font-size: 1.5em;
+            padding-bottom: 0.2em;
+            margin-bottom: 0.5em;
+            border-bottom: 0.07em solid #000;
+        }
+        #font-demo-3 {
+            font-size: 1.7em;
+            line-height: 1.5em;
+        }
+        #font-demo-4 {
+            letter-spacing: 1em;
+            font-weight: bold;
+            line-height: 3em;
+        }
+    </style>
+    <div class="padder">
+    <div class="center" id="font-demo-2">
+        <div class="fancy demo-head">
+            <span class="demo-quote">&ldquo;</span>
+            Lorem Ipsum Dolor sit Amet
+            <span class="demo-quote">&rdquo;</span>
+        </div>
+    </div>
+    <div class="center" id="font-demo-3">
+        <span class="script">
+            Vivamus porttitor metus
+        </span>
+    </div>
+    <div class="center sans-serif" id="font-demo-4">
+        &nbsp;&middot; LTD &middot;
+    </div>
+    <div style="clear: both;">&nbsp;</div>
+    </div>
+    <figcaption>
+        Demonstration of a mixed-face design
+    </figcaption>
 </figure>
 
 ### Bold
