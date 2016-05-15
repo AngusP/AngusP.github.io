@@ -335,9 +335,24 @@ Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *Yeseva One*, *FontAwe
 
 <figure class="sheet">
     <style scoped>
-        #font-demo-2 { 
-            font-size: 2em;
-            z-index: 100;
+        @media(min-width: 600px){
+            #font-demo-design { 
+                font-size: 1.5em;
+            }
+            #font-demo-2 .demo-head {
+                margin: 0 1em;
+            }
+        }
+        @media(min-width: 1600px){
+            #font-demo-design { 
+                font-size: 2em;
+            }
+            #font-demo-2 .demo-head {
+                margin: 0 2em;
+            }
+        }
+        #font-demo-design {
+            padding: 1em;
         }
         #font-demo-2 .demo-quote {
             display: block;
@@ -346,39 +361,38 @@ Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *Yeseva One*, *FontAwe
         }
         #font-demo-2 .demo-head {
             padding: 0 1em;
-            margin: 0 2em;
             font-size: 1.5em;
             padding-bottom: 0.2em;
             margin-bottom: 0.5em;
             border-bottom: 0.07em solid #000;
         }
         #font-demo-3 {
-            font-size: 1.7em;
+            font-size: 0.8em;
             line-height: 1.5em;
         }
         #font-demo-4 {
+            font-size: 0.6em;
             letter-spacing: 1em;
             font-weight: bold;
             line-height: 3em;
         }
     </style>
-    <div class="padder">
-    <div class="center" id="font-demo-2">
-        <div class="fancy demo-head">
-            <span class="demo-quote">&ldquo;</span>
-            Lorem Ipsum Dolor sit Amet
-            <span class="demo-quote">&rdquo;</span>
+    <div id="font-demo-design">
+        <div class="center" id="font-demo-2">
+            <div class="fancy demo-head">
+                <span class="demo-quote">&ldquo;</span>
+                Lorem Ipsum Dolor sit Amet
+                <span class="demo-quote">&rdquo;</span>
+            </div>
         </div>
-    </div>
-    <div class="center" id="font-demo-3">
-        <span class="script">
+        <div class="center" id="font-demo-3">
+            <span class="script">
             Vivamus porttitor metus
-        </span>
-    </div>
-    <div class="center sans-serif" id="font-demo-4">
-        &nbsp;&middot; LTD &middot;
-    </div>
-    <div style="clear: both;">&nbsp;</div>
+            </span>
+        </div>
+        <div class="center sans-serif" id="font-demo-4">
+            &nbsp;&middot; LTD &middot;
+        </div>
     </div>
     <figcaption>
         Demonstration of a mixed-face design
