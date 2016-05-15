@@ -694,7 +694,7 @@ TLB
 :   Translation Look-aside Buffer - effectively a fast cache of mappings
     from Logical to Physical addresses
 
-<makr class="noir">WORDS.</mark>
+<mark class="noir">WORDS.</mark>
 
 The size of a page is usually OS specific, sometimes architecture
 specific. Sizes in the range 4KiB to 8MiB or more are not unusual; Very
