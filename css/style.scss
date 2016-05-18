@@ -156,7 +156,7 @@ html, body {
 a,
 a:visited {
     color: darken($theme_colour, 0%);
-    text-decoration: underline;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
@@ -1008,6 +1008,13 @@ img.img-responsive {
 }
 
 mark, .mark {
+    color: inherit;
+    background-color: lighten($theme_colour, 35%);
+    transition: background-color 0.5s ease;
+}
+
+mark:hover,
+.mark:hover {
     color: darken($theme_colour, 45%);
     background-color: lighten($theme_colour, 25%);
 }
@@ -1021,10 +1028,6 @@ mark.noir, .noir, .mark.noir {
     opacity: 0.7;
 }
 
-.muted > a,
-.muted > p > a {
-    color: inherit;
-}
 
 .nav-ul {
     list-style: none;
