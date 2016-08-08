@@ -5,7 +5,16 @@ title: Archive
 
 <div class="container first">
   <header class="archive">
-    <h3>This Year</h3>
+    <h2>
+      {% assign thisyear = site.time | date: '%Y' %}
+      {% assign postyear = site.posts.first.date | date: '%Y' %}
+      
+      {% if thisyear == postyear %}
+          This Year
+      {% else %}
+          {{ postyear }}
+      {% endif %}
+    </h2>
   </header>
 </div>
 
@@ -25,7 +34,9 @@ title: Archive
 
 <div class="container">
   <header class="archive">
-    <h3>{{ post.date | date: '%Y' }}</h3>
+    <h3>
+      {{ post.date | date: '%Y' }}
+    </h3>
   </header>
 </div>
 
