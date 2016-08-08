@@ -570,6 +570,10 @@ a.btn.danger {
         border-radius: 1em;
     }
 
+    img + img {
+        margin-left: -0.5em;
+    }
+
     a {
         display: inline-block;
         width: 1.4em;
@@ -695,7 +699,7 @@ dl {
 }
 
 .em {
-    font-weight: bold;
+    font-style: italic;
 }
 
 .emcircle {
@@ -1171,6 +1175,10 @@ p { font-size: 1em; }
 
 .small-font {
     font-family: $small_font;
+}
+
+.strong {
+    font-weight: bold;
 }
 
 /* A lot like .card, but more generic */

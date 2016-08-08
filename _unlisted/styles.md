@@ -95,6 +95,182 @@ The `subhead` font size is fixed, so the choice of which heading tag to use shou
 <br>
 <br>
 
+## Fonts
+
+Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *Yeseva One*, *FontAwesome* Icons and *Source Code Pro* are provided. A Helvetica based font stack for small uses (e.g. chips) is also provided.
+
+    Paragraph in PT Serif
+    {: .serif}
+    
+    Paragraph in Montserrat
+    {: .sans-serif}
+    
+    Paragraph in Pacifico
+    {: .script}
+    
+    Paragraph in Yeseva One
+    {: .fancy}
+    
+    Paragraph in Source Code Pro
+    {: .tt}
+    
+    Paragraph in small font
+    {: .small-font}
+
+<figure class="sheet padder" id="font-demo">
+    <style scoped>
+        #font-demo { font-size: 1.2em; }
+        #font-demo p {
+            color: #000;
+        }
+    </style>
+    <p class="serif">Paragraph in PT Serif</p>
+    <p class="sans-serif">Paragraph in Montserrat</p>
+    <p class="script">Paragraph in Pacifico</p>
+    <p class="fancy">Paragraph in Yeseva One</p>
+    <p class="tt">Paragraph in Source Code Pro</p>
+    <p class="small-font halfx">Paragraph in small font</p>
+</figure>
+
+<figure class="sheet">
+    <style scoped>
+        @media(min-width: 600px){
+            #font-demo-design { 
+                font-size: 1.5em;
+            }
+            #font-demo-2 .demo-head {
+                margin: 0 1em;
+            }
+        }
+        @media(min-width: 1600px){
+            #font-demo-design { 
+                font-size: 2em;
+            }
+            #font-demo-2 .demo-head {
+                margin: 0 2em;
+            }
+        }
+        #font-demo-design {
+            padding: 1em;
+        }
+        #font-demo-2 .demo-quote {
+            display: block;
+            font-size: 2em;
+            height: 0.65em;
+        }
+        #font-demo-2 .demo-head {
+            padding: 0 1em;
+            font-size: 1.5em;
+            padding-bottom: 0.2em;
+            margin-bottom: 0.5em;
+            border-bottom: 0.07em solid #000;
+        }
+        #font-demo-3 {
+            font-size: 0.8em;
+            line-height: 1.5em;
+        }
+        #font-demo-4 {
+            font-size: 0.6em;
+            letter-spacing: 1em;
+            font-weight: bold;
+            line-height: 3em;
+        }
+    </style>
+    <div id="font-demo-design">
+        <div class="center" id="font-demo-2">
+            <div class="fancy demo-head">
+                <span class="demo-quote">&ldquo;</span>
+                Lorem Ipsum Dolor sit Amet
+                <span class="demo-quote">&rdquo;</span>
+            </div>
+        </div>
+        <div class="center" id="font-demo-3">
+            <span class="script">
+            Vivamus porttitor metus
+            </span>
+        </div>
+        <div class="center sans-serif" id="font-demo-4">
+            &nbsp;&middot; LTD &middot;
+        </div>
+    </div>
+    <figcaption>
+        Demonstration of a mixed-face design
+    </figcaption>
+</figure>
+
+<br>
+<br>
+<br>
+<br>
+
+### Bold
+For emphasizing a snippet of text with a heavier font-weight.
+
+The following snippet of text is **rendered as bold text**.
+
+    **this is bold text in Markdown**
+
+Will appear as:
+
+**this is as bold text in Markdown**
+
+The class `.strong` is also available.
+
+### Italics
+For emphasizing a snippet of text with italics.
+
+The following snippet of text is _rendered as italicized text_.
+
+    _rendered as italicized text_
+
+Appears as:
+
+_rendered as italicized text_
+
+The class `.em` is also available.
+
+
+### Caps
+
+The classes `caps` and `small-caps` successively transform everything to upper case, 
+and use the small caps variant of a font. Both increase the letter spacing to maintain readability.
+
+<em>Serif:</em>
+
+<div class="larger caps serif">
+    Cras suscipit rhoncus nibh, id sodales eros facilisis id.
+</div>
+
+<div class="larger small-caps serif">
+    Nullam non mi non mauris sodales Accumsan laoreet accumsan velit.
+</div>
+
+<em>Sans Serif:</em>
+
+<div class="larger caps sans-serif">
+    Cras suscipit rhoncus nibh, id sodales eros facilisis id.
+</div>
+
+<div class="larger small-caps sans-serif">
+    Nullam non mi non mauris sodales Accumsan laoreet accumsan velit.
+</div>
+
+<em>Small Font:</em>
+
+<div class="caps small-font smaller">
+    Cras suscipit rhoncus nibh, id sodales eros facilisis id.
+</div>
+
+<div class="small-caps small-font smaller">
+    Nullam non mi non mauris sodales Accumsan laoreet accumsan velit.
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 ## Stylistic Elements
 
@@ -266,7 +442,13 @@ They're not really a class, but **chips** from Material Design are included:
 </div>
 
 <div class="chip">
-    Chips can also have anchors
+    <img src="https://octodex.github.com/images/daftpunktocat-guy.gif">
+    <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif">
+    More than one Image
+</div>
+
+<div class="chip">
+    Chips can also have buttons
     <a href="#"><i class="fa fa-share"></i></a>
     <a href="#"><i class="fa fa-close"></i></a>
 </div>
@@ -290,173 +472,6 @@ Similarly, buttons
 </div>
 
 <div class="clearfix">&nbsp;</div>
-
-<br>
-<br>
-<br>
-<br>
-
-## Fonts
-
-Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *Yeseva One*, *FontAwesome* Icons and *Source Code Pro* are provided. A Helvetica based font stack for small uses (e.g. chips) is also provided.
-
-    Paragraph in PT Serif
-    {: .serif}
-    
-    Paragraph in Montserrat
-    {: .sans-serif}
-    
-    Paragraph in Pacifico
-    {: .script}
-    
-    Paragraph in Yeseva One
-    {: .fancy}
-    
-    Paragraph in Source Code Pro
-    {: .tt}
-    
-    Paragraph in small font
-    {: .small-font}
-
-<figure class="sheet padder" id="font-demo">
-    <style scoped>
-        #font-demo { font-size: 1.2em; }
-        #font-demo p {
-            color: #000;
-        }
-    </style>
-    <p class="serif">Paragraph in PT Serif</p>
-    <p class="sans-serif">Paragraph in Montserrat</p>
-    <p class="script">Paragraph in Pacifico</p>
-    <p class="fancy">Paragraph in Yeseva One</p>
-    <p class="tt">Paragraph in Source Code Pro</p>
-    <p class="small-font halfx">Paragraph in small font</p>
-</figure>
-
-<figure class="sheet">
-    <style scoped>
-        @media(min-width: 600px){
-            #font-demo-design { 
-                font-size: 1.5em;
-            }
-            #font-demo-2 .demo-head {
-                margin: 0 1em;
-            }
-        }
-        @media(min-width: 1600px){
-            #font-demo-design { 
-                font-size: 2em;
-            }
-            #font-demo-2 .demo-head {
-                margin: 0 2em;
-            }
-        }
-        #font-demo-design {
-            padding: 1em;
-        }
-        #font-demo-2 .demo-quote {
-            display: block;
-            font-size: 2em;
-            height: 0.65em;
-        }
-        #font-demo-2 .demo-head {
-            padding: 0 1em;
-            font-size: 1.5em;
-            padding-bottom: 0.2em;
-            margin-bottom: 0.5em;
-            border-bottom: 0.07em solid #000;
-        }
-        #font-demo-3 {
-            font-size: 0.8em;
-            line-height: 1.5em;
-        }
-        #font-demo-4 {
-            font-size: 0.6em;
-            letter-spacing: 1em;
-            font-weight: bold;
-            line-height: 3em;
-        }
-    </style>
-    <div id="font-demo-design">
-        <div class="center" id="font-demo-2">
-            <div class="fancy demo-head">
-                <span class="demo-quote">&ldquo;</span>
-                Lorem Ipsum Dolor sit Amet
-                <span class="demo-quote">&rdquo;</span>
-            </div>
-        </div>
-        <div class="center" id="font-demo-3">
-            <span class="script">
-            Vivamus porttitor metus
-            </span>
-        </div>
-        <div class="center sans-serif" id="font-demo-4">
-            &nbsp;&middot; LTD &middot;
-        </div>
-    </div>
-    <figcaption>
-        Demonstration of a mixed-face design
-    </figcaption>
-</figure>
-
-### Bold
-For emphasizing a snippet of text with a heavier font-weight.
-
-The following snippet of text is **rendered as bold text**.
-
-    **this is bold text in Markdown**
-
-Will appear as:
-
-**this is as bold text in Markdown**
-
-
-### Italics
-For emphasizing a snippet of text with italics.
-
-The following snippet of text is _rendered as italicized text_.
-
-    _rendered as italicized text_
-
-Appears as:
-
-_rendered as italicized text_
-
-
-### Caps
-
-The classes `caps` and `small-caps` successively transform everything to upper case, 
-and use the small caps variant of a font. Both increase the letter spacing to maintain readability.
-
-<em>Serif:</em>
-
-<div class="larger caps serif">
-    Cras suscipit rhoncus nibh, id sodales eros facilisis id.
-</div>
-
-<div class="larger small-caps serif">
-    Nullam non mi non mauris sodales Accumsan laoreet accumsan velit.
-</div>
-
-<em>Sans Serif:</em>
-
-<div class="larger caps sans-serif">
-    Cras suscipit rhoncus nibh, id sodales eros facilisis id.
-</div>
-
-<div class="larger small-caps sans-serif">
-    Nullam non mi non mauris sodales Accumsan laoreet accumsan velit.
-</div>
-
-<em>Small Font:</em>
-
-<div class="caps small-font smaller">
-    Cras suscipit rhoncus nibh, id sodales eros facilisis id.
-</div>
-
-<div class="small-caps small-font smaller">
-    Nullam non mi non mauris sodales Accumsan laoreet accumsan velit.
-</div>
 
 <br>
 <br>
