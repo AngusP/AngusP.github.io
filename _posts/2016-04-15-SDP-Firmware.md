@@ -63,7 +63,7 @@ Which, is equivalent to the following **Force Coupling** matrix: (Note the omega
   \]
 </figure>
 
-This translation between forward, lateral & rotational force and the application of power is done in firmware, meaning the rest of the stack needn't be aware of the specifics of this bot; Three wheel holonomic or otherwise. While the single-precision floating point we're limited to on the Arduino (`double` is a lie) makes this tricky, in practice using unit vectors and a separate magnitude multipliers prevents `NaNs` from ruining our day.
+This translation between forward, lateral & rotational force and the application of power is done in firmware, meaning the rest of the stack needn't be aware of the specifics of this bot; Three wheel holonomic or otherwise. While the single-precision floating point we're limited to on the Arduino (`double` is a lie) makes this tricky, in practice using unit vectors and a separate magnitude multipliers prevents `NaNs` from making everything explode.
 
 
 Error correcting on the fly
@@ -71,7 +71,11 @@ Error correcting on the fly
 
 While holonomics are a powerful advantage, giving the ability to move in any direction independently of rotation, this all depends on us being able to move the motors in perfect proportions to the holonomic forces we've derived using the above matrix.
 
-It's also *not* sufficient to try correcting linearly, nor is it particularly clever to guess at some function that'll do this correction for you. A full PID controller is overkill in this situation, so we employed a Gradient Descent algorithm to do these corrections during runtime, using the feedback from the rotary encoders Lego's NXT motors are equipped with. The graph below shows the uneven relationship between the rotational speeds of the motors and the applied power. The three coloured lines that are closely grouped are the three motors selected for use on or bot; The single blue line is a particularly broken motor, and the pink line indicates a stall condition.
+It's also *not* sufficient to try correcting linearly, nor is it particularly clever to guess at some function that'll do this correction for you. The graph below shows the uneven relationship between the rotational speeds of the motors and the applied power. 
+
+The motors were run from -100% to 100% power _quickly_, so this graph only shows how the rotational speeds are unstable, not that the power doesn't correlate to speed. The three coloured lines that are closely grouped are the three motors selected for use on or bot; The single blue line is a particularly broken motor, and the pink line indicates a stall condition - if the motor is running below this line, we're probably trying to shove a wall or robot around.
+
+A full PID controller is probably overkill in this situation, so we employed a Gradient Descent algorithm to do these corrections during runtime, using the feedback from the rotary encoders Lego's NXT motors are equipped with.
 
 ![Graph showing uneven response of motors](/media/2016-04-15-sdp-motors.jpg)
 
@@ -83,7 +87,7 @@ So, without further ado, the correction maths on the robot: The error vector $$\
   \]
 </figure>
 
-$$k$$ is the learning rate, which varies the granularity with which we'll correct, hopefully resulting in a smooth correction with no over-reactions. Tuning this constant has the greatest effect on how the corrective system behaves; We used a value of around 0.1, which is quite conservative but very smooth given corrections are being made 20 times a second.
+$$k$$ is the learning rate, which varies the granularity with which we'll correct, hopefully resulting in a smooth correction with no over-reactions. Tuning this constant has the greatest effect on how the corrective system behaves; We used a value of around 0.1, which is quite conservative but very smooth given corrections are being made 20 times a second. This also prevents the robot from confusing a sudden commanded change in direction with a massive error, given the controller isn't complex enough to model the fact we can't instantaneously change direction.
 
 The new powers we need to apply to the motors, $$\hat{c'}$$ to reduce the error with respect to the previous $$\hat{c}$$ and error $$\hat{e}$$ is
 
@@ -178,3 +182,21 @@ void loop()
 {% endhighlight %}
 
 
+<div class="sheet tt">
+    <div class="padder">
+        <h2>
+            Source Code
+        </h2>
+        <p>
+            2016 Group 1A SDP Firmware is here: <br>
+            <a href="https://github.com/AngusP/sdp-firmware">https://github.com/AngusP/sdp-firmware</a>
+        </p>
+        <p>
+            Strategy &amp; other repositories are here:<br>
+            <a href="https://bitbucket.org/sdpateam/">https://bitbucket.org/sdpateam/</a>
+        </p>
+    </div>
+</div>
+
+Edited 2016-08-08
+{: .smaller .muted .em}
