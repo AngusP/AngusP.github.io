@@ -3,6 +3,16 @@ title: Posts
 layout: default
 ---
 
+<!--div class="container vspace skinny">
+  <aside class="center">
+    <a class="btn btn-default" href="{{ site.baseurl }}/posts/archive">
+      <i class="fa fa-calendar-o"></i>
+      <span class="spacer"></span>
+      Post Archive
+    </a>
+  </aside>
+</div-->
+
 {% for post in paginator.posts %}
 
   {% if post.hero %}

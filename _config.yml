@@ -22,6 +22,8 @@ navigation:
    url: /portfolio/
  - text: Posts
    url: /posts/
+ - text: Archive
+   url: /posts/archive/
 
 # Build Settings
 paginate: 3
