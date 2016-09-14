@@ -197,6 +197,21 @@ void loop()
         </p>
     </div>
 </div>
+<br>
+<div class="sheet tt">
+    <div class="padder">
+        <h3>
+            Suggested Reading/Information
+        </h3>
+        <p>
+            Robocup Small Size League (SSL) vision system: <br>
+            <a href="https://github.com/roboime/ssl-vision">https://github.com/roboime/ssl-vision</a>
+        </p>
+        <p class="smaller">
+            It's designed for use in the big inter-university robot football league and is very similar to the SDP in tyerms of rules and design; It's also easily better than any vision system that'll ever be written for SDP, and won't take more than a day to get working... Use it.
+        </p>
+    </div>
+</div>
 
-Edited 2016-08-08
+Edited 2016-09-14
 {: .smaller .muted .em}
