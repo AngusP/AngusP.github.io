@@ -11,7 +11,7 @@ layout: default
   <div class="container wide vspace last">
 
     {% assign projects = site.projects | sort 'date' | reverse %}
-    {% assign mod = projects | size | plus: 1 | modulo:2 %}
+    {% assign mod = projects | size | modulo:2 %}
     
     {% for project in projects %}
       
