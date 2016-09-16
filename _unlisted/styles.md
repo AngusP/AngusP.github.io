@@ -337,7 +337,7 @@ redge, ledge
 : Floats off to the right or left edge. Won't float on small displays, responsively pulls itself further out of the content box.
 
 halfx, smaller, bigger, twox, threex, fourx, fivex
-: Apply em scales on an element, smaller and bigger are respectively `0.8em` and `1.5em
+: Apply em scales on an element, smaller and bigger are respectively `0.8em` and `1.5em`
 
 muted
 : Sets the opacity to about 75%

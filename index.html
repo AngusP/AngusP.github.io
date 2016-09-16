@@ -38,6 +38,7 @@ layout: basic
 
     {% assign projects = site.projects | sort 'date' | reverse %}
     {% assign mod = projects | size | plus: 1 | modulo:3 %}
+    {% assign numprojects = site.projects | size %}
     
     {% for project in projects limit:9 %}
     
@@ -75,6 +76,13 @@ layout: basic
       </a>
     </div>
 
+    {% if numprojects > 0 %}
+    <div class="center muted sans-serif caps smaller">
+      See all {{ numprojects }} projects
+      <br>
+    </div>
+    {% endif %}
+
   </div><!-- Terminating row  -->
 </div>
 
@@ -91,7 +99,7 @@ layout: basic
 <div class="container last">
   <section class="archive">
     <ul class="this">    
-      {% for post in site.posts limit:5 %}
+      {% for post in site.posts limit:6 %}
       <a href="{{ post.url }}">
         <li>
           {{ post.title }}
@@ -102,6 +110,8 @@ layout: basic
     </ul>
   </section>
   
+  {% assign numposts = site.posts | size %}
+
   <div class="center padder">
     <a href="{{ site.baseurl }}/posts/" class="btn">
       <i class="fa fa-paper-plane"></i> <span class="spacer"></span>
@@ -113,6 +123,14 @@ layout: basic
       Archive
     </a>
   </div>
+
+  {% if numposts > 0 %}
+  <div class="center muted sans-serif caps smaller">
+    Totalling {{ numposts }} posts
+    <br>
+  </div>
+  {% endif %}
+
 </div>
 
 {% include footer.html %}
