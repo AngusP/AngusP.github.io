@@ -330,6 +330,12 @@ vspace
 sheet
 : Adds a Material Design drop shadow to the element.
 
+card
+: Material Design card, with hoverable drop shadow.
+
+card-head
+: Header within a `card` element
+
 hoverable
 : Extends `sheet` with a drop shadow that grows on hover.
 
@@ -469,6 +475,21 @@ Similarly, buttons
     <a class="btn danger">
         I do nothing.
     </a>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <a href="#">
+                <img src="https://octodex.github.com/images/privateinvestocat.jpg"
+                    class="img-responsive">
+            </a>
+            <div class="center padder">
+                <strong>Material Design Card</strong>
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
 </div>
 
 <div class="clearfix">&nbsp;</div>

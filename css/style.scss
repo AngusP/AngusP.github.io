@@ -53,6 +53,7 @@ $breakpoint_md: 70rem;
 $breakpoint_lg: 100rem;
 
 /* Material lighting cues */
+$zshadow_0: 0rem 0.1rem 0.3rem 0rem rgba(0,0,0,0.1);
 $zshadow_1: 0rem 0.2rem 0.6rem 0rem rgba(0,0,0,0.3);
 $zshadow_2: 0rem 0.6rem   2rem 0rem rgba(0,0,0,0.4);
 
@@ -528,6 +529,7 @@ a.btn.danger {
     background: #FFF;
     color: #333;
     transition: box-shadow 0.3s ease, margin 0.3s ease;
+    box-shadow: $zshadow_0;
 }
 
 @media screen and (min-width: $breakpoint_sm){
