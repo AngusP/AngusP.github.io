@@ -31,7 +31,7 @@ _{The first question Musk answers is not included in the recording.}_
 Musk:
 {:.small-caps.strong}
 
-> Any [enterprise you can imagine] on Mars, things that are, we [take for granted] on Earth as well as things that we [couldn't ...] bring to Mars, so we're [not being/doing anything] specific, our goal is to get people there, we'll need to construct the initial propellant plant to produce [much] propellant on Mars, and so the initial, [obviously] the Mars spaceport and the sort of the beginnings of [a key] central element [of] a Mars base and then thereafter, you know we wanna [... ...]. Um, and we definitely wanna make sure we [guarantee] strength upon the opportunities that people may have to create things on Mars, and [it doesn't look like] SpaceX is just gonna do that then they [they'll] be less willing to do it so we want to try and create a conduit to Mars to enable people to do an incredible [number of] things there. And just [to be specific] it would [be how we made California] really, um, we'd like to have it be that way for Mars. I think there is, um, I'm not too worried about safety on the way there from radiation, I think that's basically is _{Gets cut off by question}_
+> Any [enterprise you can imagine] on Mars, things that are, we [take for granted] on Earth as well as things that we [couldn't ...] bring to Mars, so we're [not being/doing anything] specific, our goal is to get people there, we'll need to construct the initial propellant plant to produce [much] propellant on Mars, and so the initial, [obviously] the Mars spaceport and the sort of the beginnings of [a key] central element [of] a Mars base and then thereafter, you know we wanna [... ...]. Um, and we definitely wanna make sure we [guarantee] strength upon the opportunities that people may have to create things on Mars, and [it doesn't look like] SpaceX is just gonna do that then they [they'll] be less willing to do it so <mark>we want to try and create a conduit to Mars to enable people to do an incredible [number of] things there.</mark> And just [to be specific] it would [be how we made California] really, um, we'd like to have it be that way for Mars. I think there is, um, I'm not too worried about safety on the way there from radiation, I think that's basically is _{Gets cut off by question}_
 
 01:26
 {:.muted.smaller.right}
@@ -46,7 +46,7 @@ Question Asker 1:
 Musk:
 {:.small-caps.strong}
 
-> Yeah yeah, I think those are potentially solved problems, we've been able to have [absolute/astronaut involvement] for over a year and this is a three month [journey], really I think that's more or less a solved problem, you could do it in a more [mass ...] way, it's not a [...] new technology [keeping people alive] in space. I would say that's fairly straightforward. I'd say the challenge really is getting there, and the huge challenge is getting is [taking if from being], erm, the cost [low] enough people to make it a self sustaining civilisation, that's the [monumental] challenge.
+> Yeah yeah, I think those are potentially solved problems, we've been able to have [absolute/astronaut involvement] for over a year and this is a three month [journey], really I think that's more or less a solved problem, you could do it in a more [mass ...] way, it's not a [...] new technology [keeping people alive] in space. I would say that's fairly straightforward. I'd say the challenge really is getting there, and the huge challenge is getting is [taking it from being], erm, the cost [low] enough people to make it a self sustaining civilisation, that's the [monumental] challenge.
 
 02:26
 {:.muted.smaller.right}
@@ -145,7 +145,7 @@ Question Asker 5 (PBS):
 Musk:
 {:.small-caps.strong}
 
-> [Stuff] that I can't control? Well I guess there's always space [and fortune]. Really the pace of progress on Mars depends on the pace of progress of SpaceX to work [...] achieve a good launch [rate], our success rate with Falcon 9 is roughly 93%, it's not out of [...] with some launch vehicles, it needs to be a lot better, and we, the Falcon Heavy the launch timeline, schedule to, and make sure that we [...] [that we've got sufficient cashflow to] fund launch [properly], and of course I will [double ...] personally. There's a big committee of individuals who want to do that, and [...] some point in there future there may be a, well I have no idea if there will be but there might be a NASA [COTS] programme, or something like that, [...]necessary really, this is ultimately about maximising probability that the future is good and minimising existential risk, so I think [whatever means] increases that probability is good. So I think fundamental [technical] obstacles to what we've proposed [...] [a lot of quality engineering]
+> [Stuff] that I can't control? Well I guess there's always space [and fortune]. Really the pace of progress on Mars depends on the pace of progress of SpaceX to work [...] achieve a good launch [rate], our success rate with Falcon 9 is roughly 93%, it's not out of [...] with some launch vehicles, it needs to be a lot better, and we, the Falcon Heavy the launch timeline, schedule to, and make sure that we [...] [that we've got sufficient cashflow to] fund launch [properly], and of course I will [double ...] personally. There's a big committee of individuals who want to do that, and [...] some point in there future there may be a, well I have no idea if there will be but there might be a NASA [COTS] programme, or something like that, [...]necessary really, <mark>this is ultimately about maximising probability that the future is good and minimising existential risk</mark>, so I think [whatever means] increases that probability is good. So I think fundamental [technical] obstacles to what we've proposed [...] [a lot of quality engineering]
 
 10:30
 {:.muted.smaller.right}
@@ -176,7 +176,7 @@ Question Asker 7:
 Musk:
 {:.small-caps.strong}
 
-> I haven't actually [...]... I mean, less that 5% of SpaceX's resources are working on the Interplanetary Transport System, so it is very much a secondary or tertiary priority to [understanding] exactly what happened on the last mission _{AMOS6}_, last [...] flight, or almost flight, the most taxing and difficult thing, um yeah. It would be incorrect to say it's anything other than our absolute top priority to understand exactly what went wrong there and what we can do to prevent anything like that in the future. [We've] eliminated all the obvious possibilities for what occurred there so what remains are the less probable answers. But anyway this is the [small gains] on a long road. There will probably be other failures in the future, and we've not lost a single contract as a result of the it, people in the launch business understand that is something happens with SpaceX it gets, I dunno, 100 times more press than if another rocket fails. Maybe 1000. And so the public tends to think only our rocket fails but actually lots of rockets fail.
+> I haven't actually [...]... I mean, less that 5% of SpaceX's resources are working on the Interplanetary Transport System, so it is very much a secondary or tertiary priority to [understanding] exactly what happened on the last mission _{AMOS6}_, <mark>last [...] flight, or almost flight</mark>, the most taxing and difficult thing, um yeah. It would be incorrect to say it's anything other than our absolute top priority to understand exactly what went wrong there and what we can do to prevent anything like that in the future. [We've] eliminated all the obvious possibilities for what occurred there so what remains are the less probable answers. But anyway this is the [small gains] on a long road. There will probably be other failures in the future, and we've not lost a single contract as a result of the it, people in the launch business understand that is something happens with SpaceX it gets, I dunno, 100 times more press than if another rocket fails. Maybe 1000. And so the public tends to think only our rocket fails but actually lots of rockets fail.
 
 14:27
 {:.muted.smaller.right}
@@ -191,7 +191,7 @@ Question Asker 8 (New York Times):
 Musk:
 {:.small-caps.strong}
 
-> Um yeah, when I founded SpaceX I had no expectation of any government contracts, I [funded] SpaceX with entirely my own money, [I had] about $180Million from selling PayPal to Ebay, [approximately] $100Million went into SpaceX, $70Million went to Tesla, $10Million to SolarCity, [...] everything actually but uh I expected the most likely outcome was failure, originally I thought I would spend [$50Million] on SpaceX and have $20Million left over but then [I didn't want to see my baby die] so I put all in. The I [...] somehow I [...] money by various arseholes out there, really, so... NASA is our most significant customer, we do about [20 of our launches] but 3/4 of our launches are commercial. In the future, there may be a NASA contract, there may not be, I don't know. If there is that's a good thing, if there's not probably not a good thing, because there's [larger issues than space] here, are we humans gonna become a multiplanetary species or not? Not [pedestrian _{?}_] questions of is it public or private or what percentage of [.....] small and [...] questions.
+> Um yeah, when I founded SpaceX I had no expectation of any government contracts, I [funded] SpaceX with entirely my own money, [I had] about $180Million from selling PayPal to Ebay, [approximately] $100Million went into SpaceX, $70Million went to Tesla, $10Million to SolarCity, [...] everything actually but uh I expected the most likely outcome was failure, originally I thought I would spend [$50Million] on SpaceX and have $20Million left over but then [I didn't want to see my baby die] so I put all in. The I [...] somehow I [...] money by various arseholes out there, really, so... NASA is our most significant customer, we do about [20 of our launches] but 3/4 of our launches are commercial. In the future, there may be a NASA contract, there may not be, I don't know. If there is that's a good thing, if there's not probably not a good thing, because there's [larger issues than space] here, are we humans gonna become a multiplanetary species or not? Not [pestering] questions of is it public or private or what percentage of [.....] small and [...] questions.
 
 16:37
 {:.muted.smaller.right}
@@ -236,7 +236,7 @@ Question Asker 11 (National Geographic):
 Musk:
 {:.small-caps.strong}
 
-> We've really not seen any sign of surface life on Mars, there's clearly nothing on the surface of Mars. There may be subterranean [neurotropic] bacteria, I suspect they're pretty hardy and there's not much we could do to take them out even if we wanted to. So that's what we're really talking about in terms of planetary protection. The planet we should consider protecting is Earth - that's where life exists as we know it, in abundance. [To a certain extent] we are life's [agents], we can bring life as we know it and breathe life into Mars where it [isn't] today, and ensure that if there is some kind of cataclysmic event on Earth that life as we know it continues to exist.
+> We've really not seen any sign of surface life on Mars, there's clearly nothing on the surface of Mars. There may be subterranean [neurotropic] bacteria, I suspect they're pretty hardy and there's not much we could do to take them out even if we wanted to. So that's what we're really talking about in terms of planetary protection. <mark>The planet we should consider protecting is Earth - that's where life exists as we know it, in abundance. [To a certain extent] we are life's [agents], we can bring life as we know it and breathe life into Mars where it [isn't] today, and ensure that if there is some kind of cataclysmic event on Earth that life as we know it continues to exist.</mark>
 
 22:03
 {:.muted.smaller.right}
@@ -251,7 +251,7 @@ Question Asker 12:
 Musk:
 {:.small-caps.strong}
 
-> Well you know I do have another day job... Tesla is doing electric [cars], solar power, [I think] important part of making Earth's future good, we have to have sustainable energy generation, energy consumption, and the one thing I forgot to mention actually [is the fact] that we're going to use solar power on Mars to create fuel and oxygen, that same [thing] in the long [term] could be extended to Earth, where we can actually extract CO<sub>2</sub> from the atmosphere, combine it with water and [bind] it to form CH<sub>4</sub>O<sub>2</sub> _{sic}_, so in the long term it could be equally sustainable fuel source on Earth as well. 
+> Well you know I do have another day job... Tesla is doing electric [cars], solar power, [I think] important part of making Earth's future good, we have to have sustainable energy generation, energy consumption, and the one thing I forgot to mention actually [is the fact] that we're going to use solar power on Mars to create fuel and oxygen, that same [thing] in the long [term] could be extended to Earth, where we can actually extract CO<sub>2</sub> from the atmosphere, combine it with water and [bind] it to form CH<sub>4</sub>O<sub>2</sub>, so in the long term it could be equally sustainable fuel source on Earth as well. 
 
 23:12
 {:.muted.smaller.right}
@@ -266,14 +266,14 @@ Question Asker 13:
 Musk:
 {:.small-caps.strong}
 
-> You mean the Mars Oasis thing or... Soory [what's your question?]
+> You mean the Mars Oasis thing or... Sorry [what's your question?]
 
 23:28
 {:.muted.smaller.right}
 Question Asker 13:
 {:.small-caps.strong.right}
 
-> You think you could [erase protection] on Mars or?
+> You think you could [erase/release protection] on Mars or?
 {:.right}
 
 23:31
@@ -443,7 +443,7 @@ Random Audience Member
 Musk:
 {:.small-caps.strong}
 
-> Energy shields?! Uh
+> <mark>Energy shields?! Uh</mark>
 
 30:44
 {:.muted.smaller.right}
@@ -533,7 +533,7 @@ Musk or Moderator:
 
 ### Errata
 
-For corrections or issues this page is versioned with Git, an issue can be opened [on GitHub](https://github.com/AngusP/AngusP.github.io/issues) relating to [this file](https://github.com/AngusP/AngusP.github.io/blob/master/_posts/2016-10-04-IAC_Press-Conf-Transcript.md).
+For corrections or issues, this page is versioned with Git, an issue can be opened [on GitHub](https://github.com/AngusP/AngusP.github.io/issues) relating to [this file](https://github.com/AngusP/AngusP.github.io/blob/master/_posts/2016-10-04-IAC_Press-Conf-Transcript.md).
 
 </div>
 <br>
