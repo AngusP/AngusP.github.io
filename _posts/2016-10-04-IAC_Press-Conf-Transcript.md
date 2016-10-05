@@ -46,7 +46,7 @@ Question Asker 1:
 Musk:
 {:.small-caps.strong}
 
-> Yeah yeah, I think those are potentially solved problems, we've been able to have [absolute/astronaut involvement] for over a year and this is a three month [journey], really I think that's more or less a solved problem, you could do it in a more [mass ...] way, it's not a [...] new technology [keeping people alive] in space. I would say that's fairly straightforward. I'd say the challenge really is getting there, and the huge challenge is getting is [taking it from being], erm, the cost [low] enough people to make it a self sustaining civilisation, that's the [monumental] challenge.
+> Yeah yeah, I think those are potentially solved problems, we've been able to have [astronauts on orbit] for over a year and this is a three month [journey], really I think that's more or less a solved problem, you could do it in a more [mass ...] way, it's not a [...] new technology [keeping people alive] in space. I would say that's fairly straightforward. I'd say the challenge really is getting there, and the huge challenge is getting - is [taking it from being], erm, the cost [low] enough people to make it a self sustaining civilisation, that's the [monumental] challenge.
 
 02:26
 {:.muted.smaller.right}
@@ -65,7 +65,7 @@ Musk:
 
 04:12
 {:.muted.smaller.right}
-Question Asker 2:
+Question Asker 2 (Reuters):
 {:.small-caps.strong.right}
 
 > Thanks, and then [finally] your personal investment in this, and you're chairman Tesla, SolarCity what do you [...] if anything [to fund it]?
@@ -130,7 +130,7 @@ Question Asker 4:
 Musk:
 {:.small-caps.strong}
 
-> [...] It's essentially about having to spacecraft, ahem, dock, mate and exchange fluids (certainly a joke in there somewhere). [We've] already docked with the space station, and [or technically berthing,] it'll be an autonomous docking, probably an autonomous docking capability around the end of next year, and so having fully autonomous docking capability basically gives you on-orbit [refilling]. I [...] refuelling, I use the word refilling because there's 3 and a half times as much oxygen as there is fuel and the [oxy fuel ratio ... so really it's] reoxing _{sic}_ [rather than] refuelling, that's actually what it amounts to. Actually I think that's going to be a relatively straightforward element, if we can dock with the space station which is a very complex docking manoeuvre, the natural [requirements] for [space] docking then having [...] docking is not too much of a [call].
+> [...] <mark>It's essentially about having to spacecraft, ahem, dock, mate and exchange fluids (certainly a joke in there somewhere).</mark> [We've] already docked with the space station, and [or technically berthing,] it'll be an autonomous docking, probably an autonomous docking capability around the end of next year, and so having fully autonomous docking capability basically gives you on-orbit [refilling]. I [...] refuelling, I use the word refilling because there's 3 and a half times as much oxygen as there is fuel and the [oxy fuel ratio ... so really it's] reoxing _{sic}_ [rather than] refuelling, that's actually what it amounts to. Actually I think that's going to be a relatively straightforward element, if we can dock with the space station which is a very complex docking manoeuvre, the natural [requirements] for [space] docking then having [...] docking is not too much of a [call].
 
 08:30
 {:.muted.smaller.right}
@@ -285,7 +285,7 @@ Musk:
 
 24:23
 {:.muted.smaller.right}
-Question Asker 13: _{Possibly 14}_
+Question Asker 13:
 {:.small-caps.strong.right}
 
 > [So do yo have] the intention to terraform Mars and what the method is for that?
