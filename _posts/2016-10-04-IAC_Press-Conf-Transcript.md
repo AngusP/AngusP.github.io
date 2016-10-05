@@ -357,12 +357,13 @@ Musk:
 {:.small-caps.strong}
 
 _{Note, this answer is clearer because of an [altenate recording](https://twitter.com/Tschnn/status/781245003133616129)}_
+{:.muted}
 
 > Oh launch abort, the spacecraft itself is capable of aborting from the booster, the erm... Launch abort on the spaceship itself is kinda pointless, if you're on Mars you're taking off or you're not taking off. You know, parachutes don't work too well and [you can't have] some standard abort system, and just how do you abort 100 people it's just not feasible, the key is to make the spaceship itself extremely safe and reliable, and have redundancy in the engines, high safety margins and have [it be] well tested. Much like a commercial airliner. Like they don't give you parachutes.
 
 27:22
 {:.muted.smaller.right}
-Question Asker 15:
+Question Asker 15 (Thomas Schumann, Scienceblog.dk):
 {:.small-caps.strong.right}
 
 > But you're saying the vehicle itself would be able to separate from the booster?
