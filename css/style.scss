@@ -21,6 +21,8 @@ $theme_complement: {% if site.theme_complement %}{{ site.theme_complement }};
 {% else %}{{ site.theme_colour }};
 {% endif %}
 
+$select_colour: saturate(lighten($theme_colour, 25%), 20%);
+
 $copy_colour: #181818;
 
 $back_l_grey: #f8f8f8;
@@ -81,8 +83,8 @@ html, body {
 }
 
 ::selection {
-    background: black;
-    color: white;
+    background: $select_colour;
+    color: #000;
 }
 
 ::-webkit-scrollbar {
@@ -467,12 +469,20 @@ blockquote {
     }
 
     p {
+        color: inherit;
         margin: 0;
     }
 
     p + p {
         margin-top: 1em;
     }
+}
+
+blockquote.right{
+    border-left: none;
+    margin-left: 0em;
+    border-right: 0.2em solid $back_d_grey;
+    margin-right: -0.5em;
 }
 
 .btn,
@@ -547,7 +557,7 @@ a.btn.danger {
 }
 
 .center {
-    text-align: center;
+    text-align: center !important;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1015,14 +1025,14 @@ img.img-responsive {
 
 mark, .mark {
     color: inherit;
-    background-color: lighten($theme_colour, 35%);
-    transition: background-color 0.5s ease;
+    background-color: $select_colour;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 mark:hover,
 .mark:hover {
-    color: darken($theme_colour, 45%);
-    background-color: lighten($theme_colour, 25%);
+    color: #000;
+    background-color: darken($select_colour, 10%);
 }
 
 mark.noir, .noir, .mark.noir {
@@ -1138,6 +1148,10 @@ p { font-size: 1em; }
 }
 .pull-left {
     float: left;
+}
+
+.right {
+    text-align: right !important;
 }
 
 .sans-serif {

@@ -95,6 +95,18 @@ The `subhead` font size is fixed, so the choice of which heading tag to use shou
 <br>
 <br>
 
+## Alignment
+
+The classes `.right` and `.center` change from the default alignment to the left.
+
+> Blockquotes will behave differently with `.right`, displaying a border on the right instead of left.
+{:.right}
+
+> This gives a more conversational quotation style.
+
+This is centered text.
+{:.center}
+
 ## Fonts
 
 Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *Yeseva One*, *FontAwesome* Icons and *Source Code Pro* are provided. A Helvetica based font stack for small uses (e.g. chips) is also provided.
@@ -372,6 +384,12 @@ columnar
 truncate
 : Sets overflow hidden, white-space no wrap and adds a trailing hellipsis.
 
+right
+: Sets text alignment to the right
+
+center
+: Sets central text alignment
+
 <figure class="ledge" style="max-width: 400px;">
     <blockquote>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper est sit amet velit accumsan, vel efficitur elit suscipit.
@@ -392,7 +410,7 @@ truncate
 </figure>
 
 Marking and <mark>highlighting like this is Medium or something</mark> `<mark>` and `.mark` behave same.
-THere's the bolder and darker <mark class="noir">noir mark class also</mark> for super standy-outness.
+There's the bolder and darker <mark class="noir">noir mark class also</mark> for super standy-outness.
 
 Muted looks like this:
 
