@@ -7,14 +7,11 @@ hero: 2016-10-04-iac-hero.jpg
 Image credit: SpaceX
 {:.muted.halfx.small-font}
 
-Transcript:
------------
-
 <figure class="redge padder sheet smaller" style="max-width: 25em;" markdown="1">
 
 ### Meta
 
-Hesitations have been edited out for readability's sake, unless they are contextually useful. Words that I was unable to hear are marked within square brackets: [...]. Any words I'm unsure about are also in [square brackets]. My comments are in _{Curly braces}_.
+Hesitations have been edited out for readability's sake, unless they are contextually useful. Words that I was unable to hear are marked within square brackets: [...]. Any words I'm unsure about are also in [square brackets]. My comments are in _{Curly braces}_. <mark>Emphasis</mark> is mine.
 
 This is the transcript taken from the below recording, with times added above each speaker.
 
@@ -206,7 +203,7 @@ Question Asker 9 (Aviation Week):
 Musk:
 {:.small-caps.strong}
 
-> Really we wanna use Dragon, Dragon 2 as [a] pathfinder, if it's anything to go by. We need to sort out interplanetary navigation, [deep space] communication [at] high bandwidth, uh, there's currently no high-bandwidth deep-space communication system, and then entering the Mars atmosphere, and landing. What's landing like if you're heavy - I mean, Dragon will be about 10 times heavier than anything that's landed on Mars before, and it will land with thrusters close to the surface. So with Curiosity they [really were concerned about having thrusters close to the surface, which is why they used] this sort of hovering thing, there's no way to do that with a giant Spaceship. [There's key questions like] if you're coming in hot and fast, then you ou dig a big hole in the ground. What kind of dust and rocks do you throw up? The Mars [surface is actually] pretty hard, how well does it hold up to rocket blasts? [They're all tough] questions. I wouldn't give the first Dragon landing high odds, maybe [50%], maybe 50%. The history of landing on Mars is not a good one, [actually for] those familiar with Mars. SO for a first timer I'd say pretty good - [if we have] a 50% likelihood I'd say that's pretty good. We're just [gotta think about] all the issues, sending them on every opportunity, maybe sending 2 in 2020 and then also we wanna find out what's the easiest way to get water - because water's [useful] for doing the [local] propellant production. Carbon Dioxide is easy, it's in the atmosphere. So we're looking to make sure the dust filters, you can clean the dust filters [but getting the CO<sub>2</sub> should be easy]. Getting the water, much harder. There's ice all over Mars, but in what form, how dirty is the ice, how much energy do you need to use to extract the water, because there's only a small water percentage per unit mass of the regolith, you're [gonna use] more energy to heat it, to purify it so how to [deal with ... is one of the biggest issues.]
+> Really we wanna use Dragon, Dragon 2 as [a] pathfinder, if it's anything to go by. We need to sort out interplanetary navigation, [deep space] communication [at] high bandwidth, uh, there's currently no high-bandwidth deep-space communication system, and then entering the Mars atmosphere, and landing. What's landing like if you're heavy - I mean, Dragon will be about 10 times heavier than anything that's landed on Mars before, and it will land with thrusters close to the surface. So with Curiosity they [really were concerned about having thrusters close to the surface, which is why they used] this sort of hovering thing, there's no way to do that with a giant Spaceship. [There's key questions like] if you're coming in hot and fast, then you ou dig a big hole in the ground. What kind of dust and rocks do you throw up? The Mars [surface is actually] pretty hard, how well does it hold up to rocket blasts? [They're all tough] questions. I wouldn't give the first Dragon landing high odds, maybe [50%], maybe 50%. The history of landing on Mars is not a good one, [actually for] those familiar with Mars. So for a first timer I'd say pretty good - [if we have] a 50% likelihood I'd say that's pretty good. We're just [gotta think about] all the issues, sending them on every opportunity, maybe sending 2 in 2020 and then also we wanna find out what's the easiest way to get water - because water's [useful] for doing the [local] propellant production. Carbon Dioxide is easy, it's in the atmosphere. So we're looking to make sure the dust filters, you can clean the dust filters [but getting the CO<sub>2</sub> should be easy]. Getting the water, much harder. There's ice all over Mars, but in what form, how dirty is the ice, how much energy do you need to use to extract the water, because there's only a small water percentage per unit mass of the regolith, you're [gonna use] more energy to heat it, to purify it so how to [deal with ... is one of the biggest issues.]
 
 20:00
 {:.muted.smaller.right}
@@ -537,6 +534,8 @@ Musk or Moderator:
 ### Errata
 
 For corrections or issues, this page is versioned with Git, an issue can be opened [on GitHub](https://github.com/AngusP/AngusP.github.io/issues) relating to [this file](https://github.com/AngusP/AngusP.github.io/blob/master/_posts/2016-10-04-IAC_Press-Conf-Transcript.md).
+
+First appeared in commit [bcd8757](https://github.com/AngusP/AngusP.github.io/commit/bcd87571419716bc5176ee752d5279fd4102c879)
 
 </div>
 <br>
