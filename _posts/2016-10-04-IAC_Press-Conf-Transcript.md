@@ -236,7 +236,7 @@ Question Asker 11 (National Geographic):
 Musk:
 {:.small-caps.strong}
 
-> We've really not seen any sign of surface life on Mars, there's clearly nothing on the surface of Mars. There may be subterranean [neurotropic] bacteria, I suspect they're pretty hardy and there's not much we could do to take them out even if we wanted to. So that's what we're really talking about in terms of planetary protection. <mark>The planet we should consider protecting is Earth - that's where life exists as we know it, in abundance. [To a certain extent] we are life's [agents], we can bring life as we know it and breathe life into Mars where it [isn't] today, and ensure that if there is some kind of cataclysmic event on Earth that life as we know it continues to exist.</mark>
+> We've really not seen any sign of surface life on Mars, there's clearly nothing on the surface of Mars. There may be subterranean [chemotrophic] bacteria, I suspect they're pretty hardy and there's not much we could do to take them out even if we wanted to. So that's what we're really talking about in terms of planetary protection. <mark>The planet we should be concerned protecting is Earth - that's where life exists as we know it, in abundance. [To a certain extent] we are life's [agents], we can bring life as we know it and breathe life into Mars where it [doesn't exist] today, and ensure that if there is some kind of cataclysmic event on Earth that life as we know it continues to exist.</mark>
 
 22:03
 {:.muted.smaller.right}
@@ -251,7 +251,7 @@ Question Asker 12:
 Musk:
 {:.small-caps.strong}
 
-> Well you know I do have another day job... Tesla is doing electric [cars], solar power, [I think] important part of making Earth's future good, we have to have sustainable energy generation, energy consumption, and the one thing I forgot to mention actually [is the fact] that we're going to use solar power on Mars to create fuel and oxygen, that same [thing] in the long [term] could be extended to Earth, where we can actually extract CO<sub>2</sub> from the atmosphere, combine it with water and [bind] it to form CH<sub>4</sub>O<sub>2</sub>, so in the long term it could be equally sustainable fuel source on Earth as well. 
+> Well you know I do have another day job... Tesla is doing electric [cars and] solar power, [I think] important part of making Earth's future good, we have to have sustainable energy generation, energy consumption, and the one thing I forgot to mention actually [is the fact] that we're going to use solar power on Mars to create fuel and oxygen, that same [thing] in the long [term] could be extended to Earth, where we can actually extract CO<sub>2</sub> from the atmosphere, combine it with water and [bind] it to form CH<sub>4</sub>O<sub>2</sub>, so in the long term it could be equally sustainable fuel source on Earth as well. 
 
 23:12
 {:.muted.smaller.right}
@@ -273,7 +273,7 @@ Musk:
 Question Asker 13:
 {:.small-caps.strong.right}
 
-> You think you could [erase/release protection] on Mars or?
+> You think you could [raise the pressure] on Mars or?
 {:.right}
 
 23:31
@@ -326,14 +326,14 @@ Question Asker 14:
 Musk:
 {:.small-caps.strong}
 
-> Well I think it's [trying to ... one planet ... eventual] extinction event.
+> Well, being confined to one planet until [an] eventual extinction event.
 
 29:08
 {:.muted.smaller.right}
 Question Asker 15 (Thomas Schumann, Scienceblog.dk):
 {:.small-caps.strong.right}
 
-> I was wondering errr, I just came here now [...] launch capability on the booster
+> I just came here now [...] launch capability on the booster
 {:.right}
 
 26:24
@@ -400,7 +400,7 @@ Question Asker 17:
 _{Very clipped audio, not much of this was understandable}_
 {:.muted.right}
 
-> I SpaceX trying to [...] Mexico? Mexico [...] Is Mexico part of this great plan to go to Mars?
+> I SpaceX trying to [...] Mexico? Mexico [...] Is Mexico part for this great plan to go to Mars?
 {:.right}
 
 28:48
@@ -408,7 +408,7 @@ _{Very clipped audio, not much of this was understandable}_
 Musk:
 {:.small-caps.strong}
 
-> Because of ITAR constraints it's quite hard for us to manufacture or source components from outside the US, [whereas this is different for ...] [There's too many constraints from the US] on the part of SpaceX because rockets are considered advanced weapons technology it's very difficult for us to make it more international. We'd like to but we can't, that's the [end-all]. Tesla is much more international because it is not against the law.
+> Because of ITAR constraints it's quite hard for us to do manufacturing or source components from outside the US, whereas this is different for Tesla. [It has nothing to do with] some sort of desire to only source things from the US on the part of SpaceX, because rockets are considered advanced weapons technology it's very difficult for us to make it more international. We'd like to but we can't, that's against the law. Tesla is much more international because it is not against the law.
 
 29:26
 {:.muted.smaller.right}
@@ -476,14 +476,14 @@ Question Asker 18:
 Musk:
 {:.small-caps.strong}
 
-> Well maybe we [...] having a bit sort-of electromagnetic [field] around the ship, that's not going to be very helpful against micrometeorites but it could be helpful [to bring that field] for alpha particles from the sun or any kind of high energy charged particle, the [magnetic] field [should deflect that] [...] useful in the future.
+> Well maybe you're referring to having a big sort-of electromagnetic [field] around the ship, that's not going to be very helpful against micrometeorites but it could be helpful [if you have a big enough field] for alpha particles from the sun or any kind of high energy charged particle, if you have a big enough field [should deflect that]. [So that could be] useful in the future.
 
 31:25
 {:.muted.smaller.right}
 Question Asker 19 (SpaceFlight Now):
 {:.small-caps.strong.right}
 
->  So we noticed that [...] you have like three grid-fins, three landing legs, can you talk a little bit about that design change, why you went from four down to three?
+>  So we noticed that [now you have it looks like] you have like three grid-fins, three landing legs, can you talk a little bit about that design change, why you went from four down to three?
 {:.right}
 
 31:36
@@ -491,7 +491,7 @@ Question Asker 19 (SpaceFlight Now):
 Musk:
 {:.small-caps.strong}
 
-> Well you only need three. Well so for control, technically you can get away with two grid-fins in a V configuration, with three you're really doing  fine, you essentially want to control pitch yaw roll and [just like] an aircraft [...] could use a rudder and an elevator, and ailerons, [...] three gives really good control on [longitudinal] axis but four is kinda redundant - I guess there's some value to having redundancy but you really only need three.
+> Well you only really need three. Well so for control, technically you can get away with two grid-fins in a V configuration, with three you're really doing fine, you essentially want to control pitch, yaw, and roll and [just like] an aircraft [with an empennage, where you've got] a rudder and an elevator, and ailerons -- three gives really good control on [three] axis but four is kinda redundant - I guess there's some value to having redundancy but you really only really need three.
 
 32:20
 {:.muted.smaller.right}
@@ -506,7 +506,7 @@ Question Asker 19 (SpaceFlight Now):
 Musk:
 {:.small-caps.strong}
 
-> Umm, you could probably [correct] with attitude control thrusters [at the expense] of additional propellant. The really hard one is pitch. Pitch requires, you need a really powerful thruster to control pitch, to that's really the control dimension that's the hardest which you can do with two fins.
+> Umm, you could probably [correct] with attitude control thrusters [at the expense] of additional propellant. The really hard one is pitch. Pitch requires, you need a really powerful thruster to control pitch, to that's really the control dimension that's the hardest which you can do with just two fins.
 
 32:45
 {:.muted.smaller.right}
