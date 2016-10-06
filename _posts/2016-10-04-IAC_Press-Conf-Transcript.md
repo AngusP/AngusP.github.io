@@ -19,7 +19,7 @@ Hesitations have been edited out for readability's sake, unless they are context
 This is the transcript taken from the below recording, with times added above each speaker.
 
 <div class="iframe-responsive">
-<iframe src="https://www.youtube.com/embed/hNlGkqTYsI4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/hNlGkqTYsI4?rel=0&amp;controls=1&amp;showinfo=1" frameborder="0" allowfullscreen></iframe>
 </div>
 </figure>
 
@@ -46,7 +46,7 @@ Question Asker 1:
 Musk:
 {:.small-caps.strong}
 
-> Yeah yeah, I think those are potentially solved problems, we've been able to have [astronauts on orbit] for over a year and this is a three month [journey], really I think that's more or less a solved problem, you could do it in a more [mass ...] way, it's not a [...] new technology [keeping people alive] in space. I would say that's fairly straightforward. I'd say the challenge really is getting there, and the huge challenge is getting - is [taking it from being], erm, the cost [low] enough people to make it a self sustaining civilisation, that's the [monumental] challenge.
+> Yeah yeah, I think those are essentially solved problems, we've been able to have astronauts on orbit for well over a year and this is a three month [journey, so] really I think that's more or less a solved problem, you could do it in a more [mass efficient ways], it's not a [fundamentally] new technology [keeping people alive] in space. I would say that's fairly straightforward. I'd say the challenge really is getting there, and the huge challenge is getting - is [taking it from being], erm, the cost [low] enough people [can go] to make it a self sustaining civilisation, that's the [monumental] challenge.
 
 02:26
 {:.muted.smaller.right}
@@ -61,7 +61,7 @@ Question Asker 2 (Reuters):
 Musk:
 {:.small-caps.strong}
 
-> Well I mean the [interplanetary] passage time is pretty straightforward, it just depends on your departure velocity [...], the synchronisation event only occurs [every] [26] months, every 26 months there's approximately a 6 month window [where] you can do a Mars transit, which kinda makes sense because Mars has, takes [... _{22.5}_] months to go around the Sun, and you can basically transit to Mars when you're in the right quadrant, you can't go [when] it's on the other side of the Sun, and the faster you exit Earth the quicker you can got to Mars so the low energy transition to Mars, or transit to Mars would be [6 to 7] months, that would be [dV/maybe] 1.5km/s departure velocity, at 6km/s you can drop that down to, so roughly 3 months, and over time I expect that number will come down to [perhaps] under a month, [you need a lot of] kinetic energy to do that and to then [obviously high] energy [aero]breaking is substantial so I [...] [any service to Mars] [...] quite energy expensive.
+> Well I mean the [interplanetary transit] time is pretty straightforward, it just depends on your departure velocity [from Earth], the synchronisation event only occurs [every] [26] months, [so] every 26 months there's approximately a 6 month window [where] you can do a Mars transit, which kinda makes sense because Mars has, takes [... _{22.5}_] months to go around the Sun, and you can basically transit to Mars when you're in the right quadrant, you can't go [when] it's on the other side of the Sun, and the faster you exit Earth the quicker you can got to Mars so the low energy transition to Mars, or transit to Mars would be [6 to 7] months, that would be [dV/maybe] 4.5km/s departure velocity, at 6km/s you can drop that down to, so roughly 3 months, and over time I expect that number will come down to [perhaps] under a month, although the amount of [kinetic] energy you need to do that, and to then [obviously] high energy [aero]breaking is substantial so I [...] [any service to Mars] [...] quite energy expensive.
 
 04:12
 {:.muted.smaller.right}
@@ -76,7 +76,7 @@ Question Asker 2 (Reuters):
 Musk:
 {:.small-caps.strong}
 
-> I can't comment on public company [...] because you know the [conflict] of that would be quite severe, [...] at some point in the future, not immediately, the reason that I'm accumulating personal assets in order to fund [...] becoming a multiplanetary species. The sort of things I'm funding as well, [...] healthcare, environmental issues, and education but, um, I mean AI [safety], but really the primary [aim], the thing that will resolve [non-...] resources is the [establishment] of a colony [...] on Mars. I have no reason to [accumulate] resources beyond that
+> I can't comment on public company [...] because you know the [consequences] of that would be quite severe, [...] at some point in the future, not immediately, the reason that I'm accumulating personal assets in order to fund [humanity] becoming a multiplanetary species. [There's some other] things I'm funding as well, [...] healthcare, environmental issues, and education but, um, I mean AI [safety], but really the primary [thing], the thing that will [absorb almost all our] resources is the [establishment] of a [self-sustaining civilisation] on Mars. I have no reason to [accumulate] resources beyond that
 
 05:12
 {:.muted.smaller}
@@ -100,7 +100,7 @@ _{Even as a Brit this question was really confusing}_
 Musk:
 {:.small-caps.strong}
 
-> I think when we get closer to actually sending people to Mars, [we're gonna wanna be able to get] some sense of what the demand level is, and you know people could put down a small down-payment on a trip to Mars, but we want to get pretty close to the actual trips and be highly confident that we [...] within [reason] the time-frame before we would do that, certainly two or three years before an expected launch [date].
+> I think when we get closer to actually sending people to Mars, [we're gonna wanna, we'll try to get] some sense of what the demand level is, and you know people could [perhaps] put down a small down-payment on a trip to Mars, but we want to get pretty close to the actual trips and be highly confident that we [can meet cost targets] within [a reasonable] the time-frame before we would do that, certainly [maybe] two or three years before an expected launch [date].
 
 06:21
 {:.muted.smaller.right}
@@ -130,7 +130,7 @@ Question Asker 4:
 Musk:
 {:.small-caps.strong}
 
-> [...] <mark>It's essentially about having to spacecraft, ahem, dock, mate and exchange fluids (certainly a joke in there somewhere).</mark> [We've] already docked with the space station, and [or technically berthing,] it'll be an autonomous docking, probably an autonomous docking capability around the end of next year, and so having fully autonomous docking capability basically gives you on-orbit [refilling]. I [...] refuelling, I use the word refilling because there's 3 and a half times as much oxygen as there is fuel and the [oxy fuel ratio ... so really it's] reoxing _{sic}_ [rather than] refuelling, that's actually what it amounts to. Actually I think that's going to be a relatively straightforward element, if we can dock with the space station which is a very complex docking manoeuvre, the natural [requirements] for [space] docking then having [...] docking is not too much of a [call].
+> On-orbit refuelling <mark>essentially it's about having two spacecraft, yeah, ahem, dock, mate and exchange fluids (there's certainly a joke in there somewhere).</mark> [But we've] already docked with the space station, and [well technically it's called berthing,] but it'll be an autonomous docking, probably an autonomous docking capability around the end of next year, and so having fully autonomous docking capability basically gives you on-orbit [refilling]. [When I say ] refuelling... I use the word refilling because there's 3 and a half times as much oxygen as there is fuel and the [oxygen fuel ratio is 3.5 to 1 so really it's] reoxing _{sic}_ [rather than] refuelling, that's actually what it amounts to. Actually I think that's going to be a relatively straightforward element, if we can dock with the space station which is a very complex docking manoeuvre, the [NASA requirements] are quite severe for space docking, then having two spacecraft dock in orbit is not too much of a problem.
 
 08:30
 {:.muted.smaller.right}
@@ -145,7 +145,7 @@ Question Asker 5 (PBS):
 Musk:
 {:.small-caps.strong}
 
-> [Stuff] that I can't control? Well I guess there's always space [and fortune]. Really the pace of progress on Mars depends on the pace of progress of SpaceX to work [...] achieve a good launch [rate], our success rate with Falcon 9 is roughly 93%, it's not out of [...] with some launch vehicles, it needs to be a lot better, and we, the Falcon Heavy the launch timeline, schedule to, and make sure that we [...] [that we've got sufficient cashflow to] fund launch [properly], and of course I will [double ...] personally. There's a big committee of individuals who want to do that, and [...] some point in there future there may be a, well I have no idea if there will be but there might be a NASA [COTS] programme, or something like that, [...]necessary really, <mark>this is ultimately about maximising probability that the future is good and minimising existential risk</mark>, so I think [whatever means] increases that probability is good. So I think fundamental [technical] obstacles to what we've proposed [...] [a lot of quality engineering]
+> [Stuff] that I can't control? Well I guess there's always space [and fortune]. Really the pace of progress on Mars depends on the pace of progress of SpaceX to [what degree do we] achieve a good launch [rate], our success rate with Falcon 9 is roughly 93%, it's not out of [family] with some other launch vehicles, but it needs to be a lot better, and we, the Falcon Heavy the launch timeline, [Dragon 2], and make sure that we [manage the company such that we've got sufficient cashflow to] fund [Mars programs], and of course I will [supplement that] personally. [And I think there may be other] individuals who are willing to do that, and [conceivably at] some point in there future there may be a -- well I have no idea if there will be but there might be a NASA [COTS] programme, or something like that. [...]necessary really, <mark>this is ultimately about maximising probability that the future is good and minimising existential risk</mark>, so I think [whatever means] increases that probability is good. So I [don't see any] fundamental [technical] obstacles to what we've proposed [...] [a lot of hard engineering though]
 
 10:30
 {:.muted.smaller.right}
@@ -183,7 +183,7 @@ Musk:
 Question Asker 8 (New York Times):
 {:.small-caps.strong.right}
 
-> [You've committed ...] $10Billion [before tax] that includes [...] and could you describe what sort of public private [...] you're envisioning to help pay for it, or are you hoping for a NASA contract?
+> [I believe you gave that you have to have] $10Billion [and I was wondering what] that includes [, does it include a Mars port?] And could you describe what sort of public private [partnerships] you're envisioning to help pay for it, or are you hoping for a NASA contract?
 {:.right}
 
 14:44
@@ -191,7 +191,7 @@ Question Asker 8 (New York Times):
 Musk:
 {:.small-caps.strong}
 
-> Um yeah, when I founded SpaceX I had no expectation of any government contracts, I [funded] SpaceX with entirely my own money, [I had] about $180Million from selling PayPal to Ebay, [approximately] $100Million went into SpaceX, $70Million went to Tesla, $10Million to SolarCity, [...] everything actually but uh I expected the most likely outcome was failure, originally I thought I would spend [$50Million] on SpaceX and have $20Million left over but then [I didn't want to see my baby die] so I put all in. The I [...] somehow I [...] money by various arseholes out there, really, so... NASA is our most significant customer, we do about [20 of our launches] but 3/4 of our launches are commercial. In the future, there may be a NASA contract, there may not be, I don't know. If there is that's a good thing, if there's not probably not a good thing, because there's [larger issues than space] here, are we humans gonna become a multiplanetary species or not? Not [pestering] questions of is it public or private or what percentage of [.....] small and [...] questions.
+> Um yeah, when I founded SpaceX I had no expectation of any government contracts, I [founded] SpaceX with entirely my own money, [out of] $180 Million from the sale of PayPal to Ebay, [of which] $100 Million went into SpaceX, $70 Million to Tesla, $10 Million to SolarCity, [so] everything actually but uh; I expected the most likely outcome was failure, although I should say originally I thought I would only spend [$50Million] on SpaceX and have $20 Million left over but then [I couldn't let my baby die] so I put all in. The I... [A common criticism is that somehow I'm after the government's money] by various arseholes out there, really, so... NASA is our most significant customer, we do about [20 of our launches] but 3/4 of our launches are commercial. In the future, there may be a NASA contract, there may not be, I don't know. If there is that's a good thing, if there's not probably not a good thing, because there's larger issues than space here, are we humans gonna become a multiplanetary species or not? Not [pedestrian] questions of is it public or private or what the percentage [is. These are] small and [tawdry] questions.
 
 16:37
 {:.muted.smaller.right}
@@ -206,7 +206,7 @@ Question Asker 9 (Aviation Week):
 Musk:
 {:.small-caps.strong}
 
-> Really we wanna use Dragon, Dragon 2 as [a] pathfinder, if it's anything to go by. We need to sort out interplanetary navigation, [deep space] communication, high bandwidth, uh, there's currently no high-bandwidth deep-space communication system, and then entering the Mars atmosphere, and landing... What's landing like if you're heavy - I mean, Dragon will be about 10 times heavier than anything that's landed on Mars before, and it will land with thrusters close to the surface. So Curiosity they [...] surviving [with this hovering thing], there's no way to do that with a giant Spaceship. [There's key questions like] if you're coming in hot and fast, then you [...] what kind of dust and rocks do you throw up? The Mars [surface is actually] pretty hard, how well does it hold up to rocket blasts? [We all] have questions. I wouldn't give the first Dragon landing high odds, maybe [50%], maybe 50%. The history of landing on Mars is not a good one, [actually for] those familiar with Mars. For a first timer I'd say pretty good - [if we have] a 50% likelihood I'd say that's pretty good. We're just [...] all the issues, sending them on every opportunity, maybe sending two in 2020 and then also we wanna find out what's the easiest way to get water - because water's [useful] for doing the [local] propellant production. Carbon Dioxide is easy, it's in the atmosphere. So we're looking to make sure the dust filters, you can clean the dust filters [so CO<sub>2</sub> should be easy]. Getting the water, much harder. There's ice all over Mars, but in what form, how dirty is the Ice, how much energy do you need to use to extract the water, because there's only a small water percentage in the [...] of the regolith, you're [looking at] more energy to heat it, to purify it so [... ...]
+> Really we wanna use Dragon, Dragon 2 as [a] pathfinder, if it's anything to go by. We need to sort out interplanetary navigation, [deep space] communication [at] high bandwidth, uh, there's currently no high-bandwidth deep-space communication system, and then entering the Mars atmosphere, and landing. What's landing like if you're heavy - I mean, Dragon will be about 10 times heavier than anything that's landed on Mars before, and it will land with thrusters close to the surface. So with Curiosity they [really were concerned about having thrusters close to the surface, which is why they used] this sort of hovering thing, there's no way to do that with a giant Spaceship. [There's key questions like] if you're coming in hot and fast, then you ou dig a big hole in the ground. What kind of dust and rocks do you throw up? The Mars [surface is actually] pretty hard, how well does it hold up to rocket blasts? [They're all tough] questions. I wouldn't give the first Dragon landing high odds, maybe [50%], maybe 50%. The history of landing on Mars is not a good one, [actually for] those familiar with Mars. SO for a first timer I'd say pretty good - [if we have] a 50% likelihood I'd say that's pretty good. We're just [gotta think about] all the issues, sending them on every opportunity, maybe sending 2 in 2020 and then also we wanna find out what's the easiest way to get water - because water's [useful] for doing the [local] propellant production. Carbon Dioxide is easy, it's in the atmosphere. So we're looking to make sure the dust filters, you can clean the dust filters [but getting the CO<sub>2</sub> should be easy]. Getting the water, much harder. There's ice all over Mars, but in what form, how dirty is the ice, how much energy do you need to use to extract the water, because there's only a small water percentage per unit mass of the regolith, you're [gonna use] more energy to heat it, to purify it so how to [deal with ... is one of the biggest issues.]
 
 20:00
 {:.muted.smaller.right}
