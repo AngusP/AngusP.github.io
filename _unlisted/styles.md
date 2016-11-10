@@ -741,6 +741,7 @@ Some other text[^1]
 Numbering is done programatically and the footnote text can be anywhere in the body of the page:
 
     [^footnote]: Hell Yeah!
+    [^1]: Footnotes are handy
 
 [^footnote]: Hell yeah!
 [^1]: Footnotes are handy

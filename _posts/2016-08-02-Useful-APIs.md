@@ -6,7 +6,7 @@ layout: post
 ## A collection of hopefully useful stuff for hackathons
 {: .subhead}
 
-This will be periodically updated
+This will be periodically updated, last updated 2016-10-19
 {: .muted .smaller}
 
 
@@ -27,6 +27,7 @@ ClarifAI
 Parsey McParseface / SyntaxNet
 : Google AI tensorflow-based natural language processing and semantic understanding framework/module [https://research.googleblog.com/2016/05/announcing-syntaxnet-worlds-most.html](https://research.googleblog.com/2016/05/announcing-syntaxnet-worlds-most.html)
 
+
 ### Communication
 
 Twillio
@@ -40,6 +41,7 @@ PushBullet
 
 Hubot
 : Pretty formidable chat-bot framework written in CoffeeScript (ewww...) that's well known on Slack and IRC [https://hubot.github.com/](https://hubot.github.com/)
+
 
 ### Media & Streaming
 
@@ -63,6 +65,9 @@ Flask
 Django
 : Also a **Python** framework, more involved but sometimes easier to develop on-top-of than Flask [https://www.djangoproject.com/](https://www.djangoproject.com/)
 
+Ruby on Rails
+: Similar to Django but written in **Ruby** and arguably the nicer of the two. Has a similar batteries-included approach [http://rubyonrails.org/](http://rubyonrails.org/)
+
 Bootstrap
 : Easily the most popular frontend web framework, contains good HTML/CSS/JS primatives and components [http://getbootstrap.com/](http://getbootstrap.com/)
 
@@ -74,6 +79,19 @@ Polymer
 
 NodeJS
 : No.
+
+
+### Data Storage
+
+Redis
+: Really, really fast & scalable in-memory 'schema-less' datastore, feat. Hashmaps, Lists, Sets, Ordered sets and some niche but super handy Geospatial queries [http://redis.io/](http://redis.io/)
+
+SQLite
+: Probably the smallest SQL (Structured Query Language, for relational databases), easy to use, set up and hack with [https://sqlite.org/](https://sqlite.org/)
+
+PostgreQL
+: One of the more popular full-size SQL database engines [https://www.postgresql.org/](https://www.postgresql.org/)
+
 
 ### Hosting & Deployment
 
@@ -89,3 +107,20 @@ DigitalOcean
 GitHub Pages
 : Easy & free Static Site hosting with [Jekyll](https://jekyllrb.com/) [https://pages.github.com/](https://pages.github.com/)
 
+
+### Hardware
+
+Ardunio
+: Very well known and well supported hardware development ecosystem [http://arduino.cc](http://arduino.cc)
+
+ARM Mbed
+: More powerful than Arduinos, have RTOS features and a more complex/complete API [https://www.mbed.com/](https://www.mbed.com/)
+
+Raspberry Pi
+: Mini Linux computers with GPIO [https://www.raspberrypi.org/](https://www.raspberrypi.org/)
+
+
+### General
+
+GitHub Student Develper Pack
+: Loads of useful stuff and freebies [https://education.github.com/pack](https://education.github.com/pack)
