@@ -109,9 +109,9 @@ This is centered text.
 
 ## Fonts
 
-Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *Yeseva One*, *FontAwesome* Icons and *Source Code Pro* are provided. A Helvetica based font stack for small uses (e.g. chips) is also provided.
+Currently the fonts *Montserrat*, *Crimson Text*, *Pacifico*, *Yeseva One*, *FontAwesome* Icons and *Source Code Pro* are provided. A Helvetica based font stack for small uses (e.g. chips) is also provided.
 
-    Paragraph in PT Serif
+    Paragraph in Crimson Text
     {: .serif}
     
     Paragraph in Montserrat
@@ -136,7 +136,7 @@ Currently the fonts *Montserrat*, *PT Serif*, *Pacifico*, *Yeseva One*, *FontAwe
             color: #000;
         }
     </style>
-    <p class="serif">Paragraph in PT Serif</p>
+    <p class="serif">Paragraph in Crimson Text</p>
     <p class="sans-serif">Paragraph in Montserrat</p>
     <p class="script">Paragraph in Pacifico</p>
     <p class="fancy">Paragraph in Yeseva One</p>
