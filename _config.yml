@@ -5,13 +5,14 @@ baseurl: ""
 url: "http://toaster.cc"
 author: "Angus Pearson"
 author_avatar: "//s.gravatar.com/avatar/8c54ddeaeca4f852c1d522c83780ced1?s=160"
-theme_colour: "#59d380"
-theme_complement: "#bdeecd"
+theme_colour: "#9ac6ff"
+theme_complement: "#f7cac9"
+select_colour: "saturate(lighten(#9ac6ff, 10%), 10%)"
+theme_colour_copy_darken: "20%"
 
-# Pantone colour of the year: #f7cac9
-# Complementary: #92a8d1
+# Pantone colour of the year: 2016 #f7cac9 and Rose Quartz #f7cac9
 # TCC blue: #9ac6ff
-# TCC green: #59d380
+# TCC green: #59d380 & comp: #bdeecd
 # TCC yellow: #fed136
 
 # Main Navigation (Manual)

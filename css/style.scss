@@ -1,5 +1,5 @@
 ---
-# Front matter ensures Jekyll reads file
+# Front matter
 ---
 /**
  * 
@@ -16,12 +16,14 @@
 
 
 $theme_colour: {{ site.theme_colour }};
+$theme_darken: {{ site.theme_colour_copy_darken }};
 
 $theme_complement: {% if site.theme_complement %}{{ site.theme_complement }};
 {% else %}{{ site.theme_colour }};
 {% endif %}
 
-$select_colour: saturate(lighten($theme_colour, 25%), 20%);
+$select_colour: {{ site.select_colour }};
+
 
 $copy_colour: #181818;
 
@@ -35,7 +37,7 @@ $danger_colour: #ce4a55;
 
 /* Main font pairing */
 $sans_font: 'Montserrat','Helvetica-Neue',Helvetica,Arial,sans-serif;
-$serif_font: 'PT Serif','Times','Georgia','Times New Roman',serif;
+$serif_font: 'Crimson Text','Times','Georgia','Times New Roman',serif;
 
 /* Feature fonts and specific-use */
 $cursive_font: 'Pacifico', sans-serif;
@@ -158,7 +160,7 @@ html, body {
 
 a,
 a:visited {
-    color: darken($theme_colour, 0%);
+    color: darken($theme_colour, $theme_darken);
     text-decoration: none;
     transition: color 0.3s ease;
 }
