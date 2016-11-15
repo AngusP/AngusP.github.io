@@ -5,10 +5,25 @@ baseurl: ""
 url: "http://toaster.cc"
 author: "Angus Pearson"
 author_avatar: "//s.gravatar.com/avatar/8c54ddeaeca4f852c1d522c83780ced1?s=160"
+
+## COLOURS
+# Primary and Accent (Compliment) colour:
 theme_colour: "#9ac6ff"
 theme_complement: "#f7cac9"
+
+# :selection and mark colour
 select_colour: "saturate(lighten(#9ac6ff, 10%), 10%)"
+
+# If the theme colour is light, darken it this much
+# for text or other elements on white
 theme_colour_copy_darken: "20%"
+
+# Colour to make the hero's scrim
+# default is rgba(0,0,0,0.3)
+scrim_colour: "darken(rgba(154, 198, 255, 0.3), 20%)"
+
+## HERO IMAGE
+hero_image: "rain-opt.jpg"
 
 # Pantone colour of the year: 2016 #f7cac9 and Rose Quartz #f7cac9
 # TCC blue: #9ac6ff

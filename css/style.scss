@@ -49,7 +49,7 @@ $small_font: Helvetica,'Helvetica-Neue', Arial,sans-serif;
 
 $icon_font: normal normal normal 14px/1 FontAwesome;
 
-$header_image: '../img/library-cover-opt.jpg';
+$header_image: '../img/{{ site.hero_image }}';
 
 $breakpoint_xs: 30rem;
 $breakpoint_sm: 50rem;
@@ -1162,7 +1162,7 @@ p { font-size: 1em; }
 
 /* Text-protection scrims, uniform and gradient */
 .scrim {
-    background: rgba(0,0,0,0.3);
+    background: {{ site.scrim_colour }};
     width: 100%;
     height: 100%;
 }

@@ -9,5 +9,7 @@ date: 2015-06-15
 Web design for Edinburgh University's World Solar Challenge team, built using
 Jekyll & Bootstrap.
 
-[edinsolar.org](http://edinsolar.org)
+[edinsolar.org (archived)](http://toaster.cc/edinsolar.github.io/)
+
+[Site Source Code](https://github.com/AngusP/edinsolar.github.io)
 
