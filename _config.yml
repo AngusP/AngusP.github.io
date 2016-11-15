@@ -42,6 +42,8 @@ navigation:
    url: /posts/archive/
 
 # Build Settings
+future: false
+show_drafts: false
 paginate: 3
 paginate_path: "posts/page:num"
 markdown: kramdown

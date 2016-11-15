@@ -8,20 +8,25 @@ layout: clear
     ---
     title: Post Title
     layout: {basic, default, clear, post}
-    columnar: {true, false}
+    columnar: {false:default, true}
     author: JR Hacker
     author_avatar: http://s.gravatar.com/avatar/8c54ddeaeca4f852c1d522c83780ced1?s=160
     author_url: http://gravatar.com
     date: 1970-01-01T00:00:00
+    excerpt_only: {false:default, true}
     ---
 
 Layouts are successively more styled, with basic giving an empty body, default giving 
-just header and navigation and the post layout which is best for Markdown files. Clear gives
+just header and navigation and the post layout giving tile, authorship and hero if supplied,
+which is best for most posts. The posts layout will also be used in the posts feed. Clear gives
 the same styling and `<article>` as post, withouyt the navigation bar or header.
 
-The attributes `columnar`, `author`, `author_avatar`, `author_url` and `date` are optional. The 
-authorial attributes change the content of the chip at the top of the page. The 
-default for columnar is `false`. The columnar layout uses a variable number of 
+`excerpt_only` will suppress rendering of any HTML and truncate the post to an excerpt in the 
+posts stream page; This may be useful in conjunction with the `basic` layout.
+
+The attributes `columnar`, `author`, `author_avatar`, `author_url`, `excerpt_only` and `date` 
+are optional. The authorial attributes change the content of the chip at the top of the page. The 
+default for columnar and excerpt_only are `false`. The columnar layout uses a variable number of 
 CSS columns up to 3, and is best suitied to continuous prose only. Columns can 
 be accessed through the `.columnar` CSS class also:
 

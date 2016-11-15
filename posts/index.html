@@ -50,10 +50,27 @@ layout: default
           {{ post.date | date: "%b %-d, %Y" }}
         </time>
       </div>
-      
+      {% if post.excerpt_only %}
+      <div>
+        <p class="muted">
+          Excerpt:
+        </p>
+        <p>
+          {{ post.content | strip_html | truncate: 700 }}
+        </p>
+        <div class="center">
+          <a href="{{ post.url | prepend: site.baseurl }}" 
+             class="btn"
+             title="Open whole post">
+            Continue Reading &nbsp; <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      {% else %}
       <div {% if post.columnar %} class="columnar" {% endif %}>
         {{ post.content }}
       </div>
+      {% endif %}
     </article>
     
     <hr class="break">
