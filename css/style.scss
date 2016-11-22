@@ -122,7 +122,7 @@ html, body {
 }
 .row.padd { .col { padding: 1em 0em; } }
 
-@media all and (min-width: $breakpoint_sm) {
+@media all and (min-width: $breakpoint_md) {
     .row { width: 100%; display: table; table-layout: fixed; }
     .col { display: table-cell; vertical-align: top;}
 
@@ -219,7 +219,10 @@ a:focus {
 }
 
 
-
+/** 
+    We wrap post-like content in <article> tags, and apply 
+    different styles to aid readability etc.
+**/
 article {
     font-size: 1em;
     word-break: break-word;
@@ -305,6 +308,7 @@ article {
     h1, h2, h3, h4, h5, h6 {
         -webkit-column-span: all;
         column-span: all;
+        margin-top: 1rem;
 
         a,
         a:visited {
@@ -776,7 +780,7 @@ footer {
     color: #FFF;
     background-color: #111;
     padding: 3rem 1rem;
-    border-top: 0.15rem solid #777;
+    border-top: 0.15rem solid $theme_complement;
     font-size: 0.9rem;
     transition: border-color 0.5s ease;
 

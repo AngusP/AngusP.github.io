@@ -5,55 +5,56 @@ layout: default
 {% comment %}
 ^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^
                      IMPORTANT!
- Markup must be consistent with _layouts/post.html
+ Markup must be consistent with posts/index.html
 ^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^
 {% endcomment %}
 
-{% if page.hero %}
-<div class="hero" style="background-image: url('{{site.baseurl}}/media/{{ page.hero }}');">
+{% assign post = page %}
+
+{% if post.wide %}
+{% assign wclass = 'wide' %}
+{% else %}
+{% assign wclass = 'skinny' %}
+{% endif %}
+
+{% if post.hero %}
+<div class="hero" style="background-image: url('{{site.baseurl}}/media/{{ post.hero }}');">
   <div class="scrim-g">
     {% endif %}
-    <div class="container vspace skinny">
+    <div class="container vspace {{ wclass }}">
       <article>
-        {% if page.title %}
-        <h1 class="post-title">{{ page.title }}</h1>
-        {% endif %}
+        <a name="{{ post.title | xml_escape }}"></a>
+        <h1 class="post-title">
+          <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to post">{{ post.title }}</a>
+        </h1>
       </article>
     </div>
     
-    {% if page.hero %}
+    {% if post.hero %}
   </div>
 </div>
 {% endif %}
 
-<div class="container vspace skinny">
+<div class="container vspace {{ wclass }}">
   <article>
     <div class="clearfix">
       <div class="chip pull-right">
-        {% if page.author %}
-        {% if page.author_avatar %}
-        <img src="{{ page.author_avatar }}">
+        {% if post.author %}
+        {% if post.author_avatar %}
+        <img src="{{ post.author_avatar }}">
         {% endif %}
-        {{ page.author }}
-        
-        {% if page.author_url %}
-        <a href="{{ page.author_url }}" target=_blank><i class="fa fa-share"></i></a>
-        {% endif %}
-
+        {{ post.author }}
         {% else %}
         <img src="{{ site.author_avatar }}">{{ site.author }}
         {% endif %}
       </div>
-      
-      {% if page.date %}
-      <time class="muted i">{{ page.date | date: "%b %-d, %Y" }}</time>
-      {% endif %}
+      <time class="muted i">
+        {{ post.date | date: "%b %-d, %Y" }}
+      </time>
     </div>
-
-    <div {% if page.columnar %} class="columnar" {% endif %}>
-      {{ content }}
+    <div {% if post.columnar %} class="columnar" {% endif %}>
+      {{ post.content }}
     </div>
   </article>
-  <div class="vspace hidden-print">&nbsp;</div>
 </div>
 

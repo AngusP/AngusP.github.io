@@ -1,11 +1,14 @@
 ---
 title: Useful Libraries & APIs
 layout: post
+columnar: true
+wide: true
 ---
 
 ## A collection of hopefully useful stuff for hackathons
 {: .subhead}
 
+<br>
 This will be periodically updated, last updated 2016-10-19
 {: .muted .smaller}
 

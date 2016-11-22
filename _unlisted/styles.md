@@ -3,6 +3,11 @@ title: Style Expo
 layout: clear
 ---
 
+# Kramdown
+
+We're rendering with Jekyll's *Kramdown* engine, full docs [here](http://kramdown.gettalong.org/syntax.html)
+
+
 # YAML Front Matter
 
     ---
@@ -14,6 +19,8 @@ layout: clear
     author_url: http://gravatar.com
     date: 1970-01-01T00:00:00
     excerpt_only: {false:default, true}
+    excerpt_separator: <!--more--> {default: none}
+    wide: {false:default, true}
     ---
 
 Layouts are successively more styled, with basic giving an empty body, default giving 
@@ -22,7 +29,12 @@ which is best for most posts. The posts layout will also be used in the posts fe
 the same styling and `<article>` as post, withouyt the navigation bar or header.
 
 `excerpt_only` will suppress rendering of any HTML and truncate the post to an excerpt in the 
-posts stream page; This may be useful in conjunction with the `basic` layout.
+posts stream page; This may be useful in conjunction with the `basic` layout. Similarly, 
+`wide` gives the post a wider container - this needs to be used in conjunction with the 
+`post` layout, otherwise it'll only affect how wide the post's excerpt is in the posts stream.
+
+The `excerpt_separator` isn't mandatory, as Jekyll will assign the first content block
+in the file to the excerpt by default.
 
 The attributes `columnar`, `author`, `author_avatar`, `author_url`, `excerpt_only` and `date` 
 are optional. The authorial attributes change the content of the chip at the top of the page. The 
@@ -32,10 +44,16 @@ be accessed through the `.columnar` CSS class also:
 
 <figure class="sheet">
     <p class="columnar padder smaller">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim arcu mauris, sed tincidunt nisi egestas sed. Nullam et lectus consectetur, pretium metus et, dictum mauris. Donec aliquam elit augue, quis egestas elit egestas sed. Proin auctor quam sed rhoncus ornare. Nulla ante purus, vulputate sit amet laoreet ac, commodo at sem. Sed bibendum sem mauris, eu condimentum ligula faucibus sed. Quisque dictum sodales dolor a tristique. Nulla dignissim nibh mauris, eget tempus elit mattis id. Proin ut dolor justo.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim arcu mauris, sed 
+    tincidunt nisi egestas sed. Nullam et lectus consectetur, pretium metus et, dictum mauris. 
+    Donec aliquam elit augue, quis egestas elit egestas sed. Proin auctor quam sed rhoncus 
+    ornare. Nulla ante purus, vulputate sit amet laoreet ac, commodo at sem. Sed bibendum 
+    sem mauris, eu condimentum ligula faucibus sed. Quisque dictum sodales dolor a tristique. 
+    Nulla dignissim nibh mauris, eget tempus elit mattis id. Proin ut dolor justo.
     </p>
     <figcaption>
-        Shows CSS columns on a paragraph. Note the number of columns will change responsively with screen size.
+        Shows CSS columns on a paragraph. Note the number of columns will change responsively 
+        with screen size.
     </figcaption>
 </figure>
 
@@ -82,6 +100,8 @@ Headings from `h1` through `h6` can be written with a `#` for each level of head
     <h6>h6 Heading</h6>
 </figure>
 
+Headings have relative (`em` based) padding and absolute (`rem`) margin-tops, to add negative space.
+
 The `subhead` class is provided to style subheadings, using the Kramdown extended markdown syntax like so:
 
     # Main Header
@@ -93,7 +113,7 @@ The `subhead` class is provided to style subheadings, using the Kramdown extende
     <h2 class="subhead">Subheading, strapline, whatever.</h2>
 </figure>
 
-The `subhead` font size is fixed, so the choice of which heading tag to use should be the successive number to comply with HTML's semantics. Also the Subhead will be larger than h4, h5 and h6.
+The `subhead` font size is fixed, so the choice of which heading tag to use should be the successive number to comply with HTML's semantic specs. Subhead's font size is larger than h4, h5 and h6.
 
 <br>
 <br>
@@ -282,6 +302,54 @@ and use the small caps variant of a font. Both increase the letter spacing to ma
     Nullam non mi non mauris sodales Accumsan laoreet accumsan velit.
 </div>
 
+
+### Size
+
+A bunch of `em` based scaling classes exist, that'll relatively (with cascading) scale
+an entity they're applied to:
+
+~~~
+.halfx   { font-size: 0.5em; }
+.smaller { font-size: 0.8em; }
+.bigger  { font-size: 1.5em; }
+.twox    { font-size: 2em;   }
+.threex  { font-size: 3em;   }
+.fourx   { font-size: 4em;   }
+.fivex   { font-size: 5em;   }
+~~~
+
+<figure id="scaleclassdemo" class="sheet padder" markdown="1">
+<style scoped>
+    #scaleclassdemo p {
+        margin: 0;
+        text-align: center;
+    }
+</style>
+
+Halfx
+{: .halfx}
+
+Smaller
+{: .smaller}
+
+*(Normal)*
+
+Bigger
+{: .bigger}
+
+Two &times;
+{: .twox}
+
+Three &times;
+{: .threex}
+
+Four &times;
+{: .fourx}
+
+Five &times;
+{: .fivex}
+</figure>
+
 <br>
 <br>
 <br>
@@ -312,7 +380,8 @@ classes are particularly effective on `figure`s:
 
 ### Super Simple Grid System
 
-Uses table layouts to develop a simple grid system without murdering semantics.
+Uses table layouts to develop a simple grid system without murdering semantics - though CSS columns
+(`columnar` class) will better serve responsive columns in a prose-like context.
 
     <div class="row">
         <div class="col">
@@ -321,7 +390,10 @@ Uses table layouts to develop a simple grid system without murdering semantics.
         ...
     </div>
     
-The row has the optional `.sep` and `.padd` classes that add a border between columns and padding to the columns. The columns below use both `sep` and `padd`. Grids in `<article>`s have a small padding applied to them too, which isn't the case elsewhere. Sep borders responively switch edge.
+The row has the optional `.sep` and `.padd` classes that add a border between columns and padding to the 
+columns. The columns below use both `sep` and `padd`. Grids in `<article>`s have a small padding applied 
+to them too, which isn't the case elsewhere. Sep borders responively switch edge from the sides on large 
+viewports to the top on smaller ones.
 
 <div class="row sep padd">
     <p class="col">
@@ -482,7 +554,7 @@ They're not really a class, but **chips** from Material Design are included:
     <a href="#"><i class="fa fa-close"></i></a>
 </div>
 
-Similarly, buttons
+Similarly, buttons (Use `$theme_colour` by default)
 
     <a class="btn">
         I do nothing.
@@ -770,7 +842,8 @@ Any of these would look like:
 ___
 
 Additionally the class `.break` is provided for a theme colour helipsis instead of a horizontal
-rule, though it isn't particularly general purpose:
+rule, though it isn't particularly general purpose (*note* that it's also used in the post stream,
+so could be confused for a post delimiter):
 
     ___
     {: .break}
@@ -830,7 +903,7 @@ Shows on the page as:
 
 ### Inline monospace
 Wrap inline snippets of code with `` ` ``. That's the funny backtick character in the bottom
-left of the keyboard next to `z` (On a Mac).
+left of the keyboard next to `z` (On a Mac), and top left of the keyboard British Layout.
 
 So this:
 
@@ -882,6 +955,21 @@ Syntax hilighting is available with *Rouge*, and the liquid tags
     code goes in here...
 &#123;% endhighlight %&#125;</code></pre>
 
+For example:
+
+<pre><code>&#123;% highlight haskell %&#125;
+fizz :: Int -> String
+fizz n | n `mod` 15 == 0  = "FizzBuzz"
+       | n `mod` 3  == 0  = "Fizz"
+       | n `mod` 5  == 0  = "Buzz"
+       | otherwise        = show n
+ 
+main :: IO()
+main = mapM_ putStrLn $ map fizz [1..100]
+&#123;% endhighlight %%&#125;</code></pre>
+
+Becomes
+
 {% highlight haskell %}
 fizz :: Int -> String
 fizz n | n `mod` 15 == 0  = "FizzBuzz"
@@ -930,7 +1018,8 @@ Note that the reference is invisible.
 
 [id]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
-These are all way too big so images tend to work better with some direct HTML.
+These are all way too big so images tend to work better with some direct HTML, or with classes
+as laid out further up applied to them.
 
 
 

@@ -13,13 +13,27 @@ layout: default
   </aside>
 </div-->
 
+
+{% comment %}
+^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^
+                     IMPORTANT!
+ Markup must be consistent with _layouts/post.html
+^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^
+{% endcomment %}
+
 {% for post in paginator.posts %}
+
+{% if post.wide %}
+{% assign wclass = 'wide' %}
+{% else %}
+{% assign wclass = 'skinny' %}
+{% endif %}
 
   {% if post.hero %}
   <div class="hero" style="background-image: url('{{site.baseurl}}/media/{{ post.hero }}');">
     <div class="scrim-g">
       {% endif %}
-      <div class="container vspace skinny">
+      <div class="container vspace {{ wclass }}">
         <article>
           <a name="{{ post.title | xml_escape }}"></a>
           <h1 class="post-title">
@@ -33,7 +47,7 @@ layout: default
   </div>
   {% endif %}
   
-  <div class="container vspace skinny">
+  <div class="container vspace {{ wclass }}">
     <article>
       <div class="clearfix">
         <div class="chip pull-right">
@@ -56,7 +70,7 @@ layout: default
           Excerpt:
         </p>
         <p>
-          {{ post.content | strip_html | truncate: 700 }}
+          {{ post.excerpt }}
         </p>
         <div class="center">
           <a href="{{ post.url | prepend: site.baseurl }}" 
@@ -73,6 +87,7 @@ layout: default
       {% endif %}
     </article>
     
+    <div class="clearfix">&nbsp;</div>
     <hr class="break">
   </div>
   

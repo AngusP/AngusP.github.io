@@ -2,6 +2,8 @@
 title: Musk IAC Press Q&A Transcript
 layout: clear
 hero: 2016-10-04-iac-hero.jpg
+excerpt_only: true
+excerpt_separator: <!--more-->
 ---
 
 Image credit: SpaceX
@@ -31,6 +33,8 @@ Musk:
 > Any [enterprise you can imagine] on Mars, things that are, we [take for granted] on Earth as well as things that [won't exist anywhere] but Mars, so we're [like the Union Pacific[^unionpacific]] so, our goal is to get people there, we'll need to construct the initial propellant plant to produce [much] propellant on Mars, and so the initial, [obviously] the Mars spaceport and the sort of the beginnings of [a key] central element [of] a Mars base and then thereafter, um, and we definitely wanna make sure we [don't infringe] upon the opportunities that people may have to create things on Mars, and if [people thought that] SpaceX is just gonna do that then they [they’ll] be less willing to do it so [we're really] <mark>trying to create a conduit to Mars to enable people to do an incredible [number of] things there.</mark>. [And just like how the Union Pacific, sort of, made California really,] um, we'd like to have it be that way for Mars. I think there is, um, like I say I'm not too worried about safety on the way there from radiation, I think that's basically is _{Gets cut off by question}_
 
 [^unionpacific]: [https://en.wikipedia.org/wiki/History_of_the_Union_Pacific_Railroad](https://en.wikipedia.org/wiki/History_of_the_Union_Pacific_Railroad)
+
+<!--more-->
 
 01:26
 {:.muted.smaller.right}
