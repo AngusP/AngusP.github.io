@@ -51,6 +51,7 @@ $icon_font: normal normal normal 14px/1 FontAwesome;
 
 $header_image: '../img/{{ site.hero_image }}';
 
+/* rem breakpoints so smaller font gets larger styles earlier */
 $breakpoint_xs: 30rem;
 $breakpoint_sm: 50rem;
 $breakpoint_md: 70rem;
@@ -562,12 +563,6 @@ a.btn.danger {
 
     .card:hover {
         box-shadow: $zshadow_1;
-        
-        img.feature {
-            transform: scale(1.02);
-            -webkit-transform: scale(1.02);
-            -moz-transform: scale(1.02);
-        }
     }
 }
 
@@ -767,6 +762,25 @@ blockquote.feature:before {
     font-size: 1.5em;
     color: $back_d_grey;
     height: 1em;
+}
+
+.mid {
+    @extend .feature;
+    text-align: center;
+    font-style: italic;
+}
+
+blockquote.mid {
+    @extend blockquote.feature;
+    margin: 0;
+    border: 0;
+}
+
+@media all and (min-width: $breakpoint_sm){
+    .mid {
+        margin-right: 2em;
+        margin-left: 2em;
+    }
 }
 
 .fold-centre {

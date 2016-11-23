@@ -440,6 +440,9 @@ muted
 feature
 : Bumps the font size, spans all columns and adds padding. Good for beginning an article.
 
+mid
+: Similar to feature, italicises and aligns centre as well.
+
 mark
 : Does the same as `<mark></mark>` and highlights text.
 
@@ -508,6 +511,8 @@ The `feature` class can be applied to most elements, with special styles being p
 > Praesent odio felis, consectetur consequat vulputate ut, facilisis nec erat. Vestibulum sit amet quam pulvinar, lacinia nunc vitae, scelerisque nulla. Aliquam venenatis dui et imperdiet suscipit.
 {: .feature}
 
+Similarly, the `mid` class can be a nice vignette mid prose
+{: .mid}
 
 <div class="bg-theme padder">
     <span class="twox">JumboTron</span>
@@ -868,6 +873,21 @@ Will show up as:
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
 
+Similarly, a `.feature` blockquote:
+
+    > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+    {: .feature}
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+{: .feature}
+
+And a `.mid` blockquote:
+
+    > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+    {: .mid}
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+{: .mid}
 
 Blockquotes can also be nested:
 
