@@ -13,7 +13,7 @@
           type="text/css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css?version={{ site.time | date: "%FT%TZ" | url_encode }}" type="text/css">
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS feed" href="{{ site.baseurl }}/feed.xml" />
 
@@ -76,8 +76,5 @@
     </script>
 
     <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script-->
-    <script type="text/javascript" async
-            src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
-    </script>
 
   </head>

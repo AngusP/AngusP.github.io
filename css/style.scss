@@ -249,7 +249,7 @@ article {
 
     code {
         font-family: $mono_font;
-        font-size: 0.9em;
+        font-size: 0.7em;
         padding: 0.2em 0;
         color: lighten($copy_colour, 20%);
         overflow: auto;
@@ -307,8 +307,8 @@ article {
     }
 
     h1, h2, h3, h4, h5, h6 {
-        -webkit-column-span: all;
-        column-span: all;
+        /* -webkit-column-span: all; */
+        /* column-span: all; */
         margin-top: 1rem;
 
         a,
@@ -404,7 +404,7 @@ article {
 
     pre {
         @extend code;
-        font-size: 0.8em;
+        font-size: 1em;
         background: $back_l_grey;
         padding: 1.2em 0.8em;
         border-radius: 0.2em;
@@ -638,12 +638,18 @@ a.btn.danger {
 
 .columnar {
     /* Column responiveness is based on relative font size (em) */
-    -webkit-columns: 3 16em; /* Chrome, Safari, Opera */
-    -moz-columns: 3 16em; /* Firefox */
-    columns: 3 16em;
-    -webkit-column-gap: 2em;
-    -moz-column-gap: 2em;
-    column-gap: 2em;
+    -webkit-columns: 3 20rem; /* Chrome, Safari, Opera */
+    -moz-columns: 3 20rem; /* Firefox */
+    columns: 3 20rem;
+    -webkit-column-gap: 3rem;
+    -moz-column-gap: 3rem;
+    column-gap: 3rem;
+}
+
+.colspan {
+    /* Provide clas to disable columns for an element */
+    -webkit-column-span: all;
+    column-span: all;
 }
 
 .container {
@@ -957,8 +963,29 @@ header.hero {
 }
 
 @media print {
+    /**
+       Header is pretty differently styled
+       for print, backgrounds and colours removed.
+       **/
+
     header.hero {
-        display: none;
+        height: auto;
+        min-height: 0;
+        background: none;
+        color: $copy_colour;
+
+        hr {
+            display: none;
+            border-color: $copy_colour;
+        }
+
+        .fold-centre {
+            padding: 1em;
+        }
+
+        .scrim {
+            background: none;
+        }
     }
 }
 
@@ -1284,12 +1311,6 @@ p { font-size: 1em; }
     }
 }
 
-@media print {
-    .site_header {
-        display: none;
-    }
-}
-
 .site-nav {
     
 }
@@ -1365,3 +1386,7 @@ p { font-size: 1em; }
     }
 }
 
+
+#MathJax_Message {
+    
+}

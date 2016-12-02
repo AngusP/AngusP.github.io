@@ -2,7 +2,7 @@
 title: GNU General Public License
 author: Free Software Foundation, Inc
 author_url: http://www.fsf.org
-layout: post
+layout: basic
 ---
 
 This License applies only to the source code of this website, not the content.

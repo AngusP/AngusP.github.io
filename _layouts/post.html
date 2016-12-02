@@ -11,50 +11,7 @@ layout: default
 
 {% assign post = page %}
 
-{% if post.wide %}
-{% assign wclass = 'wide' %}
-{% else %}
-{% assign wclass = 'skinny' %}
-{% endif %}
+{% include post_hero.html %}
 
-{% if post.hero %}
-<div class="hero" style="background-image: url('{{site.baseurl}}/media/{{ post.hero }}');">
-  <div class="scrim-g">
-    {% endif %}
-    <div class="container vspace {{ wclass }}">
-      <article>
-        <a name="{{ post.title | xml_escape }}"></a>
-        <h1 class="post-title">
-          <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to post">{{ post.title }}</a>
-        </h1>
-      </article>
-    </div>
-    
-    {% if post.hero %}
-  </div>
-</div>
-{% endif %}
-
-<div class="container vspace {{ wclass }}">
-  <article>
-    <div class="clearfix">
-      <div class="chip pull-right">
-        {% if post.author %}
-        {% if post.author_avatar %}
-        <img src="{{ post.author_avatar }}">
-        {% endif %}
-        {{ post.author }}
-        {% else %}
-        <img src="{{ site.author_avatar }}">{{ site.author }}
-        {% endif %}
-      </div>
-      <time class="muted i">
-        {{ post.date | date: "%b %-d, %Y" }}
-      </time>
-    </div>
-    <div {% if post.columnar %} class="columnar" {% endif %}>
-      {{ post.content }}
-    </div>
-  </article>
-</div>
+{% include post_body.html %}
 

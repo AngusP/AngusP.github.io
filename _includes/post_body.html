@@ -1,0 +1,23 @@
+
+{% if post.wide %}
+{% assign wclass = 'wide' %}
+{% else %}
+{% assign wclass = 'skinny' %}
+{% endif %}
+
+<div class="container vspace {{ wclass }}">
+  <article>
+    <div class="clearfix">
+      
+      {% include author_chip.html %}
+      
+      <time class="muted i">
+        {{ post.date | date: "%b %-d, %Y" }}
+      </time>
+    </div>
+    <br>
+    <div {% if post.columnar %} class="columnar" {% endif %}>
+      {{ post.content }}
+    </div>
+  </article>
+</div>

@@ -6,11 +6,11 @@ wide: true
 ---
 
 ## A collection of hopefully useful stuff for hackathons
-{: .subhead}
+{: .subhead .colspan}
 
 <br>
 This will be periodically updated, last updated 2016-10-19
-{: .muted .smaller}
+{: .muted .smaller .colspan}
 
 
 ### Machine Learning & AI
@@ -59,8 +59,6 @@ LaTeX
 
 
 ### Web Development
-
-Some of these are a bit no-shit/obvious to all but complete beginners, but worth including for completeness
 
 Flask
 : Simple and effective **Python** backend web framework [http://flask.pocoo.org](http://flask.pocoo.org)
@@ -113,7 +111,7 @@ GitHub Pages
 
 ### Hardware
 
-Ardunio
+Arduino
 : Very well known and well supported hardware development ecosystem [http://arduino.cc](http://arduino.cc)
 
 ARM Mbed
@@ -127,3 +125,4 @@ Raspberry Pi
 
 GitHub Student Develper Pack
 : Loads of useful stuff and freebies [https://education.github.com/pack](https://education.github.com/pack)
+

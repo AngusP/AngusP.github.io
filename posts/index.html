@@ -23,78 +23,53 @@ layout: default
 
 {% for post in paginator.posts %}
 
-{% if post.wide %}
-{% assign wclass = 'wide' %}
+
+{% include post_hero.html %}
+  
+{% if post.excerpt_only %}
+<div class="container vspace {{ wclass }}">
+  <article>
+    <div class="clearfix">
+      
+      {% include author_chip.html %}
+      
+      <time class="muted i">
+        {{ post.date | date: "%b %-d, %Y" }}
+      </time>
+    </div>
+    <br>
+    <div>
+      <p>
+        {{ post.excerpt }}
+      </p>
+      <div class="center">
+        <a href="{{ post.url | prepend: site.baseurl }}" 
+           class="btn"
+           title="Open whole post">
+          Continue Reading &nbsp; <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </article>
+</div>
+
 {% else %}
-{% assign wclass = 'skinny' %}
+
+{% include post_body.html %}
+
 {% endif %}
 
-  {% if post.hero %}
-  <div class="hero" style="background-image: url('{{site.baseurl}}/media/{{ post.hero }}');">
-    <div class="scrim-g">
-      {% endif %}
-      <div class="container vspace {{ wclass }}">
-        <article>
-          <a name="{{ post.title | xml_escape }}"></a>
-          <h1 class="post-title">
-            <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to post">{{ post.title }}</a>
-          </h1>
-        </article>
-      </div>
-      
-      {% if post.hero %}
-    </div>
-  </div>
-  {% endif %}
-  
-  <div class="container vspace {{ wclass }}">
-    <article>
-      <div class="clearfix">
-        <div class="chip pull-right">
-          {% if post.author %}
-          {% if post.author_avatar %}
-          <img src="{{ post.author_avatar }}">
-          {% endif %}
-          {{ post.author }}
-          {% else %}
-          <img src="{{ site.author_avatar }}">{{ site.author }}
-          {% endif %}
-        </div>
-        <time class="muted i">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </time>
-      </div>
-      {% if post.excerpt_only %}
-      <div>
-        <p class="muted">
-          Excerpt:
-        </p>
-        <p>
-          {{ post.excerpt }}
-        </p>
-        <div class="center">
-          <a href="{{ post.url | prepend: site.baseurl }}" 
-             class="btn"
-             title="Open whole post">
-            Continue Reading &nbsp; <i class="fa fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-      {% else %}
-      <div {% if post.columnar %} class="columnar" {% endif %}>
-        {{ post.content }}
-      </div>
-      {% endif %}
-    </article>
-    
+<div class="container vspace {{ wclass }}">
+  <article>
     <div class="clearfix">&nbsp;</div>
     <hr class="break">
-  </div>
+  </article>
+</div>
   
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
-<div class="container vspace skinny">
+<div class="container vspace skinny hidden-print">
   <nav class="pagination">
     <div class="row">
       <div class="col">
@@ -124,7 +99,7 @@ layout: default
 </div>
 {% endif %}
 
-<div class="container vspace skinny">
+<div class="container vspace skinny hidden-print">
   <aside class="center last">
     <a class="btn btn-default" href="{{ site.baseurl }}/posts/archive">
       <i class="fa fa-calendar-o"></i>

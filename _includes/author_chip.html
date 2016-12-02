@@ -1,0 +1,15 @@
+<div class="chip pull-right">
+  {% if page.author %}
+  {% if page.author_avatar %}
+  <img src="{{ page.author_avatar }}">
+  {% endif %}
+  {{ page.author }}
+  
+  {% if page.author_url %}
+  <a href="{{ page.author_url }}" target=_blank><i class="fa fa-share"></i></a>
+  {% endif %}
+
+  {% else %}
+  <img src="{{ site.author_avatar }}">{{ site.author }}
+  {% endif %}
+</div>

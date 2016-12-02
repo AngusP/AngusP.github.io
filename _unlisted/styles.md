@@ -3,9 +3,12 @@ title: Style Expo
 layout: clear
 ---
 
-# Kramdown
+<div class="sheet padder" markdown="1">
+### Kramdown
 
 We're rendering with Jekyll's *Kramdown* engine, full docs [here](http://kramdown.gettalong.org/syntax.html)
+
+</div>
 
 
 # YAML Front Matter
@@ -56,6 +59,10 @@ be accessed through the `.columnar` CSS class also:
         with screen size.
     </figcaption>
 </figure>
+
+The class `.colspan` will set an element's `column-span` to `all`, effectively turning off columns
+for it. Headers won't span columns by default, so to prevent a reader having to scroll back up a 
+mile, use a `<hr>` or add `{: .collspan }` to a heading.
 
 <br>
 <br>

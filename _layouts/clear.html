@@ -9,53 +9,12 @@ layout: basic
 ^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^
 {% endcomment %}
 
-{% if page.hero %}
-<div class="hero" style="background-image: url('{{site.baseurl}}/media/{{ page.hero }}');">
-  <div class="scrim-g">
-    {% endif %}
-    <div class="container vspace skinny">
-      <article>
-        {% if page.title %}
-        <h1 class="post-title">{{ page.title }}</h1>
-        {% endif %}
-      </article>
-    </div>
-    
-    {% if page.hero %}
-  </div>
-</div>
-{% endif %}
+{% assign post = page %}
 
-<div class="container vspace skinny">
-  <article>
-    <div class="clearfix">
-      <div class="chip pull-right">
-        {% if page.author %}
-        {% if page.author_avatar %}
-        <img src="{{ page.author_avatar }}">
-        {% endif %}
-        {{ page.author }}
-        
-        {% if page.author_url %}
-        <a href="{{ page.author_url }}" target=_blank><i class="fa fa-share"></i></a>
-        {% endif %}
+{% include post_hero.html %}
 
-        {% else %}
-        <img src="{{ site.author_avatar }}">{{ site.author }}
-        {% endif %}
-      </div>
-      
-      {% if page.date %}
-      <time class="muted i">{{ page.date | date: "%b %-d, %Y" }}</time>
-      {% endif %}
-    </div>
+{% include post_body.html %}
 
-    <div {% if page.columnar %} class="columnar" {% endif %}>
-      {{ content }}
-    </div>
-  </article>
-  <div class="vspace hidden-print">&nbsp;</div>
-</div>
-
+<div class="vspace hidden-print">&nbsp;</div>
 
 {% include footer.html %}
