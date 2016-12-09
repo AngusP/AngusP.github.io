@@ -521,6 +521,15 @@ button.btn {
     box-shadow: $zshadow_2;
 }
 
+.btn.complement,
+a.btn.complement {
+    background-color: $theme_complement;
+}
+.btn.complement:hover,
+.btn.complement:active {
+    background-color: lighten($theme_complement, 6%);
+}
+
 .btn.danger,
 a.btn.danger {
     background-color: $danger_colour;

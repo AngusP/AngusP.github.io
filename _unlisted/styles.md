@@ -372,9 +372,9 @@ Kramdown allows CSS classes and IDs to be applied to Markdown objects with the p
     {: #some_id}
 
 For articles (requires the `post` layout in the YAML Front Matter) a bunch of elements have styles.
-Figures are particularly useful, though need to be plain HTML as there is no Markdown Syntax for them.
+Figures are particularly useful, though need to be plain HTML unless you turn on markdown:
 
-    <figure class="...">
+    <figure class="..." markdown="1">
         ...
         <figcaption>
         Some Caption
@@ -571,12 +571,18 @@ Similarly, buttons (Use `$theme_colour` by default)
     <a class="btn">
         I do nothing.
     </a>
+    <a class="btn complement">
+        I do nothing.
+    </a>
     <a class="btn danger">
         I do nothing.
     </a>
 
 <div>
     <a class="btn">
+        I do nothing.
+    </a>
+    <a class="btn complement">
         I do nothing.
     </a>
     <a class="btn danger">
