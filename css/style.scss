@@ -38,6 +38,7 @@ $danger_colour: #ce4a55;
 /* Main font pairing */
 $sans_font: 'Montserrat','Helvetica-Neue',Helvetica,Arial,sans-serif;
 $serif_font: 'Crimson Text','Times','Georgia','Times New Roman',serif;
+$title_font: $sans_font;
 
 /* Feature fonts and specific-use */
 $cursive_font: 'Pacifico', sans-serif;
@@ -860,7 +861,7 @@ footer:hover {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Montserrat','Helvetica-Neue',Helvetica,Arial,sans-serif;
+    font-family: $title_font;
     font-weight: bold;
     word-wrap: break-word;
     margin: 0;
@@ -1118,7 +1119,7 @@ mark.noir, .noir, .mark.noir {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat','Helvetica-Neue', Helvetica, Arial, sans-serif;
+    font-family: $sans_font;
     text-transform: uppercase;
     font-size: 0.9em;
 }
