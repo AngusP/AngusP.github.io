@@ -20,10 +20,10 @@ theme_colour_copy_darken: "20%"
 
 # Colour to make the hero's scrim
 # default is rgba(0,0,0,0.3)
-scrim_colour: "darken(rgba(154, 198, 255, 0.3), 20%)"
+scrim_colour: "darken(rgba(154, 198, 255, 0.3), 10%)"
 
 ## HERO IMAGE
-hero_image: "rain-opt.jpg"
+hero_image: "forum-col-opt.jpg"
 
 # Pantone colour of the year: Serenity 2016 #f7cac9 and Rose Quartz #f7cac9
 # TCC blue: #9ac6ff
