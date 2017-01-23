@@ -197,21 +197,25 @@ void loop()
         </p>
     </div>
 </div>
-<br>
-<div class="sheet tt">
+
+
+<div class="sheet tt" style="margin-top: 1em;">
     <div class="padder">
         <h3>
             Suggested Reading/Information
         </h3>
         <p>
             Robocup Small Size League (SSL) vision system: <br>
-            <a href="https://github.com/roboime/ssl-vision">https://github.com/roboime/ssl-vision</a>
+            <a href="https://github.com/RoboCup-SSL/ssl-vision">https://github.com/RoboCup-SSL/ssl-vision</a>
         </p>
         <p class="smaller">
-            It's designed for use in the big inter-university robot football league and is very similar to the SDP in terms of rules and design; It's also easily better than any vision system that'll ever be written for SDP, and won't take more than a day to get working... Use it.
+            It's designed for use in the big inter-university robot football league and is very similar to the SDP in terms of rules and design; It's a very mature vision system with support
+            for multiple cameras, many more than 4 robots and it publishes information to the network. I have a slightly older version that does not need FireWire cameras here: 
+            <a href="https://github.com/AngusP/ssl-vision">https://github.com/AngusP/ssl-vision</a>. It will work on DICE if you're comfortable debugging a C++ build fail, it's usually
+            just a missing library.
         </p>
     </div>
 </div>
 
-Edited 2016-09-14, 2016-12-02
+Edited 2016-09-14, 2016-12-02, 2017-01-21
 {: .smaller .muted .em}

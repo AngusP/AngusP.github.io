@@ -15,3 +15,6 @@ a range of topics as identifies in a previous Affinity diagram.
 Live site is [here](http://toaster.cc/inf4-hci-2), source code is 
 on [GitHub](https://github.com/AngusP/inf4-hci-2)
 
+<small>
+Project received 96% mark.
+</small>
