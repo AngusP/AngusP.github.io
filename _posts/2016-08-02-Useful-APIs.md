@@ -5,7 +5,7 @@ columnar: true
 wide: true
 ---
 
-## A collection of hopefully useful stuff for hackathons
+## A collection of hopefully useful stuff
 {: .subhead .colspan}
 
 <br>
@@ -26,6 +26,9 @@ Toch
 
 ClarifAI
 : Image recognition as a service [https://www.clarifai.com/](https://www.clarifai.com/) has a limited free plan and paid tiers.
+
+NLTK
+: Natural Language Toolkit for **Python**, got a load of useful stuff in it [http://www.nltk.org/](http://www.nltk.org/)
 
 Parsey McParseface / SyntaxNet
 : Google AI tensorflow-based natural language processing and semantic understanding framework/module [https://research.googleblog.com/2016/05/announcing-syntaxnet-worlds-most.html](https://research.googleblog.com/2016/05/announcing-syntaxnet-worlds-most.html)
@@ -85,7 +88,7 @@ NodeJS
 ### Data Storage
 
 Redis
-: Really, really fast & scalable in-memory 'schema-less' datastore, feat. Hashmaps, Lists, Sets, Ordered sets and some niche but super handy Geospatial queries [http://redis.io/](http://redis.io/)
+: Really, really fast & scalable in-memory 'schema-less' datastore, feat. Hashmaps, Lists, Sets, Pub/Sub, Ordered sets and some niche but super handy Geospatial queries [http://redis.io/](http://redis.io/)
 
 SQLite
 : Probably the smallest SQL (Structured Query Language, for relational databases), easy to use, set up and hack with [https://sqlite.org/](https://sqlite.org/)
@@ -113,6 +116,9 @@ GitHub Pages
 
 Arduino
 : Very well known and well supported hardware development ecosystem [http://arduino.cc](http://arduino.cc)
+
+ROS
+: Huge ecosystem and standardised method of doing stuff for serious Robotics [http://www.ros.org/](http://www.ros.org/)
 
 ARM Mbed
 : More powerful than Arduinos, have RTOS features and a more complex/complete API [https://www.mbed.com/](https://www.mbed.com/)
