@@ -5,6 +5,8 @@
 {% assign wclass = 'skinny' %}
 {% endif %}
 
+{% if post.notitle %}
+{% else %}
 {% if post.hero %}
 <div class="hero" style="background-image: url('{{site.baseurl}}/media/{{ post.hero }}');">
   <div class="scrim-g">
@@ -22,3 +24,5 @@
   </div>
 </div>
 {% endif %}
+{% endif %}
+

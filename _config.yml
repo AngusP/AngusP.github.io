@@ -47,6 +47,11 @@ show_drafts: false
 paginate: 3
 paginate_path: "posts/page:num"
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 permalink: pretty
 highlighter: rouge
 gems: [jekyll-paginate]
