@@ -195,6 +195,7 @@ Currently the fonts *Montserrat*, *Crimson Text*, *Pacifico*, *Yeseva One*, *Fon
             }
         }
         #font-demo-design {
+            color: #000;
             padding: 1em;
         }
         #font-demo-2 .demo-quote {

@@ -565,7 +565,7 @@ a.btn.success {
     margin-top: 2rem;
     min-height: 4rem;
     background: #FFF;
-    color: #333;
+    color: $copy_softer;
     transition: box-shadow 0.3s ease, margin 0.3s ease;
     box-shadow: $zshadow_0;
     overflow: hidden;
@@ -788,12 +788,14 @@ blockquote.feature {
 }
 
 blockquote.feature:before {
-    content: '\f10d';
+    content: '\f10d'; /* fa-quote-right */
+    display: block;
     font: $icon_font;
     font-style: normal;
     font-size: 1.5em;
     color: $back_d_grey;
     height: 1em;
+    margin-bottom: 0.1em;
 }
 
 .mid {
@@ -806,6 +808,11 @@ blockquote.mid {
     @extend blockquote.feature;
     margin: 0;
     border: 0;
+}
+blockquote.mid:after {
+    @extend blockquote.feature:before;
+    content: '\f10e'; /* fa-quote-left */
+    margin-top: 0.2em;
 }
 
 @media all and (min-width: $breakpoint_sm){
@@ -955,7 +962,6 @@ header.hero {
 
     h1 {
         font-size: 3em;
-        letter-spacing: 0.08em;
     }
 }
 
@@ -1148,7 +1154,7 @@ mark.noir, .noir, .mark.noir {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    color: #7B7B7B;
+    color: $copy_softer;
     border-bottom: 0.15em solid $border_light;
     transition: border-color 0.3s ease;
 }
@@ -1298,7 +1304,7 @@ p { font-size: 1em; }
     /*background-image: url($header_image);*/
     background-position: center center;
     background-size: cover;
-    color: #181818;
+    color: $copy_colour;
     text-align: center;
     font-size: 1rem;
     font-size: 3.5vw;
@@ -1308,7 +1314,6 @@ p { font-size: 1em; }
         padding: 1em 0em;
         margin: 0;
         line-height: 1em;
-        letter-spacing: 0.08em;
     }
 
     a,
