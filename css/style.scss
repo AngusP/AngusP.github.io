@@ -25,15 +25,17 @@ $theme_complement: {% if site.theme_complement %}{{ site.theme_complement }};
 $select_colour: {{ site.select_colour }};
 
 
-$copy_colour: #181818;
+$copy_colour: {{ site.copy_colour }};
+$copy_softer: desaturate(lighten($copy_colour, 20%), 50%);
 
 $back_l_grey: #f8f8f8;
 $back_d_grey: #efefef;
 
-$border_light: #eee;
-$border_dark: #ddd;
+$border_light: #eef;
+$border_dark: #dde;
 
 $danger_colour: #ce4a55;
+$success_colour: #4acea9;
 
 /* Main font pairing */
 $sans_font: 'Montserrat','Helvetica-Neue',Helvetica,Arial,sans-serif;
@@ -203,7 +205,7 @@ a:focus {
         display: inline-block;
         width: 100%;
         padding: 0.3em 0em;
-        border-bottom: 0.15rem solid $border_dark;
+        border-bottom: 0.15rem solid $border_light;
         margin-bottom: 0.5em;
         overflow: hidden;
         transition: border-color 0.3s ease;
@@ -252,7 +254,7 @@ article {
         font-family: $mono_font;
         font-size: 0.7em;
         padding: 0.2em 0;
-        color: lighten($copy_colour, 20%);
+        color: $copy_softer;
         overflow: auto;
     }
 
@@ -358,7 +360,7 @@ article {
 
     p, ul, ol {
         line-height: 1.5em;
-        color: lighten($copy_colour, 20%);
+        color: $copy_softer;
     }
 
     ul, ol {
@@ -415,11 +417,11 @@ article {
         font-size: 0.9em;
         border-collapse: collapse;
         width: 100%;
-        color: lighten($copy_colour, 20%);
+        color: $copy_colour;
     }
 
     tbody {
-        color: lighten($copy_colour, 30%);
+        color: $copy_softer;
     }
 
     th, td {
@@ -461,16 +463,16 @@ article {
 }
 
 blockquote {
-    color: lighten($copy_colour, 30%);
+    color: $copy_colour;
     border-left: 0.2em solid $back_d_grey;
     margin: 1em 0em;
     margin-left: -0.5em;
     padding: 0.2em 2em;
 
     cite {
+        opacity: 0.6;
         display: block;
         margin-top: 0.5em;
-        color: lighten($copy_colour, 50%);
         font-weight: normal;
         font-style: italic;
         text-decoration: none;
@@ -538,6 +540,15 @@ a.btn.danger {
 .btn.danger:hover,
 .btn.danger:active {
     background-color: lighten($danger_colour, 6%);
+}
+
+.btn.success,
+a.btn.success {
+    background-color: $success_colour;
+}
+.btn.success:hover,
+.btn.success:active {
+    background-color: lighten($success_colour, 6%);
 }
 
 .caps {
@@ -761,6 +772,11 @@ dl {
     -webkit-column-span: all;
     column-span: all;
 }
+@media all and (min-width: $breakpoint_sm){
+    .feature {
+        font-size: 1.4em;
+    }
+}
 
 .feature.ledge,
 .feature.redge {
@@ -939,6 +955,7 @@ header.hero {
 
     h1 {
         font-size: 3em;
+        letter-spacing: 0.08em;
     }
 }
 
@@ -1188,13 +1205,13 @@ p { font-size: 1em; }
     }
 
     .disabled {
-        color: lighten($copy_colour, 70%);
+        color: $theme_colour;
     }
 
     .page_number {
         @extend .disabled;
         font-size: 0.6em;
-        color: lighten($copy_colour, 70%);
+        color: $theme_colour;
         word-spacing: 0.5em;
         display: inline-block;
         line-height: 1em;
@@ -1291,6 +1308,7 @@ p { font-size: 1em; }
         padding: 1em 0em;
         margin: 0;
         line-height: 1em;
+        letter-spacing: 0.08em;
     }
 
     a,

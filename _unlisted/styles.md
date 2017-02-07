@@ -577,6 +577,9 @@ Similarly, buttons (Use `$theme_colour` by default)
     <a class="btn danger">
         I do nothing.
     </a>
+    <a class="btn success">
+        I do nothing.
+    </a>
 
 <div>
     <a class="btn">
@@ -586,6 +589,9 @@ Similarly, buttons (Use `$theme_colour` by default)
         I do nothing.
     </a>
     <a class="btn danger">
+        I do nothing.
+    </a>
+    <a class="btn success">
         I do nothing.
     </a>
 </div>

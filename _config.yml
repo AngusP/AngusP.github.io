@@ -7,6 +7,9 @@ author: "Angus Pearson"
 author_avatar: "//s.gravatar.com/avatar/8c54ddeaeca4f852c1d522c83780ced1?s=160"
 
 ## COLOURS
+# Copy (main text) colour
+copy_colour: "#090b2c"
+
 # Primary and Accent (Compliment) colour:
 theme_colour: "#9ac6ff"
 theme_complement: "#f7cac9"
