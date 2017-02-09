@@ -22,6 +22,8 @@ $theme_complement: {% if site.theme_complement %}{{ site.theme_complement }};
 {% else %}{{ site.theme_colour }};
 {% endif %}
 
+$theme_noir: #131315;
+
 $select_colour: {{ site.select_colour }};
 
 
@@ -508,6 +510,7 @@ button.btn {
     text-decoration: none;
     color: #FFF;
     font-family: $sans_font;
+    font-weight: normal;
     box-shadow: none;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     line-height: 1.2rem;
@@ -831,7 +834,7 @@ blockquote.mid:after {
 footer {
     font-family: $small_font;
     color: #FFF;
-    background-color: #111;
+    background-color: $theme_noir;
     padding: 3rem 1rem;
     border-top: 0.15rem solid $theme_complement;
     font-size: 0.9rem;
@@ -885,7 +888,7 @@ footer:hover {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: $title_font;
-    font-weight: bold;
+    font-weight: 600;
     word-wrap: break-word;
     margin: 0;
     padding: 0.4em 0em 0.2em 0em;
@@ -1154,13 +1157,13 @@ mark.noir, .noir, .mark.noir {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    color: $copy_softer;
-    border-bottom: 0.15em solid $border_light;
+    color: inherit;
+    border-bottom: 0.15em solid #222226;
     transition: border-color 0.3s ease;
 }
 
 .nav-ul > li > a.active {
-    border-color: $border_dark;
+    border-color: #333336;
 }
 
 .nav-ul > li > a:hover,
@@ -1300,11 +1303,11 @@ p { font-size: 1em; }
 }
 
 .site_header {
-    background-color: #FFF;
+    background-color: $theme_noir;
     /*background-image: url($header_image);*/
     background-position: center center;
     background-size: cover;
-    color: $copy_colour;
+    color: #FFF;
     text-align: center;
     font-size: 1rem;
     font-size: 3.5vw;
@@ -1314,6 +1317,7 @@ p { font-size: 1em; }
         padding: 1em 0em;
         margin: 0;
         line-height: 1em;
+        letter-spacing: 0.03em;
     }
 
     a,
@@ -1345,7 +1349,26 @@ p { font-size: 1em; }
 }
 
 .site-nav {
-    
+    background-color: $theme_noir;
+    color: #fff;
+}
+
+.inverted > .site-nav {
+    background-color: #fff;
+    color: $copy_softer;
+
+    .nav-ul > li > a {
+        border-color: $border_light;
+    }
+
+    .nav-ul > li > a.active {
+        border-color: $border_dark;
+    }
+
+    .nav-ul > li > a:hover,
+    .nav-ul > li > a:focus {
+        border-color: $theme_colour;
+    }
 }
 
 .spacer {
