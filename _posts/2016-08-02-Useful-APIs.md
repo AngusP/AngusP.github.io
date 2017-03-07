@@ -84,6 +84,13 @@ Polymer
 NodeJS
 : No.
 
+lxml
+: Python Library for parsing XML and HTML, faster than *Beautiful Soup* [http://lxml.de/](http://lxml.de/)
+
+requests
+: Very capable Python web client API [http://docs.python-requests.org/en/master/](http://docs.python-requests.org/en/master/)
+
+
 
 ### Data Storage
 
