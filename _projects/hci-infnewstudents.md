@@ -12,8 +12,9 @@ recently been admitted to the University of Edinburgh's School of Informatics.
 The site must have a fairly complex set of designed interactions, and cover
 a range of topics as identifies in a previous Affinity diagram.
 
-Live site is [here](http://toaster.cc/inf4-hci-2), source code is 
-on [GitHub](https://github.com/AngusP/inf4-hci-2)
+Live site is [here](//toaster.cc/inf4-hci-2), source code is 
+on [GitHub](https://github.com/AngusP/inf4-hci-2) and 
+[project report here.](//toaster.cc/inf4-hci-2/report/group.pdf)
 
 <small>
 Project received 96% mark.
