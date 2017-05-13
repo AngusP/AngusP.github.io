@@ -2,7 +2,7 @@
 name: Intelligent Autonomous Robotics
 type: University Project
 image: iar.jpg
-link: "http://toaster.cc/inf4-hci-2/"
+link: "https://github.com/AngusP/Khepera-II-IAR"
 date: 2016-11-29
 ---
 
