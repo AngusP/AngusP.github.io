@@ -73,7 +73,7 @@ While holonomics are a powerful advantage, giving the ability to move in any dir
 
 It's also *not* sufficient to try correcting linearly, nor is it particularly clever to guess at some function that'll do this correction for you. The graph below shows the uneven relationship between the rotational speeds of the motors and the applied power. 
 
-The motors were run from -100% to 100% power _quickly_, so this graph only shows how the rotational speeds are unstable, not that the power doesn't correlate to speed. The three coloured lines that are closely grouped are the three motors selected for use on or bot; The single blue line is a particularly broken motor, and the pink line indicates a stall condition - if the motor is running below this line, we're probably trying to shove a wall or robot around.
+The motors were run from -100% to 100% power _quickly_, so this graph only shows how the rotational speeds are unstable, not that the power doesn't correlate to speed. The three coloured lines that are closely grouped are the three motors selected for use on our bot; The single blue line is a particularly broken motor, and the pink line indicates a stall condition - if the motor is running below this line, we're probably trying to shove a wall or robot around.
 
 A full PID controller is probably overkill in this situation, so we employed a Gradient Descent algorithm to do these corrections during runtime, using the feedback from the rotary encoders Lego's NXT motors are equipped with.
 
