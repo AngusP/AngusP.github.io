@@ -30,8 +30,23 @@ layout: default
 <div class="container vspace {{ wclass }}">
   <article>
     <div class="clearfix">
-      
-      {% include author_chip.html %}
+
+      <div class="chip pull-right">
+        {% if post.author %}
+        {% if post.author_avatar %}
+        <img src="{{ page.author_avatar }}">
+        {% endif %}
+        {{ post.author }}
+        
+        {% if post.author_url %}
+        <a href="{{ post.author_url }}" target=_blank><i class="fa fa-share"></i></a>
+        {% endif %}
+
+        {% else %}
+        <img src="{{ site.author_avatar }}">{{ site.author }}
+        {% endif %}
+      </div>
+
       
       <time class="muted i">
         {{ post.date | date: "%b %-d, %Y" }}

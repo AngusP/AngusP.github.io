@@ -63,9 +63,11 @@ $breakpoint_md: 70rem;
 $breakpoint_lg: 100rem;
 
 /* Material lighting cues */
-$zshadow_0: 0rem 0.1rem 0.3rem 0rem rgba(0,0,0,0.1);
-$zshadow_1: 0rem 0.2rem 0.6rem 0rem rgba(0,0,0,0.3);
-$zshadow_2: 0rem 0.6rem   2rem 0rem rgba(0,0,0,0.4);
+$zshadow_in2: inset 0      0      0.4rem rgba(0,0,0,0.3);
+$zshadow_in1: inset 0      0      0.2rem rgba(0,0,0,0.2);
+$zshadow_0:   0rem  0.1rem 0.4rem 0rem   rgba(0,0,0,0.2);
+$zshadow_1:   0rem  0.2rem 0.6rem 0rem   rgba(0,0,0,0.3);
+$zshadow_2:   0rem  0.4rem   1rem 0rem   rgba(0,0,0,0.4);
 
 * { box-sizing: border-box; }
 
@@ -803,6 +805,7 @@ blockquote.feature:before {
 
 .mid {
     @extend .feature;
+    font-size: 1.1em;
     text-align: center;
     font-style: italic;
 }
@@ -811,11 +814,6 @@ blockquote.mid {
     @extend blockquote.feature;
     margin: 0;
     border: 0;
-}
-blockquote.mid:after {
-    @extend blockquote.feature:before;
-    content: '\f10e'; /* fa-quote-left */
-    margin-top: 0.2em;
 }
 
 @media all and (min-width: $breakpoint_sm){
@@ -1036,7 +1034,6 @@ hr {
 
 hr.break {
     border: none;
-    
 }
 
 hr.break::after {
@@ -1052,6 +1049,7 @@ hr.break::after {
     font-weight: bold;
     letter-spacing: 0.3rem;
     font-family: $sans_font;
+    padding: 0.5rem 0;
 }
 
 .hspace {
@@ -1193,6 +1191,9 @@ p { font-size: 1em; }
 .padder {
     padding: 2em;
 }
+.littlepadder {
+    padding: 1em;
+}
 
 .pagination {
     font-size: 2em;
@@ -1295,7 +1296,7 @@ p { font-size: 1em; }
 
 /* A lot like .card, but more generic */
 .sheet {
-    box-shadow: $zshadow_1;
+    box-shadow: $zshadow_0;
     transition: box-shadow 0.3s ease;
 }
 .sheet.hoverable:hover {

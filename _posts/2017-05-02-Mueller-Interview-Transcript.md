@@ -1,6 +1,6 @@
 ---
 title: Tom Mueller Speech Transcript
-layout: clear
+layout: post
 excerpt_only: true
 hero: 2017-05-02-mueller-hero.jpg
 author: u/dansemacabred2, u/jclishman, u/Zucal, and u/zsla

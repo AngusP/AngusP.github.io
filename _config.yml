@@ -11,11 +11,11 @@ author_avatar: "//s.gravatar.com/avatar/8c54ddeaeca4f852c1d522c83780ced1?s=160"
 copy_colour: "#090b2c"
 
 # Primary and Accent (Compliment) colour:
-theme_colour: "#9ac6ff"
-theme_complement: "#f7cac9"
+theme_colour: "#0072ff"
+theme_complement: "#d6577e" #"#da7951" #"#004499"
 
 # :selection and mark colour
-select_colour: "saturate(lighten(#9ac6ff, 10%), 10%)"
+select_colour: "desaturate(lighten(rgb(0, 114, 255), 42%), 10%)"
 
 # If the theme colour is light, darken it this much
 # for text or other elements on white
@@ -23,12 +23,12 @@ theme_colour_copy_darken: "20%"
 
 # Colour to make the hero's scrim
 # default is rgba(0,0,0,0.3)
-scrim_colour: "darken(rgba(154, 198, 255, 0.3), 10%)"
+scrim_colour: "rgba(0, 114, 255, 0.4)"
 
 ## HERO IMAGE
 hero_image: "forum-col-opt.jpg"
 
-# Pantone colour of the year: Serenity 2016 #f7cac9 and Rose Quartz #f7cac9
+# Pantone colour of the year: Serenity 2016 #9ac6ff and Rose Quartz #f7cac9
 # TCC blue: #9ac6ff
 # TCC green: #59d380 & comp: #bdeecd
 # TCC yellow: #fed136
@@ -57,7 +57,7 @@ kramdown:
 
 permalink: pretty
 highlighter: rouge
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 sass:
   style: compressed
 

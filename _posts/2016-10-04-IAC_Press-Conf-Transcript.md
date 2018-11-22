@@ -1,6 +1,6 @@
 ---
 title: Musk IAC Press Q&A Transcript
-layout: clear
+layout: post
 hero: 2016-10-04-iac-hero.jpg
 excerpt_only: true
 excerpt_separator: <!--more-->

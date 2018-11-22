@@ -1,22 +1,17 @@
 ---
-layout: basic
+layout: default
 ---
 
 {% comment %}
 ^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^
                      IMPORTANT!
- Markup must be consistent with _layouts/post.html
+ Markup must be consistent with posts/index.html
 ^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V^
 {% endcomment %}
 
 {% assign post = page %}
 
-{% include return_nav.html %}
-
 {% include post_hero.html %}
 
 {% include post_body.html %}
 
-<div class="vspace hidden-print">&nbsp;</div>
-
-{% include footer.html %}
