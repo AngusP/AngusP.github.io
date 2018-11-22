@@ -16,7 +16,7 @@
       </time>
     </div>
     <br>
-    <div {% if post.columnar %} class="columnar" {% endif %}>
+    <div class="{% if post.columnar %} columnar{% endif %}{% if post.justified %} justified{% endif %}">
       {{ post.content }}
     </div>
   </article>

@@ -24,4 +24,12 @@ title: sitemap
       <priority>0.8</priority>
     </url>
   {% endfor %}
+  {% for project in site.projects %}
+    <url>
+      <loc>{{ project.link }}</loc>
+      <lastmod>{{ project.date | date: "%F" }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  {% endfor %}
 </urlset>

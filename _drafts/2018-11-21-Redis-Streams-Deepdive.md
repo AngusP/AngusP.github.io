@@ -1,6 +1,7 @@
 ---
 title: Redis Streams Deepdive
 layout: post
+justified: true
 excerpt_separator: <!--more-->
 ---
 
@@ -8,10 +9,11 @@ excerpt_separator: <!--more-->
 between Redis' Lists and Pub/Sub structures that came before them.
 {: .feature}
 
-Redis Lists provide fast pushing, popping and range queries, and are similar to
-the fundamental double-ended-stack datastructure. On the other, Redis Pub/Sub provides "fire and
-forget" messaging amongst different channels. Messages in PubSub are *ephemeral* - once gone, they're
-gone. Your client has to be listening when the server publishes if you're going to get the message.
+In one hand, we have Redis Lists, which provide fast pushing, popping and range queries, and are
+similar to the fundamental Computer Science double-ended-stack datastructure. On the other hand,
+Redis Pub/Sub provides "fire and forget" messaging amongst different channels. Messages in PubSub
+are *ephemeral* - once gone, they're gone. Your client has to be listening when the server publishes
+if you're going to get the message.
 
 If you wanted a way to pass messages between producers and consumers, but it was important that no
 messages got dropped, then you can see Pub/Sub in Redis is a no-go. So, many people turned to Lists

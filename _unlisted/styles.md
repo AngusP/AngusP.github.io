@@ -15,8 +15,7 @@ We're rendering with Jekyll's *Kramdown* engine, full docs [here](http://kramdow
 
     ---
     title: Post Title
-    layout: {basic, default, clear, post}
-    columnar: {false:default, true}
+    layout: {basic, clear, default, full, home, post}
     author: JR Hacker
     author_avatar: http://s.gravatar.com/avatar/8c54ddeaeca4f852c1d522c83780ced1?s=160
     author_url: http://gravatar.com
@@ -24,12 +23,15 @@ We're rendering with Jekyll's *Kramdown* engine, full docs [here](http://kramdow
     excerpt_only: {false:default, true}
     excerpt_separator: <!--more--> {default: none}
     wide: {false:default, true}
+    columnar: {false:default, true}
+    justified: {false:default, true}
     ---
 
 Layouts are successively more styled, with basic giving an empty body, default giving 
-just header and navigation and the post layout giving tile, authorship and hero if supplied,
-which is best for most posts. The posts layout will also be used in the posts feed. Clear gives
-the same styling and `<article>` as post, withouyt the navigation bar or header.
+just header and navigation. Full keeps main site nav, post has a minial nav,
+which is best for most posts, and home has the homepage hero. The posts layout will also be
+used in the posts feed. Clear gives the same styling and `<article>` as post, without the
+navigation bar or header.
 
 `excerpt_only` will suppress rendering of any HTML and truncate the post to an excerpt in the 
 posts stream page; This may be useful in conjunction with the `basic` layout. Similarly, 

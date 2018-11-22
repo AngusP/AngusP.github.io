@@ -1,5 +1,5 @@
 ---
-title: Musk IAC Press Q&A Transcript
+title: Elon Musk IAC Press Q&A Transcript
 layout: post
 hero: 2016-10-04-iac-hero.jpg
 excerpt_only: true
