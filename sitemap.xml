@@ -26,7 +26,7 @@ title: sitemap
   {% endfor %}
   {% for project in site.projects %}
     <url>
-      <loc>{{ site.baseurl }}/portfolio#{{ project.name | url_encode }}</loc>
+      <loc>{{ site.url }}/portfolio#{{ project.name | url_encode }}</loc>
       <lastmod>{{ project.date | date: "%F" }}</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
