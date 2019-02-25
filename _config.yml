@@ -12,7 +12,7 @@ copy_colour: "#090b2c"
 
 # Primary and Accent (Compliment) colour:
 theme_colour: "#0072ff"
-theme_complement: "#d6577e" #"#da7951" #"#004499"
+theme_complement: "#d5006f" #"#d6577e" #"#da7951" #"#004499"
 
 # :selection and mark colour
 select_colour: "desaturate(lighten(rgb(0, 114, 255), 42%), 10%)"
