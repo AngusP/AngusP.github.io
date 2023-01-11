@@ -71,3 +71,4 @@ collections:
     layout: clear
     permalink: /unlisted/:path/
 
+include: [".well-known"]
