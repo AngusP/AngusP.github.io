@@ -1,0 +1,86 @@
+==================================================================
+https://keybase.io/angusp
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://toaster.cc
+  * I am angusp (https://keybase.io/angusp) on keybase.
+  * I have a public key with fingerprint 5B48 95B4 7066 AF9C ED56  D364 D6A5 EFE7 8E9C 40E3
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101ac4fa765127b863531f802ac0f13d6f925d7d61bace9040dda2a4837b25e52ca0a",
+      "fingerprint": "5b4895b47066af9ced56d364d6a5efe78e9c40e3",
+      "host": "keybase.io",
+      "key_id": "d6a5efe78e9c40e3",
+      "kid": "010159c663b0604dac73aaa67edd135706b355384d48c40e0ef1043a2fcbea6c342e0a",
+      "uid": "518e219fe42e1719b788b80502208519",
+      "username": "angusp"
+    },
+    "merkle_root": {
+      "ctime": 1673905243,
+      "hash_meta": "44c6d0c6387b2b276efb0637036848205fd517f7c80ddc18905302e97c640484",
+      "seqno": 23879726
+    },
+    "revoke": {
+      "sig_ids": [
+        "ef98e27150ab91ad08db609f61b9aaa1c47bc8c17a372b655425da1586ee4d000f"
+      ]
+    },
+    "service": {
+      "hostname": "toaster.cc",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1673905257,
+  "expire_in": 157680000,
+  "prev": "fec26c8e81e421cb5113fc5fa32dedc5245fa241b5f8904375e26b8c687694e2",
+  "seqno": 48,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtk3tsFFUUxvugsjSYNqJUUF5T0TQucOdx79zpgmBtsEjkIVSUCsudO3fadcvu
+MjstlLoJtETpI0ChJJqqgLQiCZQ3CDRY2orYZgkUpbWWUKlAABFoTSov8W4DITH+
+M4+T73znm9+Zu+7p2ChHdAn7cdhlx4yN0S1X9Sj6fVOgUND9RoGQWih4Wf+N5Ros
+aLu9HkNIFYAIREIVk6gIipKqYyRDWTQxkAgFpigbyNQkaKgGEnVCmQYUYBhEIgqW
+VV2CDEqUACI4BdPjy2ZWwPL4bG4LdQVr/KIChIipUWZAZMhIMRCBzGQqZhpVAJN5
+Y44/GOng4XQSZOM9fl7jL+7+eP+jf5IbahQhWQcIKAahqkwIQSozDFGGfK4uQyhj
+xVBwpBMwUwSKTCST6owgKisS68+d128HRcwkUTMZL4uqqOkqxjoGEEgSwFDUIsIg
+s3xkMeNq4svOCwaEkFNYzCxvLnNbfr8dQUttT0QgIlXWAJQUmX8eCea4FzOb8D5F
+ocgAFMmYs9MlFTGTp5dVICOsYAlA04CiaqoUc8hUxNxDBhLTVIoUoGCFpwiyJT6/
+kCpxC02VEI9gsXy/l0WmBz3ZnFpQSM0SmKlhVm9LqggB0TWRGAAbOgKayfeocVAi
+VVSdYiqqRFYlHUGo8DUTEWLEmGIAAExhQSgyz8r30H77yKIeAbD9JGgzazylPFLA
+8tt+6s/l9RzbDgRTI2DsgkBEuJTp7kcWbt3jM/hPwjvymRX0+H0cFFf+hxlUnQJb
+FvBYzO2JKKCKME8DInNYPrc0GZUQxQyLfFki1aEoyiaFJpElgxmUU+fPkiLq0OQA
+FVmFTEI6pgirSFOY9ASignlOks09OTkfsfMsJoTiS2LkAVHRjqgRQ8cMaDPOFDR5
+DnzT9+Bk+eODFRcTOVVR8YMSH1fCGxIeem+svLO8sW3bkClzSd0G15rAwfekeW/s
+byj+bULVdXTCct5M6Cr9+0Vf+NStIjYs7YukzJEXtt7bPKplemeNK74hOUV5e4cj
+dmA49aXwOthenFjU6BqTVtnwbmnalofJ7fuX/3k361xnSU3moedL0LiivlC4sXdS
+ZvM/9b1pMdvu3njh4gd5D9qqZ117M2vf3Zydx67re5rkEXuGjRMunL54pHzZ5Jkf
+XfJ2S5+tvHG+547rfnprb+yOypH3v92csXdwa8vBU/Jr5fNWJqSv7k5BOSH61Yrv
+UmLa8JrzcSebf2+6twTv67xcu+OPLRXHbe+cjGtHG1vP7R67LNFRLFcs2nlz0fx3
+DgyoWju7OX7iX+7a7DFHWyryR7fHvz+755mynsJnt6Xlzi8Y1BW98Fh19arwD8Kd
+4aejTqBa4pp0cVDTle0zMrJA5fbMqfVv7V59fH24eGbd2E5XcuxPCa+KiZNKpuyq
+Svq8rntuz2FnSlFK6Ja/qyL5bJr3EJs+clPTw/Lb7fGjk0rNK8mVX249Mtu5uW5g
++GxRy66qjffiFjiW/jJz1KyEmo5Pa54b3lXxoLC146kp+GV18ILrfd2BIb2v9G1q
+a4CJsZMzHM5TV+vLttPLHXs/vBDrCX29ft7ESytK504b+mv0rdy4s58kTSibE1f9
+8ZlDvcby2jVGutWx8GTz2vWzMktGrLp9uM817fWfR/0L
+=CxaN
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/angusp
+
+==================================================================
